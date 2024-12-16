@@ -1,7 +1,7 @@
 # orgST
 -- -- -- --
-a PHS system
-[PORTABLE HOUSE SYSTEM]
+a PHS system (portable home system)
+-
 raspberry pi supported home emulation software.
 view sponsors and get discounts on products.
 inspired by Wii Room v770

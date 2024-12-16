@@ -7,4 +7,5 @@ view sponsors and get discounts on products.
 inspired by Wii Room v770
 
 "How about YOU try ASM+!!!!"
+- the calc tech team
 

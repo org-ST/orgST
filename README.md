@@ -1,5 +1,11 @@
 # orgST
 -- -- -- --
-a PWS system
-(PORTABLE WORK SYSTEM)
-allows users to work on certain devices unsupported in 2024-2025
+a PHS system
+[PORTABLE HOUSE SYSTEM]
+raspberry pi supported home emulation software.
+view sponsors and get discounts on products.
+inspired by Wii Room v770
+
+"How about YOU try ASM+!!!!"
+- the calc tech team
+

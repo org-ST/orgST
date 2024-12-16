@@ -1,3 +1,3 @@
 # orgST
-a Portable Entertainment System (PES)
+a PES system
 works on raspberry pi and desktop

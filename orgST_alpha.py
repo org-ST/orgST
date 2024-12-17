@@ -1,24 +1,27 @@
 import json
 import sys
 import os
+import random
 
 print("orgST pre-alpha terminal 1.1")
 print("refer to the help manual for more information")
-supertext="poilo"
+supertexterr="poilo"
 
-a=input("orgdrive= ")
+a = input("Enter your choice: ")
 
 with open('maindata.json', 'r') as file:
-    jsonfile = json.load(file)
+   jsonfile = json.load(file)
 
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
-
+with open('randdata.json', 'r') as randfile:
+    randdata = json.load(randfile)
 def main():
-    if a==supertext:
-        print("holder")
+    if a=="supertext":
+        rand = [randfile["b"], randfile["c"], randfile["d"], randfile["e"], randfile["f"]]
+        print(random.choice(rand))
         
     if a=="licence" or "creativecommons":
         print(jsonfile["license"])
@@ -36,7 +39,7 @@ def main():
         print("dump raw data?")
         d=input("Y/N")
         if d=="Y" or "Yes" or "yes":
-            print("dumping...)
+            print("dumping...")
                   
     if a=="sponsors":
         print("current sponsors")

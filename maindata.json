@@ -1,9 +1,10 @@
 {
   "version": 1.0,
-  "title": "orgST"
-  "authors": ["progman.task", "Wdboyes13"],
+  "title": "orgST",
+  "authors": ["progman.task (makidev)", "Wdboyes13"],
   "description": "home entertainment and sponsor viewer",
   "sponsors": 2,
-  "sponsornames": ["calc_tech", "orgST_team"]
-  "updates": 0
+  "sponsornames": ["calc_tech" ,"orgST_team"],
+  "updates": 0,
+  "github": "https://github.com/MakiDevelops/orgST"
 }

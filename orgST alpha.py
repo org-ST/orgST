@@ -16,4 +16,11 @@ if a=="org":
     b=input("input command= ")
     if b=="Y" or "Yes" or "yes":
         print("searching for data.ini")
-    
+        print("data.ini not found")
+        print("are you using MACOS?")
+        print("Y/N")
+        c=input("input command= ")
+        if c=="Y" or "Yes" or "yes":
+            print("MACOS is currently not supported lmao")
+        if c=="N" or "No" or "no":
+            print("sorry, there is nothing we can do")

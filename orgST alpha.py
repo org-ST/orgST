@@ -3,7 +3,8 @@ import sys
 import os
 
 print("orgST pre-alpha terminal 1.0")
-print("Refer to the help manual for any questions")
+print("refer to the help manual for more information")
+supertext="poilo"
 
 a=input("orgdrive= ")
 
@@ -19,7 +20,7 @@ def restart_program():
 
 
 def main():
-    if a=="287j48ah":
+    if a==supertext:
         print("licence,creativecommons,history,git,credits,sauce,sponsors,org
     if a=="licence" or "creativecommons":
         print("orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/"
@@ -42,14 +43,6 @@ def main():
         print("Y/N")
         b=input("input command= ")
         if b=="Y" or "Yes" or "yes":
-            print("searching for data.ini")
-            print("data.ini not found")
-            print("are you using MACOS?")
-            print("Y/N")
-            c=input("input command= ")
-            if c=="Y" or "Yes" or "yes":
-                print("MACOS is currently not supported lmao")
-            if c=="N" or "No" or "no":
-                print("sorry, there is nothing we can do")
+           print("support=287j48ah
     restart_program()
 main()

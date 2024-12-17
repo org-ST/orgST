@@ -2,7 +2,7 @@ import json
 import sys
 import os
 
-print("orgST pre-alpha terminal 1.0")
+print("orgST pre-alpha terminal 1.1")
 print("refer to the help manual for more information")
 supertext="poilo"
 

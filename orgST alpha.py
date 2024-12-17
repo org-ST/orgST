@@ -2,7 +2,7 @@ import json
 import sys
 import os
 
-print("orgST pre-alpha 1.0")
+print("orgST pre-alpha terminal 1.0")
 print("Refer to the help manual for any questions")
 
 a=input("orgdrive= ")

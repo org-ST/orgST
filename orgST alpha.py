@@ -19,6 +19,8 @@ def restart_program():
 
 
 def main():
+    if a=="287j48ah":
+        print("licence,creativecommons,history,git,credits,sauce,sponsors,org
     if a=="licence" or "creativecommons":
         print("orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/"
     if a=="history":
@@ -33,6 +35,7 @@ def main():
         if d=="Y" or "Yes" or "yes":
             print("dumping...)
     if a=="sponsors":
+        print("currentsponsors")
         print(jsonfile["sponsornames"])
     if a=="org":
         print("would you like to start orgST setup?")

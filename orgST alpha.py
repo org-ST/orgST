@@ -2,7 +2,7 @@ import json
 import sys
 import os
 
-print("OrgST pre-alpha 1.0")
+print("orgST pre-alpha 1.0")
 print("Refer to the help manual for any questions")
 
 a=input("orgdrive= ")
@@ -19,6 +19,8 @@ def restart_program():
 
 
 def main():
+    if a=="licence" or "creativecommons":
+        print("orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/"
     if a=="history":
         print("version ", jsonfile["version"])
     if a=="git":

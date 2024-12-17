@@ -35,7 +35,7 @@ def main():
         if d=="Y" or "Yes" or "yes":
             print("dumping...)
     if a=="sponsors":
-        print("currentsponsors")
+        print("current sponsors")
         print(jsonfile["sponsornames"])
     if a=="org":
         print("would you like to start orgST setup?")

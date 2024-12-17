@@ -2,11 +2,10 @@ import json
 import sys
 import os
 
-print("orgST alpha build")
-print("!DO NOT RUN THIS IN FOLDER TERMINAL!")
-print("refer to help manual to get started")
+print("OrgST pre-alpha 1.0")
+print("Refer to the help manual for any questions")
 
-a=input("input command= ")
+a=input("orgdrive= ")
 
 with open('maindata.json', 'r') as file:
     jsonfile = json.load(file)
@@ -22,12 +21,15 @@ def restart_program():
 def main():
     if a=="history":
         print("version ", jsonfile["version"])
-    if a=="github":
+    if a=="git":
         print(jsonfile["github"])
     if a=="credits":
         print(jsonfile["authors"])
     if a=="sauce":
-        print("you found the sauce!")
+        print("dump raw data?")
+        d=input("Y/N")
+        if d=="Y" or "Yes" or "yes":
+            print("dumping...)
     if a=="sponsors":
         print(jsonfile["sponsornames"])
     if a=="org":

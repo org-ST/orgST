@@ -64,5 +64,8 @@ def main():
     if a=="esc":
         return None
 
+    if a=="start":
+        #THIS IS WHERE YOU START THE PROGRAM / INSTALL IT
+
     restart_program()
 main()

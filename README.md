@@ -14,9 +14,11 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 # lovely sponsors
 -- -- -- -- -- -- --
 
-"welcome to orgST!"
+"Welcome to OrgST's workspace."
 - the orgST team
+(progman.task, Wdboyes13)
 
-"how about YOU try ASM+!!!!"
+"How about YOU try ASM+!!!!"
 - the calc tech team
+(progman.task, chureki)
 

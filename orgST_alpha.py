@@ -10,18 +10,17 @@ supertexterr="poilo"
 a = input("Enter your choice: ")
 
 with open('maindata.json', 'r') as file:
-    jsonfile = json.load(file)
+   jsonfile = json.load(file)
 
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
 with open('randdata.json', 'r') as randfile:
-    randpy = json.load(randfile)
-
+    randdata = json.load(randfile)
 def main():
     if a=="getsuper":
-        rand = [randpy["b"], randpy["c"], randpy["d"], randpy["e"], randpy["f"]]
+        rand = [randfile["b"], randfile["c"], randfile["d"], randfile["e"], randfile["f"]]
         print(random.choice(rand))
         
     if a=="lis" or "CC":
@@ -55,9 +54,8 @@ def main():
        print("press * to continue, otherwise press /")
        i3 = input("...")
        if i3=="*":
-           newval = input("Insert your new supertext: ")
-           print("")
-
-
+          print("insert your supertext")
+      
+    
     restart_program()
 main()

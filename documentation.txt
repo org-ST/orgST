@@ -19,3 +19,6 @@ Sponsorviewer commands:
 -review
 -people
 -web
+
+How to use the User Interface:
+#willputsomeinstructionsherelmao

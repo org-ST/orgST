@@ -32,10 +32,10 @@ def main():
         print("version ", jsonfile["version"])
         
     if a=="git":
-        print(jsonfile["github"])
+        print("github link: ", jsonfile["github"])
         
     if a=="cred":
-        print(jsonfile["authors"])
+        print("authors: ", jsonfile["authors"])
 
     if a=="eufi":
        print(jsonfile["eufi"])
@@ -45,7 +45,8 @@ def main():
         print("dump raw data?")
         d=input("Y/N")
         if d=="Y" or "Yes" or "yes":
-            print("dumping...")
+            print(jsonfile)
+
                   
     if a=="spon":
         print("current sponsors")
@@ -64,5 +65,12 @@ def main():
     if a=="esc":
         return None
 
+    if a =="start":
+        app = "app.py"
+        if sys.platform == "win32" or "win64":
+            os.system('python app.py')
+        else:
+            os.system('python3 app.py')
+        return None
     restart_program()
 main()

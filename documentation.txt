@@ -1,4 +1,4 @@
-orgST DOCUMENTATION
+organizationSTATION DOCUMENTATION
 -------------------
 Terminal release has a couple commands:
 - getsuper (get the supertext)
@@ -12,3 +12,10 @@ Terminal release has a couple commands:
 - org (supertext inserter)
 - start (either start downloading or open the UI version)
 - esc (close the terminal)
+
+Sponsorviewer commands:
+-check
+-purchase
+-review
+-people
+-web

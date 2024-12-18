@@ -3,6 +3,7 @@
 
 rev = 1.0
 sponsors = 2
+is_looping = True
 
 print("Gathering resources...")
 
@@ -14,22 +15,29 @@ import time
 print("Sponsor viewer")
 print("Would you like to check the current sponsors?")
 a = input(">...")
-if a == "Y":
-    print("Listings:")
-    print("1. orgST")
-    print("2. CalcTech")
-    b = input(">...")
-    if b == "1":
-        print("Welcome to orgST's public room!")
-        print("-progman.task")
-        c = input(">...")
-        if c == "check":
-            print(
+while is_looping:
+    if a == "Y":
+        print("Listings:")
+        print("1. orgST")
+        print("2. CalcTech")
+        b = input(">...")
+        if b == "1":
+            print("Welcome to orgST's public room!")
+            print("-progman.task")
+            c = input(">...")
+            if c == "check":
+                print(
                 "We currently have no deals to offer at the moment. Please try again at a later date"
-            )
-    if b == "2":
-        print("How about YOU try ASM+!!!!")
-        print("-Table")
-        c = input(">...")
-        if c == "check":
-            print("We have no deals to offer at the moment")
+                )
+        if b == "2":
+            print("How about YOU try ASM+!!!!")
+            print("-Table")
+            c = input(">...")
+            if c == "check":
+                print("We currently have no deals to offer at the moment. Please try again at a later date")
+            if c == "purchase":
+                print("There is no domain for CalcTech")
+            if c == "web":
+                print("There is no domain for CalcTech")
+        elif is_looping:
+            break

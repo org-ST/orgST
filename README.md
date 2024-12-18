@@ -22,3 +22,25 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 - the calc tech team
 (progman.task, chureki)
 
+# Documentation
+## organizationSTATION DOCUMENTATION
+-------------------
+Terminal release has a couple commands:
+- getsuper (get the supertext)
+- help (check the documentation, aka this page)
+- lis/CC (check creative commons licence)
+- git (check the github page)
+- cred (check credits)
+- eufi (check the diary eufi version)
+- sauce (download the raw original json file)
+- spon (check the sponsors.py)
+- org (supertext inserter)
+- start (either start downloading or open the UI version)
+- esc (close the terminal)
+
+## Sponsorviewer commands:
+-check
+-purchase
+-review
+-people
+-web

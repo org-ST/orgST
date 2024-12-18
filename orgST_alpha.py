@@ -31,6 +31,7 @@ def main():
    # Check upd. history
     if a=="his":
         print("version ", jsonfile["version"])
+        print("update history", jsonfile["updhistory"])
 
    # Check the github link
     if a=="git":

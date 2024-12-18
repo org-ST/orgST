@@ -20,6 +20,7 @@ while is_looping:
         print("Listings:")
         print("1. orgST")
         print("2. CalcTech")
+        print("3. toyathing")
         b = input(">...")
         if b == "1":
             print("Welcome to orgST's public room!")

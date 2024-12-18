@@ -2,7 +2,7 @@
 # Created by progman.task
 
 rev = 1.0
-sponsors = 2
+sponsors = 3
 is_looping = True
 
 print("Gathering resources...")

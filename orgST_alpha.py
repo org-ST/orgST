@@ -16,12 +16,14 @@ def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
-with open('randdata.json', 'r') as randfile:
-    randdata = json.load(randfile)
+with open('randdata.json', 'r+') as json_file:
+    randdata = json.load(json_file)
 def main():
+    keys = ["b", "c", "d", "e", "f"]
+    randchoice = random.choice(keys)
+
     if a=="getsuper":
-        rand = [randdata["b"], randdata["c"], randdata["d"], randdata["e"], randdata["f"]]
-        print(random.choice(rand))
+        print(randdata[randchoice])
         
     if a=="lis" or "CC":
         print(jsonfile["license"])
@@ -55,7 +57,7 @@ def main():
        i3 = input("...")
        if i3=="*":
           intext = input("insert your supertext: ")
-
+          randdata.update({randchoice: intext})
 
     
     restart_program()

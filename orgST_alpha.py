@@ -56,9 +56,13 @@ def main():
        print("press * to continue, otherwise press /")
        i3 = input("...")
        if i3=="*":
-          intext = input("insert your supertext: ")
-          randdata.update({randchoice: intext})
+           with open('randdata.json', 'w') as file:
+              intext = input("insert your supertext: ")
+              randdata.update({randchoice: intext})
+              json.dump(randdata, file, indent=6)
 
-    
+    if a=="esc":
+        return None
+
     restart_program()
 main()

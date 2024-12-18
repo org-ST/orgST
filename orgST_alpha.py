@@ -19,20 +19,20 @@ def restart_program():
 with open('randdata.json', 'r') as randfile:
     randdata = json.load(randfile)
 def main():
-    if a=="supertext":
+    if a=="getsuper":
         rand = [randfile["b"], randfile["c"], randfile["d"], randfile["e"], randfile["f"]]
         print(random.choice(rand))
         
-    if a=="licence" or "creativecommons":
+    if a=="lis" or "CC":
         print(jsonfile["license"])
    
-    if a=="history":
+    if a=="his":
         print("version ", jsonfile["version"])
         
     if a=="git":
         print(jsonfile["github"])
         
-    if a=="credits":
+    if a=="cred":
         print(jsonfile["authors"])
         
     if a=="sauce":
@@ -41,17 +41,17 @@ def main():
         if d=="Y" or "Yes" or "yes":
             print("dumping...")
                   
-    if a=="sponsors":
+    if a=="spon":
         print("current sponsors")
         print(jsonfile["sponsornames"])
         
     if a=="org":
-        print("would you like to start orgST setup?")
-        print("Y/N")
-        b=input("input command= ")
-        if b=="Y" or "Yes" or "yes":
-           print("support=287j48ah")
-
+       print("have you viewed the current supertext?")
+       print("press * to continue, otherwise press /")
+       i3 = input("...")
+       if i3=="*":
+          print("insert your supertext")
+      
     
     restart_program()
 main()

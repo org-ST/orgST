@@ -3,12 +3,11 @@
   "title": "orgST",
   "authors": ["progman.task (makidev)", "Wdboyes13"],
   "description": "home entertainment and sponsor viewer",
-  "sponsors": 2,
-  "sponsornames": ["calc_tech" ,"orgST_team"],
-  "updates": 1,
+  "sponsors": 3,
+  "sponsornames": ["calc_tech" ,"orgST_team", "toyathing"]
+  "updates": 2,
   "github": "https://github.com/MakiDevelops/orgST",
   "license": "orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/",
   "eufi": "eufi diary 3.1",
-  "updhistory": "2024-12-17 concepts for UI started. 2024-12-18 working on the UI version and sponsorlist"
-  "
+  "updhistory": "2024-12-17 concepts for UI started. 2024-12-18 working on the UI version and sponsorlist (added toyathing to the sponsors)"
 }

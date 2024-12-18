@@ -20,7 +20,7 @@ with open('randdata.json', 'r') as randfile:
     randdata = json.load(randfile)
 def main():
     if a=="getsuper":
-        rand = [randfile["b"], randfile["c"], randfile["d"], randfile["e"], randfile["f"]]
+        rand = [randdata["b"], randdata["c"], randdata["d"], randdata["e"], randdata["f"]]
         print(random.choice(rand))
         
     if a=="lis" or "CC":
@@ -54,8 +54,9 @@ def main():
        print("press * to continue, otherwise press /")
        i3 = input("...")
        if i3=="*":
-          print("insert your supertext")
-      
+          intext = input("insert your supertext: ")
+
+
     
     restart_program()
 main()

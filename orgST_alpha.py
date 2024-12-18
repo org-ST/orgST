@@ -34,7 +34,11 @@ def main():
         
     if a=="cred":
         print(jsonfile["authors"])
-        
+
+    if a=="eufi":
+       print(jsonfile["eufi"])
+
+   
     if a=="sauce":
         print("dump raw data?")
         d=input("Y/N")

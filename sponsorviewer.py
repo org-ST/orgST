@@ -59,3 +59,6 @@ while is_looping:
 
     if a == "N":
         print("Returning to the main terminal...")
+    if a == "HELP":
+        print("-check -purchase -review -people -web")
+        break

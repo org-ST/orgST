@@ -5,7 +5,9 @@ rev = 1.0
 sponsors = 3
 is_looping = True
 
-print("Gathering resources...")
+print("gathering sponsors")
+print(sponsors)
+print(rev)
 
 # Play loading sound...
 # Wait for it to load
@@ -40,5 +42,20 @@ while is_looping:
                 print("There is no domain for CalcTech")
             if c == "web":
                 print("There is no domain for CalcTech")
+        if b == "3":
+            print("code thing")
+            print("-toyathing")
+            c=input(">...")
+            if c == "check":
+                print("We currently have no deals to offer at the moment. Please try again at a later date")
+            if c == "purchase":
+                print("There is no domain for toyathing")
+            if c == "web":
+                print("There is no domain for toyathing")
+
+
         elif is_looping:
             break
+
+    if a == "N":
+        print("Returning to the main terminal...")

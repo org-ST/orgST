@@ -3,7 +3,7 @@ import sys
 import os
 import random
 
-print("orgST pre-alpha terminal 1.1")
+print("orgST  terminal v0.0.1-alpha")
 print("refer to the help manual for more information")
 supertexterr="poilo"
 

@@ -1,10 +1,12 @@
 import tkinter.filedialog
 from tkinter import *
 from tkinter import ttk
-from tkVideoPlayer import TkinterVideo
-
+from tkintervideo import player
+from tkintervideo.tools import Controls
+import sv_ttk
+import time
 def videoplayer():
-
+    print("e")
 
 
 

@@ -22,6 +22,10 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 - the calc tech team
 (progman.task, chureki)
 
+"code thingy"
+- toyathing
+  (toyathing)
+
 # Documentation
 ## organizationSTATION DOCUMENTATION
 -------------------

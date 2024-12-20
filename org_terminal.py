@@ -2,6 +2,7 @@ import json
 import sys
 import os
 import random
+import subprocess
 
 print("orgST  terminal v0.0.1-alpha")
 print("refer to the help manual for more information")
@@ -66,11 +67,7 @@ def main():
         return None
 
     if a =="start":
-        app = "app.py"
-        if sys.platform == "win32" or "win64":
-            os.system('python app.py')
-        else:
-            os.system('python3 app.py')
+        subprocess.run(["python3", "app.py"])
         return None
     restart_program()
 main()

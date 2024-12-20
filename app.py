@@ -4,14 +4,15 @@ from __future__ import annotations
 
 import sys
 from PySide6.QtWidgets import *
-from PySide6.QtCore import QStandardPaths, Qt, Slot
-from PySide6.QtGui import QAction, QIcon, QKeySequence
+from PySide6.QtCore import (QStandardPaths, Qt, Slot)
+from PySide6.QtGui import (QAction, QIcon, QKeySequence)
 from PySide6.QtWidgets import (QApplication, QDialog, QFileDialog,
                                QMainWindow, QSlider, QStyle, QToolBar)
 from PySide6.QtMultimedia import (QAudioOutput, QMediaFormat,
                                   QMediaPlayer)
 from PySide6.QtMultimediaWidgets import QVideoWidget
 from PySide6.QtWidgets import (QVBoxLayout)
+from PySide6.QtCore import Slot
 
 AVI = "video/x-msvideo"  # AVI
 

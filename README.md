@@ -29,10 +29,9 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 # Documentation
 ## organizationSTATION DOCUMENTATION
 -------------------
-Terminal release has a couple commands:
+The ORGST TERMINAL has a lot of commands:
 - getsuper (get the supertext)
 - help (check the documentation, aka this page)
-- lis/CC (check creative commons licence)
 - git (check the github page)
 - cred (check credits)
 - eufi (check the diary eufi version)
@@ -42,7 +41,7 @@ Terminal release has a couple commands:
 - start (either start downloading or open the UI version)
 - esc (close the terminal)
 
-## Sponsorviewer commands:
+## Channel Viewer Commands:
 -check
 -purchase
 -review

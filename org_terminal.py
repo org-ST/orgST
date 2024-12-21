@@ -9,66 +9,64 @@ print("refer to the help manual for more information")
 supertexterr="poilo"
 
 a = input("Enter your choice: ")
-try{
-   with open('maindata.json', 'r') as file:
-      jsonfile = json.load(file)
 
-   def restart_program():
-       python = sys.executable
-       os.execl(python, python, * sys.argv)
+with open('maindata.json', 'r') as file:
+    jsonfile = json.load(file)
 
-   with open('randdata.json', 'r+') as json_file:
-       randdata = json.load(json_file)
-   def main():
-       keys = ["b", "c", "d", "e", "f"]
-       randchoice = random.choice(keys)
+def restart_program():
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
 
-       if a=="super":
-           print(randdata[randchoice])
-           print("Would you like to update the supertext")
-           i3 = input("Enter y to change the supertext: ")
-           if i3=="Y" or "y" or "Yes" or "yes":
-              with open('randdata.json', 'w') as file:
-                 intext = input("insert your supertext: ")
-                 randdata.update({randchoice: intext})
-                 json.dump(randdata, file, indent=6)
+with open('randdata.json', 'r+') as json_file:
+    randdata = json.load(json_file)
+def main():
+    keys = ["b", "c", "d", "e", "f"]
+    randchoice = random.choice(keys)
+
+    if a=="super":
+        print(randdata[randchoice])
+        print("Would you like to update the supertext")
+        i3 = input("Enter y to change the supertext: ")
+        if i3=="Y" or "y" or "Yes" or "yes":
+            with open('randdata.json', 'w') as file:
+                intext = input("insert your supertext: ")
+                randdata.update({randchoice: intext})
+                json.dump(randdata, file, indent=6)
         
-       if a=="lis" or "CC":
-           print(jsonfile["license"])
+    if a=="lis" or "CC":
+        print(jsonfile["license"])
       
-       if a=="his":
-           print("version ", jsonfile["version"])
+    if a=="his":
+        print("version ", jsonfile["version"])
            
-       if a=="git":
-           print("github link: ", jsonfile["github"])
+    if a=="git":
+        print("github link: ", jsonfile["github"])
            
-       if a=="cred":
-           print("authors: ", jsonfile["authors"])
+    if a=="cred":
+        print("authors: ", jsonfile["authors"])
    
-       if a=="eufi":
-          print(jsonfile["eufi"])
+    if a=="eufi":
+        print(jsonfile["eufi"])
    
       
-       if a=="sauce":
-           print("dump raw data?")
-           d=input("Y/N")
-           if d=="Y" or "Yes" or "yes":
-               print(jsonfile)
+    if a=="sauce":
+        print("dump raw data?")
+        d=input("Y/N")
+        if d=="Y" or "Yes" or "yes":
+            print(jsonfile)
    
                      
-       if a=="spon":
+    if a=="spon":
         print("current sponsors")
         print(jsonfile["sponsornames"])
         
    
-       if a=="esc":
-           return None
+    if a=="esc":
+        return None
    
-       if a =="start":
-           subprocess.run(["python3", "app.py"])
-           return None
-    except:
-       restart_program()
-    finally:
-       restart_program()
+    if a =="start":
+        subprocess.run(["python3", "app.py"])
+        return None
+
+    restart_program()
 main()

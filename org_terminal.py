@@ -10,14 +10,14 @@ supertexterr="poilo"
 
 a = input("Enter your choice: ")
 
-with open('maindata.json', 'r') as file:
+with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
 
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)
 
-with open('randdata.json', 'r+') as json_file:
+with open('JSONs/randdata.json', 'r+') as json_file:
     randdata = json.load(json_file)
 def main():
     keys = ["b", "c", "d", "e", "f"]
@@ -28,7 +28,7 @@ def main():
         print("Would you like to update the supertext")
         i3 = input("Enter y to change the supertext: ")
         if i3=="Y" or "y" or "Yes" or "yes":
-            with open('randdata.json', 'w') as file:
+            with open('JSONs/randdata.json', 'w') as file:
                 intext = input("insert your supertext: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
@@ -65,7 +65,7 @@ def main():
         return None
    
     if a =="start":
-        subprocess.run(["python3", "app.py"])
+        subprocess.run(["python3", "JSONs/app.py"])
         return None
 
     restart_program()

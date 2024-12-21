@@ -14,7 +14,7 @@ fi
 
 
 python3 -m pip install pyside6
-
+python3 -m pip install colorama
 
 if [[ $(command -v git) == "" ]]; then
   echo "Installing git"

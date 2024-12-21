@@ -1,7 +1,7 @@
 import math
 
 print("CalcTrash Rev 1 by @Table")
-print("Running on ORGST")
+print("Running on ORGST!")
 is_running = True
 display_ans = True
 ans = []

@@ -65,8 +65,9 @@ def main():
         return None
    
     if a =="start":
-        subprocess.run(["python3", "JSONs/app.py"])
+        subprocess.run(["python3", "PYextras/app.py"])
         return None
-
+    if a == "qwrgl":
+        subprocess.run(["python3", "PYextras/TheFlag.py"] )
     restart_program()
 main()

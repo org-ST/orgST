@@ -34,8 +34,8 @@ class MainWindow(QMainWindow):
 
         self.hello = ["Hallo Welt", "Hei maailma", "Hola Mundo", "Привет мир"]
 
-        self.button = QPushButton("Video Player")
-        self.text = QLabel("Welcome to OrgSt Visual v0.0.1-alpha")
+        self.button = QPushButton("Videos")
+        self.text = QLabel("Welcome to OrgSt Visual v0.1")
         self.text.setAlignment(Qt.AlignmentFlag.AlignCenter)
 
         # Use a layout for the central widget

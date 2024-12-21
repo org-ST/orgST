@@ -1,1 +1,18 @@
-
+name: GitHub Actions Demo
+run-name: ${{ github.actor }}
+on: 
+  push:
+    branches:
+    - main
+jobs:
+  Add-to-release:
+    name: Make Release
+    uses: svenstaro/upload-release-action@2.9.0
+    with:
+      repo_token: ${{ github.token }}
+      file: /installing/install.sh, /installing/install.ps1
+      tag: v0.0.1-alpha
+      
+      
+      
+    

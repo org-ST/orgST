@@ -4,8 +4,8 @@ import os
 import random
 import subprocess
 
-print("orgST  terminal v0.0.1-alpha")
-print("refer to the help manual for more information")
+print("ORGST Terminal Rev 2")
+print("Refer to the readme for more information.")
 supertexterr="poilo"
 
 a = input("Enter your choice: ")
@@ -32,9 +32,7 @@ def main():
                 intext = input("insert your supertext: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
-        
-    if a=="lis" or "CC":
-        print(jsonfile["license"])
+
       
     if a=="his":
         print("version ", jsonfile["version"])
@@ -50,14 +48,14 @@ def main():
    
       
     if a=="sauce":
-        print("dump raw data?")
+        print("Would you like to dump raw data?")
         d=input("Y/N")
-        if d=="Y" or "Yes" or "yes":
+        if d=="Y":
             print(jsonfile)
    
                      
     if a=="spon":
-        print("current sponsors")
+        print("Current Sponsors")
         print(jsonfile["sponsornames"])
         
    

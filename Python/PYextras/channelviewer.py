@@ -64,9 +64,9 @@ while is_looping:
                 time.sleep(3)
                 subprocess.run(["python3", "calctrash.py"])
             if c == "web":
-                print("This channel is empty. Please check this at a later date.")
+                print("There is no website for CalcTech.")
             if c == "purchase":
-                print("This channel is empty. Please check this at a later date.")
+                print("There is nothing to purchase.")
             if c == "review":
                 print("There is nothing to review.")
             if c == "people":
@@ -114,8 +114,8 @@ while is_looping:
 
 
 
-    if a == "N":
-        subprocess.run(["python3", "org_terminal.py"])
-    if a == "HELP":
-        print("-check -purchase -review -people -web -info")
-        break
+if a == "N":
+    subprocess.run(["python3", "org_terminal.py"])
+if a == "HELP":
+    print("-check -purchase -review -people -web -info")
+

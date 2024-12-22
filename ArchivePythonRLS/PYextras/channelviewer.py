@@ -3,6 +3,7 @@
 
 import time
 import os
+import subprocess
 
 rev = 1.2
 sponsors = 4
@@ -26,17 +27,30 @@ a = input(">...")
 while is_looping:
     if a == "Y":
         print("Listings:")
-        print("1. OrgST Public")
-        print("2. CalcTech")
-        print("3. toyathing's MMD")
-        print("4. Archive")
+        print("1. The OrgST Public Channel")
+        print("2. The CalcTech Channel")
+        print("3. toyathing's MMD Channel")
+        print("4. The Archive Channel")
         b = input(">...")
         if b == "1":
-            print("Greetings. Welcome to the OrgST Public room.")
+            print("Greetings. Welcome to the OrgST Public Channel.")
             print("-progman.task")
             c = input(">...")
             if c == "check":
                 print("This channel is empty. Please check this at a later date.")
+            if c == "web":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "purchase":
+                print("This channel is empty. Please check this at a later date.")
+        if b == "2":
+            print("Greetings. Welcome to the CalcTech Channel.")
+            c = input(">...")
+            if c == "check":
+                print("Found 1 result")
+                print("Opening calctrash.py")
+                time.sleep(3)
+                subprocess.run(["python3", "calctrash.py"])
+
 
         elif is_looping:
             break

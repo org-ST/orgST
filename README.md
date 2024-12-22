@@ -1,6 +1,6 @@
 # orgST
 -- -- -- --
-a PHS system (portable home system)
+a PHGS system (Portable Home Graphic System)
 -
 raspberry pi supported home emulation software.
 view sponsors and get discounts on products.

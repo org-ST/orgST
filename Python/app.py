@@ -34,7 +34,7 @@ class MainWindow(QMainWindow):
         self.buttonvid = QPushButton("Video Player")
         self.text = QLabel("Welcome to OrgSt Visual v1-alpha")
         self.text.setAlignment(Qt.AlignmentFlag.AlignCenter)
-        self.buttonphoto =   QPushButton("Photo viewer")
+        self.buttonphoto =   QPushButton("Photo Viewer")
 
         # Use a layout for the central widget
         self.layout = QVBoxLayout()

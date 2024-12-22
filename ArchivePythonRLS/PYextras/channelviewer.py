@@ -46,6 +46,8 @@ while is_looping:
                 print("There is nothing to review.")
             if c == "people":
                 print("Wdboyes13, @kaycutier (progman.task)")
+            if c == "info":
+                print("The public orgST channel.")
         if b == "2":
             print("Greetings. Welcome to the CalcTech Channel.")
             c = input(">...")
@@ -62,6 +64,39 @@ while is_looping:
                 print("There is nothing to review.")
             if c == "people":
                 print("@chureki (Table), @kaycutier (progman.task)")
+            if c == "info":
+                print("A channel for CalcTech!")
+        if b == "3":
+            print("Greetings. Welcome to the toyathing Channel.")
+            c = input(">...")
+            if c == "check":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "web":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "purchase":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "review":
+                print("There is nothing to review.")
+            if c == "people":
+                print("toyathing")
+            if c == "info":
+                print("A channel for MMD!")
+        if b == "4":
+            print("Greetings. Welcome to the Archive Channel.")
+            c = input(">...")
+            if c == "check":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "web":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "purchase":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "review":
+                print("There is nothing to review.")
+            if c == "people":
+                print("progman.task, Wdboyes13, @chureki, toyathing")
+            if c == "info":
+                print("A channel that archives ANYTHING orgST. If something's missing, contact us!")
+
 
 
         elif is_looping:

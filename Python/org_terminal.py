@@ -68,7 +68,7 @@ def main():
         return None
    
     if a =="start":
-        subprocess.run(["python3", "PYextras/app.py"])
+        subprocess.run(["python3", "app.py"])
         return None
 
     if a =="aero":

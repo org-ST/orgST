@@ -5,8 +5,9 @@ import time
 import os
 import subprocess
 
-rev = 1.2
+rev = 2.0
 sponsors = 4
+secureaccesscode = 293
 is_looping = True
 
 print("Gathering Channels...")
@@ -17,6 +18,9 @@ print("Sponsors:")
 print(sponsors)
 print("Revisions:")
 print(rev)
+print("Your secure access code is 293")
+print("")
+print("")
 
 
 
@@ -37,7 +41,9 @@ while is_looping:
             print("-progman.task")
             c = input(">...")
             if c == "check":
-                print("This channel is empty. Please check this at a later date.")
+                print("We've compiled some interesting things for you to look at.")
+                print("Please choose one of the options below:")
+                print("1. ")
             if c == "web":
                 print("This channel is empty. Please check this at a later date.")
             if c == "purchase":
@@ -48,6 +54,7 @@ while is_looping:
                 print("Wdboyes13, @kaycutier (progman.task)")
             if c == "info":
                 print("The public orgST channel.")
+                print("Date created: 2024-12-21")
         if b == "2":
             print("Greetings. Welcome to the CalcTech Channel.")
             c = input(">...")
@@ -66,6 +73,7 @@ while is_looping:
                 print("@chureki (Table), @kaycutier (progman.task)")
             if c == "info":
                 print("A channel for CalcTech!")
+                print("Date created: 2024-12-21")
         if b == "3":
             print("Greetings. Welcome to the toyathing Channel.")
             c = input(">...")
@@ -81,6 +89,7 @@ while is_looping:
                 print("toyathing")
             if c == "info":
                 print("A channel for MMD!")
+                print("Date created: 2024-12-21")
         if b == "4":
             print("Greetings. Welcome to the Archive Channel.")
             c = input(">...")
@@ -96,6 +105,7 @@ while is_looping:
                 print("progman.task, Wdboyes13, @chureki, toyathing")
             if c == "info":
                 print("A channel that archives ANYTHING orgST. If something's missing, contact us!")
+                print("Date created: 2024-12-21")
 
 
 

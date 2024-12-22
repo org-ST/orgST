@@ -107,5 +107,5 @@ while is_looping:
     if a == "N":
         subprocess.run(["python3", "org_terminal.py"])
     if a == "HELP":
-        print("-check -purchase -review -people -web")
+        print("-check -purchase -review -people -web -info")
         break

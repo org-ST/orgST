@@ -102,13 +102,10 @@ while is_looping:
         elif is_looping:
             break
 
-    else:
-        print(a)
-        print("is not a command.")
-        break
+
 
     if a == "N":
-        print("Returning to terminal...")
+        subprocess.run(["python3", "org_terminal.py"])
     if a == "HELP":
         print("-check -purchase -review -people -web")
         break

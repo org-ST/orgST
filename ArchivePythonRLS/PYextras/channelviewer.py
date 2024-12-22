@@ -42,6 +42,10 @@ while is_looping:
                 print("This channel is empty. Please check this at a later date.")
             if c == "purchase":
                 print("This channel is empty. Please check this at a later date.")
+            if c == "review":
+                print("There is nothing to review.")
+            if c == "people":
+                print("Wdboyes13, @kaycutier (progman.task)")
         if b == "2":
             print("Greetings. Welcome to the CalcTech Channel.")
             c = input(">...")
@@ -50,6 +54,14 @@ while is_looping:
                 print("Opening calctrash.py")
                 time.sleep(3)
                 subprocess.run(["python3", "calctrash.py"])
+            if c == "web":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "purchase":
+                print("This channel is empty. Please check this at a later date.")
+            if c == "review":
+                print("There is nothing to review.")
+            if c == "people":
+                print("@chureki (Table), @kaycutier (progman.task)")
 
 
         elif is_looping:

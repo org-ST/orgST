@@ -49,3 +49,4 @@ The ORGST TERMINAL has a lot of commands:
 -review
 -people
 -web
+-info

@@ -36,10 +36,12 @@ The ORGST TERMINAL has a lot of commands:
 - cred (check credits)
 - eufi (check the diary eufi version)
 - sauce (download the raw original json file)
-- spon (check the sponsors.py)
+- channel (open Channels)
 - org (supertext inserter)
 - start (either start downloading or open the UI version)
 - esc (close the terminal)
+- pride (view the pride flag)
+- aero (unused cmd)
 
 ## Channel Viewer Commands:
 -check

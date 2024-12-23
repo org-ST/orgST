@@ -74,5 +74,8 @@ def main():
     if a =="pride":
         subprocess.run(["python3", "PYextras/TheFlag.py"])
 
+    if a=="orgasm":
+        subprocess.run(["python3", "OrgAsm/OrgAsm.py"])
+
     restart_program()
 main()

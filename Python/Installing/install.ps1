@@ -23,5 +23,6 @@ else {
 
 
 python -m pip install pyside6
+pip install pyqt5
 python -m pip install colorama
 git clone https://github.com/MakiDevelops/orgST.git

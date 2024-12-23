@@ -3,13 +3,14 @@ import sys
 import os
 import random
 import subprocess
+from colorama import *
 
 print("ORGST Terminal 1.3")
 print("Refer to the readme for more information.")
 supertexterr="SuperStar2937"
-
-a = input(">... ")
-
+print(Fore.GREEN, "user@OrgST % ", end="")
+a = input()
+print(Style.RESET_ALL)
 with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
 
@@ -25,37 +26,33 @@ def main():
 
     if a=="super":
         print(randdata[randchoice])
-        print("Would you like to update the supertext")
-        i3 = input("Enter y to change the supertext: ")
+        print(" Would you like to update the supertext")
+        i3 = input(" Enter y to change the supertext: ")
         if i3=="Y" or "y" or "Yes" or "yes":
             with open('JSONs/randdata.json', 'w') as file:
-                intext = input("insert your supertext: ")
+                intext = input(" insert your supertext: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 
       
     if a=="his":
-        print("version ", jsonfile["version"])
-        return None
+        print(" version ", jsonfile["version"])
            
     if a=="git":
-        print("github link: ", jsonfile["github"])
-        return None
+        print(" github link: ", jsonfile["github"])
            
     if a=="cred":
-        print("authors: ", jsonfile["authors"])
+        print(" authors: ", jsonfile["authors"])
    
     if a=="eufi":
         print(jsonfile["eufi"])
-        return None
    
       
     if a=="sauce":
-        print("Would you like to dump raw data?")
-        d=input("Y/N")
+        print(" Would you like to dump raw data?")
+        d=input(" Y/N: ")
         if d=="Y":
             print(jsonfile)
-            return None
    
                      
     if a=="channel":
@@ -72,12 +69,10 @@ def main():
         return None
 
     if a =="aero":
-        print("Aero is not supported for this TERMINAL release.")
-        return None
+        print(" Aero is not supported for this TERMINAL release.")
 
     if a =="pride":
         subprocess.run(["python3", "PYextras/TheFlag.py"])
-        return None
 
     restart_program()
 main()

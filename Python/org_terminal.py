@@ -59,7 +59,6 @@ def main():
         subprocess.run(["python3", "PYextras/channelviewer.py"])
         return None
 
-        
    
     if a=="esc":
         return None

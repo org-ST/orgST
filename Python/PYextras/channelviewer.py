@@ -4,6 +4,7 @@
 import time
 import os
 import subprocess
+import webbrowser
 
 rev = 2.0
 sponsors = 4
@@ -45,7 +46,7 @@ while is_looping:
                 print("Please choose one of the options below:")
                 print("1. ")
             if c == "web":
-                print("This channel is empty. Please check this at a later date.")
+                webbrowser.open('satelliteearth.wordpress.com')
             if c == "purchase":
                 print("This channel is empty. Please check this at a later date.")
             if c == "review":
@@ -62,7 +63,7 @@ while is_looping:
                 print("Found 1 result")
                 print("Opening calctrash.py")
                 time.sleep(3)
-                subprocess.run(["python3", "calctrash.py"])
+                subprocess.run(["python3", "PYextras/calctrash.py"])
             if c == "web":
                 print("There is no website for CalcTech.")
             if c == "purchase":

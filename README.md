@@ -28,8 +28,15 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 
 # Documentation
 ## organizationSTATION DOCUMENTATION
+
 -------------------
-The ORGST TERMINAL has a lot of commands:
+Where do I find this?
+- If you haven't already, go to TERMINAL and write: "git clone https://github.com/MakiDevelops/orgST.git"
+- Once it's done, do "cd orgST"
+- If you need to update it, do "cd orgST" then "git pull https://github.com/MakiDevelops/orgST.git"
+- The directories are: orgST/Python/ArchivePythonRLS
+- To run the org terminal, do "python org_terminal.py"
+- The ORGST TERMINAL has a lot of commands:
 - getsuper (get the supertext)
 - help (check the documentation, aka this page)
 - git (check the github page)

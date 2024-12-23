@@ -5,7 +5,7 @@ import random
 import subprocess
 from colorama import *
 
-print("ORGST Terminal 1.3")
+print("ORGST Terminal 1.4")
 print("Refer to the readme for more information.")
 supertexterr="SuperStar2937"
 print(Fore.GREEN, "user@OrgST % ", end="")

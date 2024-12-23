@@ -8,7 +8,7 @@
   "updates": 3,
   "github": "https://github.com/MakiDevelops/orgST",
   "eufi": "eufi 1.2",
-  "updhistory": "2024-12-17: concepts for UI started. 2024-12-18: working on the UI version and sponsorlist (added toyathing to the sponsors) 2024-12-21: Added the Archive channel",
+  "updhistory": "2024-12-17: concepts for UI started. 2024-12-18: working on the UI version and sponsorlist (added toyathing to the sponsors) 2024-12-21: Added the Archive channel. 2024-12-22: Fixed a bunch of things and moved some directories.",
   "rolltext": "36aong93",
   "termtitle": "orgST TERM 1.3",
   "datecreated": "2024"

@@ -11,6 +11,16 @@ To view a copy of this license, visit https://creativecommons.org/licenses/by-nc
 
 original code: https://github.com/MakiDevelops/diary/tree/py
 
+# install and run
+-- -- -- -- -- --
+If you are on MacOS or Linux download the install.sh file from the latest release and run it  
+If you are on Windows download the install.ps1 from the latest release and run it  
+
+Now open either Microsoft PowerShell (for windows) or your terminal app (for Macos and Linux)  
+Enter the command `cd Downloads/orgST/Python/ArchivePythonRLS`  
+Then if your on Windows run `python org_terminal.py`  
+If you're on MacOS or Linux run `python3 org_terminal.py`  
+
 # lovely sponsors
 -- -- -- -- -- -- --
 

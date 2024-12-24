@@ -3,8 +3,9 @@ import os
 import random
 import subprocess
 import socket
+import sys
 from colorama import *
-
+hostname = socket.gethostname()
 print("ORGST Terminal 1.5")
 print("Refer to the readme for more information.")
 supertexterr="SuperStar2937"

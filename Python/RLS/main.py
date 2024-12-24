@@ -8,7 +8,7 @@ from colorama import *
 hostname = socket.gethostname()
 print("ORGST Terminal 1.5")
 print("Refer to the readme for more information.")
-supertexterr="SuperStar2937"
+supertexterr= "forthensitart"
 print(Fore.GREEN, hostname, "@ OrgST % ", end="")
 a = input()
 print(Style.RESET_ALL)
@@ -38,17 +38,19 @@ def main():
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 
-    if a == "help":
-        print("CMDS: his, git, cred, sauce, channel, start, esc")
 
-    if a == "his":
-        print(" version ", jsonfile["version"])
+    if a == "help":
+        print("CMDS: his, git, sauce, channel, esc, start, super")
+
+    if a == "hist":
+        print(" version= ", jsonfile["version"])
+        print(" updates=", jsonfile["updates"])
+        print(" eufi ver-", jsonfile["eufi"])
+        print(" authors: ", jsonfile["authors"])
 
     if a == "git":
         print(" github link: ", jsonfile["github"])
 
-    if a == "cred":
-        print(" authors: ", jsonfile["authors"])
 
 
     if a == "sauce":

@@ -9,7 +9,7 @@ hostname = socket.gethostname()
 print("ORGST Terminal 1.5")
 print("Refer to the readme for more information.")
 supertexterr="SuperStar2937"
-print(Fore.GREEN, "user@OrgST % ", end="")
+print(Fore.GREEN, hostname, "@ OrgST % ", end="")
 a = input()
 print(Style.RESET_ALL)
 with open('JSONs/maindata.json', 'r') as file:

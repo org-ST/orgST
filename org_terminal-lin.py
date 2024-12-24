@@ -3,12 +3,17 @@ import sys
 import os
 import random
 import subprocess
+import socket
+
+HOSTNAME = socket.gethostname()
+PREV_COMMIT_NUM = "36cf28bf"
 
 print("ORGST Terminal 1.4-linux")
 print("Refer to the readme for more information.")
-supertexterr = "SuperStar2937"
-a = input(">...")
-with open('RLS/JSONs/maindata.json', 'r') as file:
+print(HOSTNAME, "@ OrgST % ", end="")
+inp = input()
+
+with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
 
 
@@ -17,7 +22,7 @@ def restart_program():
     os.execl(python, python, *sys.argv)
 
 
-with open('RLS/JSONs/randdata.json', 'r+') as json_file:
+with open('JSONs/randdata.json', 'r+') as json_file:
     randdata = json.load(json_file)
 
 
@@ -25,52 +30,64 @@ def main():
     keys = ["b", "c", "d", "e", "f"]
     randchoice = random.choice(keys)
 
-    if a == "super":
+    if inp == "super":
         print(randdata[randchoice])
         print(" Would you like to update the supertext")
-        i3 = input(" Enter y to change the supertext: ")
-        if i3 == "Y" or "y" or "Yes" or "yes":
-            with open('RLS/JSONs/randdata.json', 'w') as file:
+
+        inp2 = input(" Enter y to change the supertext: ")
+
+        if inp2 == "Y" or "y" or "Yes" or "yes":
+            with open('JSONs/randdata.json', 'w') as file:
                 intext = input(" insert your supertext: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 
-    if a == "his":
+
+    if inp == "his":
         print(" version ", jsonfile["version"])
 
-    if a == "git":
+
+    if inp == "git":
         print(" github link: ", jsonfile["github"])
 
-    if a == "cred":
+
+    if inp == "cred":
         print(" authors: ", jsonfile["authors"])
 
-    if a == "eufi":
+
+    if inp == "eufi":
         print(jsonfile["eufi"])
 
-    if a == "sauce":
+
+    if inp == "sauce":
         print(" Would you like to dump raw data?")
         d = input(" Y/N: ")
         if d == "Y":
             print(jsonfile)
 
-    if a == "channel":
+
+    if inp == "channel":
         subprocess.run(["python3", "PYextras/channelviewer.py"])
         return None
 
-    if a == "esc":
+
+    if inp == "esc":
         return None
 
-    if a == "start":
+
+    if inp == "start":
         subprocess.run(["python3", "app.py"])
         return None
 
-    if a == "aero":
+
+    if inp == "aero":
         print(" Aero is not supported for this TERMINAL release.")
 
-    if a == "pride":
+
+    if inp == "pride":
         subprocess.run(["python3", "PYextras/TheFlag.py"])
 
+
+
     restart_program()
-
-
 main()

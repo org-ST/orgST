@@ -5,15 +5,21 @@ import subprocess
 import socket
 import sys
 from colorama import *
-hostname = socket.gethostname()
+
+HOSTNAME = socket.gethostname()
+PREV_COMMIT_NUM = "36cf28bf"
+
 print("ORGST Terminal 1.5")
 print("Refer to the readme for more information.")
-supertexterr= "forthensitart"
-print(Fore.GREEN, hostname, "@ OrgST % ", end="")
-a = input()
+print(Fore.GREEN, HOSTNAME, "@ OrgST % ", end="")
+inp = input()
 print(Style.RESET_ALL)
+
+
 with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
+
+
 
 def restart_program():
     python = sys.executable
@@ -28,7 +34,7 @@ def main():
     keys = ["b", "c", "d", "e", "f"]
     randchoice = random.choice(keys)
 
-    if a == "super":
+    if inp == "super":
         print(randdata[randchoice])
         print(" Would you like to update the supertext")
         i3 = input(" Enter y to change the supertext: ")
@@ -39,39 +45,46 @@ def main():
                 json.dump(randdata, file, indent=6)
 
 
-    if a == "help":
+    if inp == "help":
         print("CMDS: his, git, sauce, channel, esc, start, super")
 
-    if a == "hist":
+
+    if inp == "hist":
         print(" version= ", jsonfile["version"])
         print(" updates=", jsonfile["updates"])
         print(" eufi ver-", jsonfile["eufi"])
         print(" authors: ", jsonfile["authors"])
 
-    if a == "git":
+
+    if inp == "git":
         print(" github link: ", jsonfile["github"])
 
 
-
-    if a == "sauce":
+    if inp == "sauce":
         print(" Would you like to dump raw data?")
         d = input(" Y/N: ")
         if d == "Y":
             print(jsonfile)
 
-    if a == "channel":
+
+    if inp == "channel":
         subprocess.run(["python3", "PYextras/channelviewer.py"])
         return None
 
-    if a == "esc":
+
+    if inp == "esc":
         return None
 
-    if a == "start":
+
+    if inp == "start":
         subprocess.run(["python3", "app.py"])
         return None
 
 
+    if inp == "help":
+        subprocess.run(["python3", "PYextras/help.py"])
+
+
+
     restart_program()
-
-
 main()

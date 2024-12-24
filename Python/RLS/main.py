@@ -38,6 +38,9 @@ def main():
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 
+    if a == "help":
+        print("CMDS: his, git, cred, sauce, channel, start, esc")
+
     if a == "his":
         print(" version ", jsonfile["version"])
 
@@ -47,8 +50,6 @@ def main():
     if a == "cred":
         print(" authors: ", jsonfile["authors"])
 
-    if a == "eufi":
-        print(jsonfile["eufi"])
 
     if a == "sauce":
         print(" Would you like to dump raw data?")
@@ -67,11 +68,6 @@ def main():
         subprocess.run(["python3", "app.py"])
         return None
 
-    if a == "aero":
-        print(" Aero is not supported for this TERMINAL release.")
-
-    if a == "pride":
-        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
     restart_program()
 

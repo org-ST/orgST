@@ -9,9 +9,9 @@ from colorama import *
 HOSTNAME = socket.gethostname()
 PREV_COMMIT_NUM = "36cf28bf"
 
-print("ORGST Terminal 1.5")
+print("ORGST Terminal 1.6")
 print("Refer to the readme for more information.")
-print(Fore.GREEN, HOSTNAME, "@ OrgST % ", end="")
+print(Fore.GREEN, HOSTNAME, "@OrgST% ", end="")
 inp = input()
 print(Style.RESET_ALL)
 
@@ -46,7 +46,7 @@ def main():
 
 
     if inp == "help":
-        print("CMDS: his, git, sauce, channel, esc, start, super")
+        print("CMDS: his, git, sauce, esc, run, super")
 
 
     if inp == "hist":
@@ -67,22 +67,22 @@ def main():
             print(jsonfile)
 
 
-    if inp == "channel":
-        subprocess.run(["python3", "PYextras/channelviewer.py"])
-        return None
-
 
     if inp == "esc":
         return None
 
 
-    if inp == "start":
-        subprocess.run(["python3", "app.py"])
+    if inp == "run":
+        print("Run which:?")
+        print("A- orgST visual | C- Channels")
+        pel = input(">>")
+        if pel == "A":
+            subprocess.run(["python3", "app.py"])
+        if pel == "C":
+            subprocess.run(["python3", "PYextras/channelviewer.py"])
+
         return None
 
-
-    if inp == "help":
-        subprocess.run(["python3", "PYextras/help.py"])
 
 
 

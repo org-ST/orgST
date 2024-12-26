@@ -83,6 +83,9 @@ def main():
 
         return None
 
+    if inp == "pride":
+        subprocess.run(["python3", "PYextras/TheFlag.py"])
+
 
 
 

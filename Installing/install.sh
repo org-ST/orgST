@@ -25,3 +25,4 @@ fi
 
 git clone https://github.com/MakiDevelops/orgST.git
 
+echo "cloned orgST git. open your terminal and run 'cd orgST'"

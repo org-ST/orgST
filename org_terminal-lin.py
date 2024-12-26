@@ -1,25 +1,28 @@
 import json
-import sys
 import os
 import random
 import subprocess
 import socket
+import sys
+
 
 HOSTNAME = socket.gethostname()
 PREV_COMMIT_NUM = "36cf28bf"
 
-print("ORGST Terminal 1.4-linux")
+print("ORGST Terminal 1.6")
 print("Refer to the readme for more information.")
-print(HOSTNAME, "@ OrgST % ", end="")
-inp = input()
+inp = input(">...")
+
+
 
 with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
 
 
+
 def restart_program():
     python = sys.executable
-    os.execl(python, python, *sys.argv)
+    os.execl(python, python, * sys.argv)
 
 
 with open('JSONs/randdata.json', 'r+') as json_file:
@@ -33,30 +36,27 @@ def main():
     if inp == "super":
         print(randdata[randchoice])
         print(" Would you like to update the supertext")
-
-        inp2 = input(" Enter y to change the supertext: ")
-
-        if inp2 == "Y" or "y" or "Yes" or "yes":
+        i3 = input(" Enter y to change the supertext: ")
+        if i3 == "Y" or "y" or "Yes" or "yes":
             with open('JSONs/randdata.json', 'w') as file:
                 intext = input(" insert your supertext: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 
 
-    if inp == "his":
-        print(" version ", jsonfile["version"])
+    if inp == "help":
+        print("CMDS: his, git, sauce, esc, run, super")
+
+
+    if inp == "hist":
+        print(" version= ", jsonfile["version"])
+        print(" updates=", jsonfile["updates"])
+        print(" eufi ver-", jsonfile["eufi"])
+        print(" authors: ", jsonfile["authors"])
 
 
     if inp == "git":
         print(" github link: ", jsonfile["github"])
-
-
-    if inp == "cred":
-        print(" authors: ", jsonfile["authors"])
-
-
-    if inp == "eufi":
-        print(jsonfile["eufi"])
 
 
     if inp == "sauce":
@@ -66,26 +66,25 @@ def main():
             print(jsonfile)
 
 
-    if inp == "channel":
-        subprocess.run(["python3", "PYextras/channelviewer.py"])
-        return None
-
 
     if inp == "esc":
         return None
 
 
-    if inp == "start":
-        subprocess.run(["python3", "app.py"])
+    if inp == "run":
+        print("Run which:?")
+        print("A- orgST visual | C- Channels")
+        pel = input(">>")
+        if pel == "A":
+            subprocess.run(["python3", "app.py"])
+        if pel == "C":
+            subprocess.run(["python3", "PYextras/channelviewer.py"])
+
         return None
-
-
-    if inp == "aero":
-        print(" Aero is not supported for this TERMINAL release.")
-
 
     if inp == "pride":
         subprocess.run(["python3", "PYextras/TheFlag.py"])
+
 
 
 

@@ -9,7 +9,10 @@ from colorama import *
 HOSTNAME = socket.gethostname()
 PREV_COMMIT_NUM = "36cf28bf"
 
-print("ORGST Terminal 1.6")
+print("orgST © 2024 by Wdboyes13, progman.task")
+print("orgST terminal created in 2024")
+print("---------------------------------------")
+print("orgST Terminal 1.6")
 print("Refer to the readme for more information.")
 print(Fore.GREEN, HOSTNAME, "@OrgST% ", end="")
 inp = input()

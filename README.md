@@ -44,21 +44,8 @@ Where do I find this?
 - If you haven't already, go to TERMINAL and write: "git clone https://github.com/MakiDevelops/orgST.git"
 - Once it's done, do "cd orgST"
 - If you need to update it, do "cd orgST" then "git pull https://github.com/MakiDevelops/orgST.git"
-- The directories are: orgST/Python/ArchivePythonRLS
-- To run the org terminal, do "python org_terminal.py"
-- The ORGST TERMINAL has a lot of commands:
-- getsuper (get the supertext)
-- help (check the documentation, aka this page)
-- git (check the github page)
-- cred (check credits)
-- eufi (check the diary eufi version)
-- sauce (download the raw original json file)
-- channel (open Channels)
-- org (supertext inserter)
-- start (either start downloading or open the UI version)
-- esc (close the terminal)
-- pride (view the pride flag)
-- aero (unused cmd)
+- The directory is "org ST"
+- To run the org terminal, do "python3 main.py"
 
 ## Channel Viewer Commands:
 -check

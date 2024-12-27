@@ -1,1 +1,1 @@
-If you can't open org_terminal.py due to colorama, open org_terminal-lin.py
+If you can't open main.py due to colorama, open mainl-lin.py

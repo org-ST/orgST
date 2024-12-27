@@ -78,7 +78,7 @@ def main():
         print("A- orgST visual | C- Channels")
         pel = input(">>")
         if pel == "A":
-            subprocess.run(["python3", "app.py"])
+            subprocess.run(["python3", "PYextras/app.py"])
         if pel == "C":
             subprocess.run(["python3", "PYextras/channelviewer.py"])
 

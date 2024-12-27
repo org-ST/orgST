@@ -9,8 +9,12 @@ import sys
 HOSTNAME = socket.gethostname()
 PREV_COMMIT_NUM = "36cf28bf"
 
-print("ORGST Terminal 1.6")
+print("orgST © 2024 by Wdboyes13, progman.task")
+print("orgST terminal created in 2024")
+print("---------------------------------------")
+print("orgST Terminal 1.6")
 print("Refer to the readme for more information.")
+
 inp = input(">...")
 
 
@@ -53,6 +57,7 @@ def main():
         print(" updates=", jsonfile["updates"])
         print(" eufi ver-", jsonfile["eufi"])
         print(" authors: ", jsonfile["authors"])
+        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
 
     if inp == "git":
@@ -76,14 +81,12 @@ def main():
         print("A- orgST visual | C- Channels")
         pel = input(">>")
         if pel == "A":
-            subprocess.run(["python3", "app.py"])
+            subprocess.run(["python3", "PYextras/app.py"])
         if pel == "C":
             subprocess.run(["python3", "PYextras/channelviewer.py"])
 
         return None
 
-    if inp == "pride":
-        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
 
 

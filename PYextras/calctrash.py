@@ -1,13 +1,13 @@
-import math
+# github repo: https://github.com/Chureki/CalcTrash
 
-print("CalcTrash Rev 1 by @Table")
+import math
+print("CalcTrash V1.0.3 by @Table")
 is_running = True
 display_ans = True
 ans = []
 a = 0
 b = 0
 will_get_b = True
-
 def take_input(special: bool, prompt: str):
     try:
         print(prompt)
@@ -39,10 +39,8 @@ def take_input(special: bool, prompt: str):
         elif a == "cancel" and special:
             print("Operation cancelled")
             return (False)
-
         else:
             print("Error: please input a number")
-
 
 def check_input(to_check):
     if type(to_check) == int or type(to_check) == float:
@@ -50,11 +48,10 @@ def check_input(to_check):
     else:
         return (False)
 
-
 while is_running:
     print("Input operation, else, enter \"help\" for all commands")
     c = input(">> ")
-    ops = ["add",1,"sauce","sub",2,"subtract","mul",2,"multiply","div",2,"divide","exp",2,"exponentiate","sqrt",3,"square root"]
+    ops = ["add",1,"sauce","sub",2,"subtract","mul",2,"multiply","div",2,"divide","exp",2,"exponentiate","sqrt",3,"square root")
     if ops.count(c) > 0:
         if type(ops[ops.index(c) - 1]) == int:
             c = ops[ops.index(c) - 2]
@@ -71,13 +68,11 @@ while is_running:
         elif ops[ops.index(c) + 1] == 3:
             a = take_input(True, f"Please input the number you want to find the {ops[ops.index(c) + 2]} of:")
             will_get_b = False
-
         if check_input(a):
             display_ans = True
         else:
             display_ans = False
             continue
-
         if will_get_b:
             b = take_input(True, "Please input the second:")
             if check_input(b):
@@ -85,46 +80,45 @@ while is_running:
             else:
                 display_ans = False
                 continue
-
     elif ops.count(c) == 0:
         if c == "quit":
             print("Thank you for using CalcTrash.")
             break
         elif c == "help":
             print("""\
-            add - addition
+add - addition
 sub - subtraction
 mul - multiplication
 div - division
 exp - exponentation
 sqrt - square root
-quit - quit CalcTrash
 
+exit - exit CalcTrash
 help - what you're looking at right now
 loplist - get the list of last operations
 clearlop - clear the loplist
 
 lop - get last operation
 cancel - cancel current operation""")
-
         elif c == "loplist":
             print("last ops:")
+            i = 0
             for a in ans:
                 if type(a) != str:
                     if a - math.floor(a) != 0:
                         a = float(a)
                     else:
                         a = int(a)
-                    print(str(ans[ans.index(a) + 1]) + " " + str(a))
+                    print(str(ans[i + 1]) + " " + str(a))
                 else:
                     pass
+                i += 1
         elif c == "clearlop":
             ans = []
             print("loplist cleared")
         else:
             print("Error: invalid operation")
         display_ans = False
-
     if display_ans:
         if c == "add":
             ans.append(a + b)
@@ -144,9 +138,7 @@ cancel - cancel current operation""")
         elif c == "sqrt":
             ans.append(math.sqrt(a))
             ans.append("square root:")
-
         latest = ans[len(ans) - 2]
-
         if latest - math.floor(latest) != 0:
             latest = float(latest)
         else:

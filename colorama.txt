@@ -1,1 +1,1 @@
-If you can't open main.py due to colorama, open mainl-lin.py
+If you can't open main.py due to colorama, open main-lin.py

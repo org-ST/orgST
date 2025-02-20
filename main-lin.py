@@ -19,11 +19,6 @@ inp = input(">...")
 
 
 
-with open('JSONs/maindata.json', 'r') as file:
-    jsonfile = json.load(file)
-
-
-
 def restart_program():
     python = sys.executable
     os.execl(python, python, * sys.argv)

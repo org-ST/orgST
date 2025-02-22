@@ -57,7 +57,6 @@ def main():
         print(" updates=", jsonfile["updates"])
         print(" eufi ver-", jsonfile["eufi"])
         print(" authors: ", jsonfile["authors"])
-        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
 
     if inp == "git":

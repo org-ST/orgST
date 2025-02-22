@@ -86,7 +86,7 @@ if yes_ins.count(a):
                         int(d)
                         print('Opening ' + files[int(d) - 1] + '...')
                         sleep(3)
-                        run(['python3', files[int(d) - 1]])
+                        run(['python3', 'PYextras/' + files[int(d) - 1]])
                     except ValueError:
                         print('Error: invalid input')
                         sleep(2)

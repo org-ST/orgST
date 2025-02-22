@@ -82,7 +82,7 @@ def main():
         if pel == "A" or pel == 'a':
             subprocess.run(["python3", "PYextras/app.py"])
         if pel == "C" or pel == 'c':
-            subprocess.run(["python3", "channelviewer.py"])
+            subprocess.run(["python3", "PYextras/channelviewer.py"])
         else:
             print("please input the assigned letter of a certain choice, and not the name")
             print('')

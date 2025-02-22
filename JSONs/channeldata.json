@@ -1,0 +1,58 @@
+{
+    "channels": ["orgst", "calctech", "toyas", "archive", "debug"], 
+    
+    "orgst": {
+        "name": "The OrgST Public Channel",
+        "files": false,
+        "website": "satelliteearth.wordpress.com",
+        "products": false,
+        "people": ["@Wdboyes31", "@kaycutier (program.task)"],
+        "info": "The public orgST channel.",
+        "date": "2024-12-21",
+        "comment": "Welcome to OrgST's workspace."
+    },
+    
+    "calctech": {
+        "name": "The CalcTech Channel",
+        "files": ["calctrash.py"],
+        "website": "https://github.com/Chureki/CalcTrash",
+        "products": false,
+        "people": ["@chureki (Table)", "@kaycutier (program.task)"],
+        "info": "A channel for CalcTech!",
+        "date": "2024-12-21",
+        "comment": "How about YOU try ASM+!!!!"
+    },
+    
+    "toyas": {
+        "name": "toyathings MMD channel",
+        "files": false,
+        "website": false,
+        "products": false,
+        "people": ["@toyathing"],
+        "info": "A channel for MMD!",
+        "date": "2024-12-21",
+        "comment": "code thingy"
+    },
+    
+    "archive": {
+        "name": "The Archive Channel",
+        "files": false,
+        "website": false,
+        "products": false,
+        "people": ["@kaycutier", "@Wdboyes13", "@chureki", "@toyathing"],
+        "info": "A channel that archives ANYTHING orgST. If something's missing, contact us!",
+        "date": "2024-12-21",
+        "comment": "when we said ANYTHING, we meant it, sleep tight :)"
+    },
+    
+    "debug": {
+        "name": "The Debug Channel",
+        "files": false,
+        "website": false,
+        "products": false,
+        "people": ["@kaycutier", "@chureki"],
+        "info": "fun fun smile",
+        "date": "2024-12-21",
+        "comment": "Delusional office is the best doors game honestly."
+    }
+}

@@ -4,20 +4,20 @@ import random
 import subprocess
 import socket
 import sys
-from colorama import *
+
 
 HOSTNAME = socket.gethostname()
 PREV_COMMIT_NUM = "36cf28bf"
 
+yes_ins = ['Yes','yes','Y','y']
+
 print("orgST © 2024 by Wdboyes13, progman.task")
 print("orgST terminal created in 2024")
 print("---------------------------------------")
-print("orgST Terminal 1.6")
+print("orgST Terminal 1.7")
 print("Refer to the readme for more information.")
-print(Fore.GREEN, HOSTNAME, "@OrgST% ", end="")
-inp = input()
-print(Style.RESET_ALL)
 
+inp = input(">...")
 
 with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
@@ -41,7 +41,7 @@ def main():
         print(randdata[randchoice])
         print(" Would you like to update the supertext")
         i3 = input(" Enter y to change the supertext: ")
-        if i3 == "Y" or "y" or "Yes" or "yes":
+        if yes_ins.count(i3):
             with open('JSONs/randdata.json', 'w') as file:
                 intext = input(" insert your supertext: ")
                 randdata.update({randchoice: intext})
@@ -49,7 +49,7 @@ def main():
 
 
     if inp == "help":
-        print("CMDS: his, git, sauce, esc, run, super")
+        print("CMDS: hist, git, sauce, esc, run, super")
 
 
     if inp == "hist":
@@ -57,7 +57,6 @@ def main():
         print(" updates=", jsonfile["updates"])
         print(" eufi ver-", jsonfile["eufi"])
         print(" authors: ", jsonfile["authors"])
-        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
 
     if inp == "git":
@@ -67,7 +66,7 @@ def main():
     if inp == "sauce":
         print(" Would you like to dump raw data?")
         d = input(" Y/N: ")
-        if d == "Y":
+        if yes_ins.count(d):
             print(jsonfile)
 
 
@@ -80,16 +79,20 @@ def main():
         print("Run which:?")
         print("A- orgST visual | C- Channels")
         pel = input(">>")
-        if pel == "A":
+        if pel == "A" or pel == 'a':
             subprocess.run(["python3", "PYextras/app.py"])
-        if pel == "C":
+        if pel == "C" or pel == 'c':
             subprocess.run(["python3", "channelviewer.py"])
+        else:
+            print("please input the assigned letter of a certain choice, and not the name")
+            print('')
+            restart_program()
 
         return None
-
-
-
-
+    
+    if inp == 'pride':
+        print("OHHHHHH CAAAANADAAAAAA")
+        subprocess.run(["python3", "PYextras/TheFlag.py"])
 
     restart_program()
 main()

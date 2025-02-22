@@ -83,7 +83,7 @@ def main():
         if pel == "A":
             subprocess.run(["python3", "PYextras/app.py"])
         if pel == "C":
-            subprocess.run(["python3", "PYextras/channelviewer.py"])
+            subprocess.run(["python3", "channelviewer.py"])
 
         return None
 

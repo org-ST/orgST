@@ -51,7 +51,7 @@ def check_input(to_check):
 while is_running:
     print("Input operation, else, enter \"help\" for all commands")
     c = input(">> ")
-    ops = ["add",1,"add","sub",2,"subtract","mul",2,"multiply","div",2,"divide","exp",2,"exponentiate","sqrt",3,"square root"]
+    ops = ["add",1,"sauce","sub",2,"subtract","mul",2,"multiply","div",2,"divide","exp",2,"exponentiate","sqrt",3,"square root"]
     if ops.count(c) > 0:
         if type(ops[ops.index(c) - 1]) == int:
             c = ops[ops.index(c) - 2]

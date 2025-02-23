@@ -43,7 +43,7 @@ Where do I find this?
 - If you haven't already, go to TERMINAL and write: "git clone https://github.com/MakiDevelops/orgST.git"
 - Once it's done, do "cd orgST"
 - If you need to update it, do "cd orgST" then "git pull https://github.com/MakiDevelops/orgST.git"
-- The directory is "org ST"
+- The directory is "orgST"
 - To run the org terminal, do "python3 main.py"
 
 ## Channel Viewer Commands:

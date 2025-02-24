@@ -48,7 +48,7 @@ no_ins = ['n','no','No','N']
 def do_help():
     print("commands: check, products, people, website, info, comment")
 
-print("Channel Viewer V2.0")
+print("Channel Viewer V2.0.1")
 print("Would you like to check the current channels?")
 a = input(">...")
 if yes_ins.count(a):

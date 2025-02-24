@@ -10,11 +10,12 @@ import json
 
 is_looping = True
 intro = False
-if os.name == 'nt':
-    os.system('cls')
-else:
-    os.system('clear')
 
+def clear():
+    if os.name == 'nt':
+        os.system('cls')
+    else:
+        os.system('clear')
 with open('JSONs/channeldata.json', 'r') as file:
     data = json.load(file)
     # print(data)
@@ -65,6 +66,9 @@ if yes_ins.count(a):
                 do_help()
                 sleep(2)
                 continue
+            elif b == 'exit':
+                clear()
+                run(['python3', 'main.py'])
             else:
                 print('Error: invalid input, please input the number corresponding to the channel')
                 sleep(2)
@@ -90,10 +94,13 @@ if yes_ins.count(a):
                         sleep(3)
                         run(['python3', 'PYextras/' + files[int(d) - 1]])
                     except ValueError:
-                        print('Error: invalid input')
-                        sleep(2)
-                        print('')
-                        continue
+                        if d != 'exit':
+                            print('Error: invalid input')
+                            sleep(2)
+                            print('')
+                            continue
+                        else:
+                            break
                     except:
                         print('Error: file doesn\'t seem to exist...')
                         sleep(2)

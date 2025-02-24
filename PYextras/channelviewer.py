@@ -10,8 +10,10 @@ import json
 
 is_looping = True
 intro = False
-
-os.system('clear')
+if os.name == 'nt':
+    os.system('cls')
+else:
+    os.system('clear')
 
 with open('JSONs/channeldata.json', 'r') as file:
     data = json.load(file)

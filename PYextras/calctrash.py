@@ -93,7 +93,7 @@ div - division
 exp - exponentation
 sqrt - square root
 
-exit - exit CalcTrash
+quit - quit CalcTrash
 help - what you're looking at right now
 loplist - get the list of last operations
 clearlop - clear the loplist

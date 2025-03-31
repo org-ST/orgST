@@ -4,12 +4,13 @@
     "orgst": {
         "name": "The OrgST Public Channel",
         "files": false,
-        "website": "satelliteearth.wordpress.com",
+        "website": "https://satelliteearth.wordpress.com",
         "products": false,
-        "people": ["@Wdboyes31", "@kaycutier (program.task)"],
+        "people": ["@Wdboyes13", "@kaycutier (program.task)"],
         "info": "The public orgST channel.",
         "date": "2024-12-21",
-        "comment": "Welcome to OrgST's workspace."
+        "comment": "Welcome to OrgST's workspace.",
+        "fp": "channels/pub.py"
     },
     
     "calctech": {
@@ -20,7 +21,8 @@
         "people": ["@chureki (Table)", "@kaycutier (program.task)"],
         "info": "A channel for CalcTech!",
         "date": "2024-12-21",
-        "comment": "How about YOU try ASM+!!!!"
+        "comment": "How about YOU try ASM+!!!!",
+        "fp": "channels/calctech.py"
     },
     
     "toyas": {
@@ -31,7 +33,8 @@
         "people": ["@toyathing"],
         "info": "A channel for MMD!",
         "date": "2024-12-21",
-        "comment": "code thingy"
+        "comment": "code thingy",
+        "fp": "channels/mmd.py"
     },
     
     "archive": {
@@ -42,7 +45,8 @@
         "people": ["@kaycutier", "@Wdboyes13", "@chureki", "@toyathing"],
         "info": "A channel that archives ANYTHING orgST. If something's missing, contact us!",
         "date": "2024-12-21",
-        "comment": "when we said ANYTHING, we meant it, sleep tight :)"
+        "comment": "when we said ANYTHING, we meant it, sleep tight :)",
+        "fp": "channels/archive.py"
     },
     
     "debug": {
@@ -53,6 +57,7 @@
         "people": ["@kaycutier", "@chureki"],
         "info": "fun fun smile",
         "date": "2024-12-21",
-        "comment": "Delusional office is the best doors game honestly."
+        "comment": "Delusional office is the best doors game honestly.",
+        "fp": "channels/debug.py"
     }
 }

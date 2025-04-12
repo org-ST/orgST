@@ -26,4 +26,5 @@ fi
 git clone https://github.com/MakiDevelops/orgST.git
 
 echo "cloned orgST git. open your terminal and run 'cd orgST'"
+echo "you can run git pull https://github.com/MakiDevelops/orgST.git to update"
 echo "to update, run git pull (link.git)

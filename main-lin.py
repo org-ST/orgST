@@ -14,7 +14,7 @@ yes_ins = ['Yes','yes','Y','y']
 print("orgST © 2024 by Wdboyes13, progman.task")
 print("orgST terminal created in 2024")
 print("---------------------------------------")
-print("orgST Terminal 1.7")
+print("orgST Terminal 1.8")
 print("Refer to the readme for more information.")
 
 inp = input(">...")
@@ -36,13 +36,13 @@ def main():
     keys = ["b", "c", "d", "e", "f"]
     randchoice = random.choice(keys)
 
-    if inp == "super":
+    if inp == "orgid":
         print(randdata[randchoice])
-        print(" Would you like to update the supertext")
-        i3 = input(" Enter y to change the supertext: ")
+        print(" Would you like to update your orgID?")
+        i3 = input(" Enter y to change the orgID: ")
         if yes_ins.count(i3):
             with open('JSONs/randdata.json', 'w') as file:
-                intext = input(" insert your supertext: ")
+                intext = input(" insert your new orgID: ")
                 randdata.update({randchoice: intext})
                 json.dump(randdata, file, indent=6)
 

@@ -167,8 +167,7 @@ if yes_ins.count(a):
             
             elif c == 'exit':
                 break
-            
-        sleep(2)
+                
         print('')
 
         if not(is_looping):

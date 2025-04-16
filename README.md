@@ -1,9 +1,7 @@
 # orgST
 -- -- -- --
 
-raspberry pi supported home emulation software.
-view sponsors and get discounts on products.
-inspired by Wii Room v770
+a console in python that comes with apps. 
 
 orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. 
 To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/
@@ -16,9 +14,9 @@ If you are on Windows download the install.ps1 from the latest release and run i
 If you are on MacOS or Linux download the install.sh file from the latest release and run it  
 
 Now open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)  
-Enter the command `cd Downloads/orgST`  
-Then if your on Windows run `python main.py`  
-If you're on MacOS or Linux run `python3 main.py`  
+Enter the command `cd { BASE DIR }/orgST`  
+Windows: `python main.py`  
+MAC/LIN: `python3 main.py`  
 
 # lovely sponsors
 -- -- -- -- -- -- --
@@ -33,7 +31,7 @@ If you're on MacOS or Linux run `python3 main.py`
 
 "code thingy"
 - toyathing
-  (toyathing)
+(toyathing)
 
 # Documentation
 ## organizationSTATION DOCUMENTATION

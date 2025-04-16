@@ -28,7 +28,7 @@ def restart_program():
     os.execl(python, python, * sys.argv)
 
 
-with open('JSONs/randdata.json', 'r+') as json_file:
+with open('JSONs/orgid.json', 'r+') as json_file:
     randdata = json.load(json_file)
 
 

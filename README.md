@@ -15,8 +15,8 @@ If you are on MacOS or Linux download the install.sh file from the latest releas
 
 Now open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)  
 Enter the command `cd { BASE DIR }/orgST`  
-Windows: `python main.py`  
-MAC/LIN: `python3 main.py`  
+Windows: `python boot.py`  
+MAC/LIN: `python3 boot.py`  
 
 # lovely sponsors
 -- -- -- -- -- -- --

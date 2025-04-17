@@ -17,7 +17,7 @@ print("---------------------------------------")
 print("orgST Terminal 1.8")
 print("Refer to the readme for more information.")
 
-inp = input(">...")
+inp = input(HOSTNAME+" >>")
 
 with open('JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)

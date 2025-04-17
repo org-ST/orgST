@@ -15,8 +15,9 @@ If you are on MacOS or Linux download the install.sh file from the latest releas
 
 Now open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)  
 Enter the command `cd { BASE DIR }/orgST`  
-Windows: `python boot.py`  
-MAC/LIN: `python3 boot.py`  
+Windows: `python main.py`  
+MAC/LIN: `python3 main.py`
+If colorama fails to install, use `py main-lin.py` and `python3 main-lin.py`
 
 # lovely sponsors
 -- -- -- -- -- -- --

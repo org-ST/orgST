@@ -1,5 +1,5 @@
 {
-    "channels": ["orgst", "calctech", "toyas", "archive", "debug"], 
+    "channels": ["orgst", "calctech", "toyas", "archive", "debug", "THRC"],
     
     "orgst": {
         "name": "The OrgST Public Channel",
@@ -58,6 +58,18 @@
         "info": "fun fun smile",
         "date": "2024-12-21",
         "comment": "Delusional office is the best doors game honestly.",
+        "fp": "channels/debug.py"
+    },
+
+        "horo": {
+        "name": "The Home Room Channel",
+        "files": false,
+        "website": false,
+        "products": false,
+        "people": ["@kaycutier"],
+        "info": "Info about home room.",
+        "date": "2025-04-12",
+        "comment": "updates coming soon!",
         "fp": "channels/debug.py"
     }
 }

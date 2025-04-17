@@ -18,7 +18,7 @@ while True:
         else:
             print("Please enter a correct option to boot.")
             time.sleep(1)
-            continue
+            break
     except:
         print("Something wen't wrong.")
         time.sleep(1)

@@ -32,7 +32,7 @@ class MainWindow(QMainWindow):
         super().__init__()
 
         self.buttonvid = QPushButton("Video Player")
-        self.text = QLabel("Welcome to OrgSt Visual v1-alpha")
+        self.text = QLabel("orgVIS Version 1.1")
         self.text.setAlignment(Qt.AlignmentFlag.AlignCenter)
         self.buttonphoto =   QPushButton("Photo Viewer")
 

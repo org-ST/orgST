@@ -1,12 +1,13 @@
-# orgST
+# orgST™
 -- -- -- --
 
 a console in python that comes with apps. 
 
-[orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [progman.task](https://github.com/MakiDevelops) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-
-original code: https://github.com/MakiDevelops/diary/tree/py
-
+[orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [progman.task](https://github.com/MakiDevelops) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+“orgST”, "orgonizationSTATION", and the orgST logo are trademarks of orgST.  
+  
+original code: https://github.com/MakiDevelops/diary/tree/py  
+  
 # install and run
 -- -- -- -- -- --
 If you are on Windows download the install.ps1 from the latest release and run it  
@@ -21,7 +22,7 @@ If colorama fails to install, use `py main-lin.py` and `python3 main-lin.py`
 # lovely sponsors
 -- -- -- -- -- -- --
 
-"Welcome to OrgST's workspace."
+"Welcome to orgST's workspace."
 - the orgST team
 (progman.task, Wdboyes13)
 

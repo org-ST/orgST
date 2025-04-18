@@ -3,7 +3,7 @@
 
 a console in python that comes with apps. 
 
-orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. 
+orgST © 2024-2025 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. 
 To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/
 
 original code: https://github.com/MakiDevelops/diary/tree/py

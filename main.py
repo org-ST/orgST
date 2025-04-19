@@ -11,8 +11,7 @@ PREV_COMMIT_NUM = "36cf28bf"
 
 yes_ins = ['Yes','yes','Y','y']
 
-print("orgST © 2024 by Wdboyes13, progman.task, chureki")
-print("orgST terminal created in 2024")
+print(f"orgST © 2024-2025 by Wdboyes13, progman.task is licensed under CC BY-NC-ND 4.0\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
 print("---------------------------------------")
 print("orgST Terminal 1.8")
 print("Refer to the readme for more information.")

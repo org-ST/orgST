@@ -55,7 +55,7 @@ if yes_ins.count(a):
     while True:
         print("Listings:")
         for n in range(len(data["channels"])):
-            print(str(n + 1) + '. ' + data[data["channels"][n]]["name"])
+            print(str(n + 1) + '. ' + data["channels"][n])
         
         print('(input \"help\" at any time for a list of commands!)')
         b = input(">...")

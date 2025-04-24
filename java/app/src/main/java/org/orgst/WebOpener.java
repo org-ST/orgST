@@ -5,7 +5,7 @@ import java.net.URI;
 public class WebOpener {
     public static void open(String url) {
         try {
-            URI uri = new URI("https://satelliteearth.wordpress.com"); // your website here
+            URI uri = new URI(url); // your website here
             if (Desktop.isDesktopSupported()) {
                 Desktop.getDesktop().browse(uri);
             } else {

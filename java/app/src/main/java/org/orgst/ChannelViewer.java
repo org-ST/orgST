@@ -16,7 +16,7 @@ public class ChannelViewer {
         }
         Scanner inpscanner = new Scanner(System.in);
         while (true){
-            
+            System.out.print("..> ");
             String inp = inpscanner.nextLine();
             
         }

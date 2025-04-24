@@ -18,8 +18,9 @@ public class ChannelViewer {
         while (true){
             System.out.print("..> ");
             String inp = inpscanner.nextLine();
+            int inpi = Integer.parseInt(inp);
             try {
-            String channel = ChannelData.Channels[toInt.req(inp)];
+            String channel = ChannelData.Channels[inpi];
             } catch (Exception e) {
                 switch(inp){
                     case "help" : help(); break;

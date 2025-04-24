@@ -31,6 +31,6 @@ public class ChannelViewer {
         }
     };
     public static void CVchannel(String channel) {
-
+        ChannelData.channels.get(channel);
     }
 }

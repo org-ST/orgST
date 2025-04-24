@@ -53,6 +53,8 @@ public class ChannelViewer {
                 } else {
                     WebOpener.open(data.website);
                 }
+                break;
+                
             }
         }
     }

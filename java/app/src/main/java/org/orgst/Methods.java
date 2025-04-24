@@ -8,6 +8,7 @@ public class Methods {
         System.out.println("orgST © 2024-2025 by Wdboyes13, progman.task is licensed under CC BY-NC-ND 4.0\n" + "'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.");
         System.out.println("---------------------------------------");
         System.out.println("orgST Terminal 1.8 - Java Ported");
+        System.out.println("Ported by Wdboyes13");
         System.out.println("Refer to the readme for more information.");
     };
     public static String input(){

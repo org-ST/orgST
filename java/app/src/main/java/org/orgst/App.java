@@ -12,7 +12,7 @@ public class App {
         String Cmd = Methods.input();
         switch (Cmd) {
             case "help":
-                System.out.println("CMDS: hist, git, sauce, esc, run, super"); 
+                System.out.println("Cmd's: hist, git, sauce, esc, run, super"); 
                 break;
             case "sauce":
                 Methods.sauce();

@@ -1,4 +1,5 @@
 package org.orgst;
+import java.util.Map;
 import java.util.Scanner;
 public class Methods {
     public static String head() {
@@ -10,5 +11,11 @@ public class Methods {
         String Cmd = inp.nextLine();
         inp.close();
         return Cmd;
+    };
+    public static void sauce() {
+        for (Map.Entry<String, Vars.Data> entry : Vars.channels.entrySet()) {
+        System.out.println("Key: " + entry.getKey());
+        System.out.println("Value: " + entry.getValue()); // will call toString() on Data
+    }
     }
 }

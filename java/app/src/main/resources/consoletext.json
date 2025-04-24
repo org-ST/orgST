@@ -1,0 +1,19 @@
+{
+  "title": "ORGST INTERNATIONAL 2024-2025",
+  "setdate": "2025-01-11",
+  "dial": "Please wait a moment...",
+  "dial1": "Please put a valid file into the directory.",
+  "dial2": "The directory is not valid.",
+  "dial3": "The files in your directory are corrupted/in use.",
+  "dial4": "This installation is invalid or outdated. Please install a newer version.",
+  "disc":  "Please insert a disc...",
+  "disc1": "The disc is invalid/corrupted.",
+  "sound": "Please insert an MP3/MP4 into the directory.",
+  "sound1": "The sound file/video file is corrupted/invalid.",
+  "menutitles": "Directory, Disc, Music, Video, Settings, System, Video, Audio, Quality, Credits, Terminal, Internet",
+  "dial5": "Opening the PYTHON TERMINAL...",
+  "description": "orgST © 2024 by Wdboyes13, progman.task is licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International. To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-nd/4.0/",
+  "dial6": "The console settings are not set up, would you like to set them up now?",
+  "dial7": "Disk is opening...",
+  "prompt": ">"
+}

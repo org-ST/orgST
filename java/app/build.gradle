@@ -10,7 +10,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
 }
-
+def cmsg = "Updated Java Port"
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
@@ -43,3 +43,34 @@ application {
     // Define the main class for the application.
     mainClass = 'org.orgst.App'
 }
+
+tasks.register('mkJar', Jar) {
+    dependsOn classes
+    group = 'build'
+    description = 'Creates fat JAR with dependencies'
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    archiveClassifier.set('all')
+
+    manifest {
+        attributes('Main-Class': application.mainClass.get())
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    from sourceSets.main.output
+}
+
+
+task upload(type: Exec) {
+    dependsOn mkJar
+    commandLine 'bash', '-c', "cd ~/coding/orgST && git add . && git commit -m '${cmsg}' &&  git push origin java"
+    
+    // Ensure the output and error are printed to the console
+    standardOutput = System.out
+    errorOutput = System.err
+    ignoreExitValue = true  // This allows the task to continue even if some commands fail
+}
+
+build.dependsOn upload

@@ -22,6 +22,19 @@ public class Vars {
             this.comment = comment;
             this.fp = fp;
         }  
+        @Override
+        public String toString() {
+            return "Name: " + name +
+                   "\nFiles: " + (files != null ? String.join(", ", files) : "none") +
+                   "\nWebsite: " + (website != null ? website : "none") +
+                   "\nProducts: " + products +
+                   "\nPeople: " + String.join(", ", people) +
+                   "\nInfo: " + info +
+                   "\nDate: " + date +
+                   "\nComment: " + comment +
+                   "\nFP: " + fp + "\n";
+        }
+        
     }
     public static HashMap<String, Data> channels = new HashMap<>();
     static {

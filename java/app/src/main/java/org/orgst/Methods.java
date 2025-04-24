@@ -9,7 +9,6 @@ public class Methods {
         System.out.println("Refer to the readme for more information.");
         Scanner inp = new Scanner(System.in);
         String Cmd = inp.nextLine();
-        inp.close();
         return Cmd;
     };
     public static void sauce() {

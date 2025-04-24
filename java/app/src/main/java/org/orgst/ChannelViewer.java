@@ -20,8 +20,8 @@ public class ChannelViewer {
             String inp = inpscanner.nextLine();
             int inpi = Integer.parseInt(inp);
             try {
-            String channel = ChannelData.Channels[inpi];
-
+            String channel = ChannelData.Channels[inpi + 1];
+            
             } catch (Exception e) {
                 switch(inp){
                     case "help" : help(); break;
@@ -30,7 +30,7 @@ public class ChannelViewer {
             }
         }
     };
-    public static void CVchannel() {
-        
+    public static void CVchannel(String channel) {
+
     }
 }

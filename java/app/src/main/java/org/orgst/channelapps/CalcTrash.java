@@ -1,4 +1,4 @@
-package org.orgst.channelapps;
+package org.orgst.ChannelApps;
 
 public class CalcTrash {
     

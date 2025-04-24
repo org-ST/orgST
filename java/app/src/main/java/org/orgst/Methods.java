@@ -30,7 +30,7 @@ public class Methods {
     }
     public static void hist(){
         for (Map.Entry<String, String> entry : AppData.AppData.entrySet()){
-            System.out.println(entry.getKey() + ":" + entry.getValue());
+            System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
 }

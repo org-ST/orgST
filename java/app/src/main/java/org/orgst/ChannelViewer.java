@@ -17,8 +17,7 @@ public class ChannelViewer {
         Scanner inpscanner = new Scanner(System.in);
         while (true){
             System.out.print("..> ");
-            String inp = inpscanner.nextLine();
-            
+            String inp = inpscanner.nextLine();   
             try {
             int inpi = Integer.parseInt(inp);
             String channel = ChannelData.Channels[inpi + 1];

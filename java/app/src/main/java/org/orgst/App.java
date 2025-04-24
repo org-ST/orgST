@@ -20,6 +20,8 @@ public class App {
             case "clear":
                 Methods.clear();
                 break;
+            case "hist":
+                Methods.hist();
             default:
                 break;
         }

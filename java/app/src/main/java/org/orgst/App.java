@@ -8,7 +8,7 @@ public class App {
 
     public static void main(String[] args) {
 
-
+        while (true){
         String Cmd = Methods.head();
         switch (Cmd) {
             case "help":
@@ -19,5 +19,6 @@ public class App {
             default:
                 break;
         }
+    }
     }
 }

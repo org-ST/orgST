@@ -62,9 +62,12 @@ tasks.register('mkJar', Jar) {
     from sourceSets.main.output
 }
 
-
-task upload(type: Exec) {
+task pkg(type: Exec) {
     dependsOn mkJar
+    commandLine 'bash', '-c', 'cd ~/coding/orgST/java && ./package.sh'
+}
+task upload(type: Exec) {
+    dependsOn pkg
     commandLine 'bash', '-c', "cd ~/coding/orgST && git add . && git commit -m '${cmsg}' &&  git push origin java"
     
     // Ensure the output and error are printed to the console

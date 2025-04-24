@@ -64,7 +64,7 @@ public class ChannelViewer {
                 case "comment" : System.out.println(data.comment);
                 break;
                 case "help" : help();
-
+                
             }
         }
     }

@@ -18,8 +18,9 @@ public class ChannelViewer {
         while (true){
             System.out.print("..> ");
             String inp = inpscanner.nextLine();
-            int inpi = Integer.parseInt(inp);
+            
             try {
+            int inpi = Integer.parseInt(inp);
             String channel = ChannelData.Channels[inpi + 1];
             CVchannel(channel, inpscanner);
             } catch (Exception e) {
@@ -59,7 +60,7 @@ public class ChannelViewer {
                     System.out.println(person);
                 }
                 break;
-                
+
             }
         }
     }

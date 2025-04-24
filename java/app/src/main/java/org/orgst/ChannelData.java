@@ -64,7 +64,7 @@ public class ChannelData {
         Data debug = new Data("The Debug Channel", null, null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.", "channels/debug.py");
         String[] horopeople = {"@kaycutier"};
         Data horo = new Data("The Home Room Channel", null, null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!", "channels/debug.py");
-        channels.put("orgst", orgst);
+        channels.put("OrgST Public Channel", orgst);
         channels.put("calctech", calctech);
         channels.put("toyas", toyas);
         channels.put("archive", archive);

@@ -51,7 +51,7 @@ def do_help():
 print("Channel Viewer V2.0.1")
 print("Would you like to check the current channels?")
 a = input(">...")
-if yes_ins.count(a):
+if a in yes_ins:
     while True:
         print("Listings:")
         for n in range(len(data["channels"])):
@@ -173,7 +173,7 @@ if yes_ins.count(a):
         if not(is_looping):
             break
 
-elif no_ins.count(a):
+elif a in no_ins:
     run(["python3", "main.py"])
 elif a == 'DON\'T YOU FRICKIN DARE':
     print('ok man geez')

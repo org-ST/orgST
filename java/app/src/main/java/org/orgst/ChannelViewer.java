@@ -37,6 +37,7 @@ public class ChannelViewer {
             System.out.println("..> ");
             String inp = scanner.nextLine();
             switch(inp){
+                // Make this actually open the file once ALL of them are ported to Java
                 case "check" : if (data.files == null){
                     System.out.println("There are no files associated with this channel");
                 } else {

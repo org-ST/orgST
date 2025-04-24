@@ -60,7 +60,11 @@ public class ChannelViewer {
                 }
                 break;
                 case "info" : System.out.println(data.info);
-                
+                break;
+                case "comment" : System.out.println(data.comment);
+                break;
+                case "help" : help();
+
             }
         }
     }

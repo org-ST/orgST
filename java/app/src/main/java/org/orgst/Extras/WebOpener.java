@@ -1,4 +1,4 @@
-package org.orgst;
+package org.orgst.Extras;
 import java.awt.Desktop;
 import java.net.URI;
 

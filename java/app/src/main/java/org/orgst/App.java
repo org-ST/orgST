@@ -11,6 +11,7 @@ public class App {
         while (true){
         String Cmd = Methods.input();
         switch (Cmd) {
+            case "run": org.orgst.Extras.ChannelViewer.CV(args);
             case "help":
                 System.out.println("Cmd's: hist, git, sauce, esc, run, super"); 
                 break;

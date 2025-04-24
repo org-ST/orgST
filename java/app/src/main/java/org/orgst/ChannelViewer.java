@@ -13,7 +13,6 @@ public class ChannelViewer {
         System.out.println("Would you like to check the current channels?");
         Scanner inpscanner = new Scanner(System.in);
         String inp = inpscanner.nextLine();
-        
     };
     
 }

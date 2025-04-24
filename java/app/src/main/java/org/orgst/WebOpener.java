@@ -3,7 +3,7 @@ import java.awt.Desktop;
 import java.net.URI;
 
 public class WebOpener {
-    public static void main(String[] args) {
+    public static void open(String url) {
         try {
             URI uri = new URI("https://satelliteearth.wordpress.com"); // your website here
             if (Desktop.isDesktopSupported()) {

@@ -9,5 +9,5 @@ public class ChannelViewer {
     public static void CV() {
     System.out.println("Channel Viewer V2.0.1");
     System.out.println("Would you like to check the current channels?");
-    }
+    };
 }

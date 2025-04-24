@@ -55,6 +55,10 @@ public class ChannelViewer {
                 }
                 break;
                 // If a channel gets products then implement the product command from channelviewer.py it (not gonna until then though)
+                case "people" : for (String person : data.people){
+                    System.out.println(person);
+                }
+                break;
                 
             }
         }

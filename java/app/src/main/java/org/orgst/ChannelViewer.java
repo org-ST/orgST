@@ -48,6 +48,9 @@ public class ChannelViewer {
                     }
                 }
                 break;
+                case "web" : if (data.website == null){
+                    
+                }
             }
         }
     }

@@ -1,3 +1,12 @@
 {
-    "java.configuration.updateBuildConfiguration": "interactive"
-}
+    "java.configuration.updateBuildConfiguration": "interactive",
+    "emeraldwalk.runonsave": {
+      "commands": [
+        {
+          "match": ".*\\.java$",
+          "cmd": "cd ~/coding/orgST/java && ./gradlew build"
+        }
+      ]
+    },
+    "files.autoSave": "onWindowChange"
+  }

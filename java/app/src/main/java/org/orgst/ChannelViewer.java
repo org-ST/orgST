@@ -59,7 +59,8 @@ public class ChannelViewer {
                     System.out.println(person);
                 }
                 break;
-
+                case "info" : System.out.println(data.info);
+                
             }
         }
     }

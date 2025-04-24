@@ -33,5 +33,10 @@ To be Ported:
 Doesnt need porting:
     JSONs/* : Will be replaced by Java files containing Variable definitions
     PYextras/channelapps/apptest.py : Testing automatically done by Gradle org.orgst.AppTast
-     
+
+ChannelViewer To Be Ported:
+    Just need to finish porting channelapps/*
+    Once thats done finish check command to open them 
+    ONLY port products command IF products start actually being used
+    
 """

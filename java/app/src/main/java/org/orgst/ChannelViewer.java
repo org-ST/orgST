@@ -26,6 +26,7 @@ public class ChannelViewer {
                 switch(inp){
                     case "help" : help(); break;
                     case "exit" : App.main(args); break;
+                    case "DON'T YOU FRICKIN DARE" : System.out.println("ok man geez");
                 } 
             }
         }

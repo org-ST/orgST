@@ -54,7 +54,7 @@ public class ChannelViewer {
                     WebOpener.open(data.website);
                 }
                 break;
-                
+                // If a channel gets products then implement the product command from channelviewer.py it (not gonna until then though)
             }
         }
     }

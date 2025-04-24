@@ -22,6 +22,7 @@ public class App {
                 break;
             case "hist":
                 Methods.hist();
+                break;
             default:
                 break;
         }

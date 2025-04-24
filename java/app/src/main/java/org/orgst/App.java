@@ -16,6 +16,8 @@ public class App {
                 break;
             case "sauce":
                 Methods.sauce();
+            case "clear":
+                Methods.clear();
             default:
                 break;
         }

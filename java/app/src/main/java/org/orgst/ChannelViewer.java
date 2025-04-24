@@ -21,7 +21,7 @@ public class ChannelViewer {
             try {
             int inpi = Integer.parseInt(inp);
             String channel = ChannelData.Channels[inpi + 1];
-            CVchannel(channel, inpscanner);
+            CVchannel(channel, inpscanner, args);
             } catch (Exception e) {
                 switch(inp){
                     case "help" : help(); break;
@@ -30,7 +30,7 @@ public class ChannelViewer {
             }
         }
     };
-    public static void CVchannel(String channel, Scanner scanner) {
+    public static void CVchannel(String channel, Scanner scanner, String[] args) {
         ChannelData.Data data = ChannelData.channels.get(channel);
         System.out.println("Welcome to: " + data.name);
         while (true){
@@ -64,7 +64,7 @@ public class ChannelViewer {
                 case "comment" : System.out.println(data.comment);
                 break;
                 case "help" : help();
-                
+                case "exit" : App.main(args);
             }
         }
     }

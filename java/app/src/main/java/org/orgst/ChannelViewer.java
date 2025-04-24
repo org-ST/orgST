@@ -23,7 +23,7 @@ public class ChannelViewer {
             } catch (Exception e) {
                 switch(inp){
                     case "help" : help(); break;
-                    case "exit" : break;
+                    case "exit" : 
                 }
             }
 

@@ -20,7 +20,7 @@ public class Methods {
         for (Map.Entry<String, Vars.Data> entry : Vars.channels.entrySet()) {
         System.out.println("Key: " + entry.getKey());
         System.out.println(entry.getValue());
-    }
+        }
     }
     public static void clear(){
         System.out.print("\033[H\033[2J");

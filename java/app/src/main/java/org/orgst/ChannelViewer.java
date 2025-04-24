@@ -47,6 +47,7 @@ public class ChannelViewer {
                         System.out.println(file);
                     }
                 }
+                break;
             }
         }
     }

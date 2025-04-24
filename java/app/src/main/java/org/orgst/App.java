@@ -5,11 +5,11 @@ package org.orgst;
 
 public class App {
     String[] yes_ins = {"Yes","yes","Y","y"};
-
+   
     public static void main(String[] args) {
-
+        Methods.head();
         while (true){
-        String Cmd = Methods.head();
+        String Cmd = Methods.input();
         switch (Cmd) {
             case "help":
                 System.out.println("CMDS: hist, git, sauce, esc, run, super"); 

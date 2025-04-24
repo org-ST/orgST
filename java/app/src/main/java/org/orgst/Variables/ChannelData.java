@@ -1,4 +1,4 @@
-package org.orgst;
+package org.orgst.Variables;
 import java.util.HashMap;
 public class ChannelData {
     public static class Data {

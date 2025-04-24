@@ -1,6 +1,8 @@
 package org.orgst;
 import java.util.Map;
 import java.util.Scanner;
+
+import org.orgst.Variables.ChannelData;
 public class Methods {
     public static void head() {
         System.out.print("\033[H\033[2J");

@@ -50,6 +50,8 @@ public class ChannelViewer {
                 break;
                 case "web" : if (data.website == null){
                     
+                } else {
+                    WebOpener.open(data.website);
                 }
             }
         }

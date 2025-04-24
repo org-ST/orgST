@@ -57,7 +57,7 @@ public class ChannelData {
         String[] calctechpeople = {"@chureki (Table)", "@kaycutier (program.task)"};
         Data calctech = new Data("The CalcTech Channel", clactechfiles, "https://github.com/Chureki/CalcTrash", false, calctechpeople, "A channel for CalcTech!", "2024-12-21", "How about YOU try ASM+", "channels/calctech.py");
         String[] toyaspeople = {"@toyathing"};
-        Data toyas = new Data("toyathings MMD channel", null, null, false, toyaspeople, "A channel for MMD!", "2024-12-21", "code thingy", "channels/mmd.py");
+        Data toyas = new Data("Toyathings MMD channel", null, null, false, toyaspeople, "A channel for MMD!", "2024-12-21", "code thingy", "channels/mmd.py");
         String[] archivepeople = {"@kaycutier", "@Wdboyes13", "@chureki", "@toyathing"};
         Data archive = new Data("The Archive Channel", null, null, false, archivepeople, "A channel that archives ANYTHING orgST", "2023-12-21", "when we said ANYTHING, we meant it, sleep tight :)", "channels/archive.py");
         String[] debugpeople = {"@keycutier", "@chureki"};

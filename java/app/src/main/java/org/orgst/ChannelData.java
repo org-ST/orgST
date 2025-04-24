@@ -65,11 +65,11 @@ public class ChannelData {
         String[] horopeople = {"@kaycutier"};
         Data horo = new Data("The Home Room Channel", null, null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!", "channels/debug.py");
         channels.put("OrgST Public Channel", orgst);
-        channels.put("calctech", calctech);
-        channels.put("toyas", toyas);
-        channels.put("archive", archive);
-        channels.put("debug", debug);
-        channels.put("horo", horo);
+        channels.put("CalcTech Channel", calctech);
+        channels.put("Toyathings MMD Channel", toyas);
+        channels.put("The Archive Channel", archive);
+        channels.put("The Debug Channel", debug);
+        channels.put("The Home Room Channel", horo);
     }
     
 }

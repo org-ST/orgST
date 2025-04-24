@@ -34,9 +34,12 @@ public class ChannelViewer {
         ChannelData.Data data = ChannelData.channels.get(channel);
         System.out.println("Welcome to: " + data.name);
         while (true){
+            System.out.println("..> ");
             String inp = scanner.nextLine();
             switch(inp){
-                
+                case "check" : if (data.files == null){
+                    System.out.println("There are no files associated with this channel");
+                }
             }
         }
     }

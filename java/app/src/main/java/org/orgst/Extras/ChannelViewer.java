@@ -3,7 +3,6 @@ package org.orgst.Extras;
 import java.util.Scanner;
 
 import org.orgst.App;
-import org.orgst.WebOpener;
 import org.orgst.Variables.ChannelData;
 public class ChannelViewer {
     String[] yes_ins = {"y","yes","Yes","Y","check","Check"};

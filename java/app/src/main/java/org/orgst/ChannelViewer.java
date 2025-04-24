@@ -32,6 +32,12 @@ public class ChannelViewer {
     };
     public static void CVchannel(String channel, Scanner scanner) {
         ChannelData.Data data = ChannelData.channels.get(channel);
-        
+        System.out.println("Welcome to: " + data.name);
+        while (true){
+            String inp = scanner.nextLine();
+            switch(inp){
+                
+            }
+        }
     }
 }

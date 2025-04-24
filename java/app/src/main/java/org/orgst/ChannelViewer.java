@@ -49,7 +49,7 @@ public class ChannelViewer {
                 }
                 break;
                 case "web" : if (data.website == null){
-                    
+                    System.out.println("There is no website for this channel");
                 } else {
                     WebOpener.open(data.website);
                 }

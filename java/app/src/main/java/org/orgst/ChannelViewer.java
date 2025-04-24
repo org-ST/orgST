@@ -8,7 +8,7 @@ public class ChannelViewer {
     public static void help(){
         System.out.println("commands: check, products, people, website, info, comment");
     }
-    public static void CV() {
+    public static void CV(String[] args) {
         System.out.println("Channel Viewer V2.0.1");
         System.out.println("Would you like to check the current channels?");
         for (int i = 0; i < ChannelData.Channels.length; i++){
@@ -25,7 +25,7 @@ public class ChannelViewer {
             } catch (Exception e) {
                 switch(inp){
                     case "help" : help(); break;
-                    case "exit" : System.exit(0); break;
+                    case "exit" : App.main(args); break;
                 } 
             }
         }

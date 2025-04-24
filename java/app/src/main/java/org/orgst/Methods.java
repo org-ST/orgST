@@ -28,4 +28,10 @@ public class Methods {
         System.out.flush();
         head();
     }
+    public static void hist(){
+        for (Map.Entry<String, String> entry : AppData.AppData.entrySet()){
+            System.out.println(entry.getKey());
+            System.out.println(entry.getValue());
+        }
+    }
 }

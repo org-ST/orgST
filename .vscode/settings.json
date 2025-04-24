@@ -4,7 +4,7 @@
       "commands": [
         {
           "match": ".*\\.java$",
-          "cmd": "cd ~/coding/orgST/java && ./gradlew build"
+          "cmd": "cd ${env:HOME}/coding/orgST/java && ./gradlew build"
         }
       ]
     },

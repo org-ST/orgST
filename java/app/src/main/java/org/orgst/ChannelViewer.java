@@ -27,7 +27,6 @@ public class ChannelViewer {
                     case "exit" : break;
                 } 
             }
-
         }
     };
     

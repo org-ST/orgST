@@ -92,7 +92,7 @@ if yes_ins.count(a):
                         int(d)
                         print('Opening ' + files[int(d) - 1] + '...')
                         sleep(3)
-                        run(['python3', 'PYextras/' + files[int(d) - 1]])
+                        run(['python3', 'PYextras/channelapps/' + files[int(d) - 1]])
                     except ValueError:
                         if d != 'exit':
                             print('Error: invalid input')

@@ -39,6 +39,12 @@ public class ChannelViewer {
             switch(inp){
                 case "check" : if (data.files == null){
                     System.out.println("There are no files associated with this channel");
+                } else {
+                    String[] files = data.files;
+                    System.out.println("We found some files");
+                    for (String file : files){
+                        System.out.println(file);
+                    }
                 }
             }
         }

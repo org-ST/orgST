@@ -17,7 +17,7 @@ print("Refer to the readme for more information.")
 
 inp = input(HOSTNAME+" >>")
 
-with open('JSONs/maindata.json', 'r') as file:
+with open('../JSONs/maindata.json', 'r') as file:
     jsonfile = json.load(file)
 
 
@@ -27,7 +27,7 @@ def restart_program():
     os.execl(python, python, * sys.argv)
 
 
-with open('JSONs/orgid.json', 'r+') as json_file:
+with open('../JSONs/orgid.json', 'r+') as json_file:
     randdata = json.load(json_file)
 
 

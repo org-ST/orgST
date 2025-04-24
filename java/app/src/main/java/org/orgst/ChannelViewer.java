@@ -12,7 +12,12 @@ public class ChannelViewer {
         System.out.println("Channel Viewer V2.0.1");
         System.out.println("Would you like to check the current channels?");
         Scanner inpscanner = new Scanner(System.in);
-        String inp = inpscanner.nextLine();
+        while (true){
+            String inp = inpscanner.nextLine();
+            for (int i = 0; i < ChannelData.Channels.length; i++){
+                System.out.println(ChannelData.Channels[i]);
+            }
+        }
     };
     
 }

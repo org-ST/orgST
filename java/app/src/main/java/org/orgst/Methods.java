@@ -1,6 +1,8 @@
 package org.orgst;
 import java.util.Map;
 import java.util.Scanner;
+
+import javax.annotation.CheckForNull;
 public class Methods {
     public static void head() {
         System.out.print("\033[H\033[2J");
@@ -18,7 +20,7 @@ public class Methods {
         return Cmd;
     }
     public static void sauce() {
-        for (Map.Entry<String, Vars.Data> entry : Vars.channels.entrySet()) {
+        for (Map.Entry<String, ChannelData.Data> entry : ChannelData.channels.entrySet()) {
         System.out.println("Key: " + entry.getKey());
         System.out.println(entry.getValue());
         }

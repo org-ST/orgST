@@ -1,6 +1,6 @@
 package org.orgst;
 import java.util.HashMap;
-public class Vars {
+public class ChannelData {
     public static class Data {
         public String name;
         public String[] files;
@@ -34,7 +34,7 @@ public class Vars {
                    "\nComment: " + comment +
                    "\nFP: " + fp + "\n";
         }
-        
+
     }
     public static HashMap<String, Data> channels = new HashMap<>();
     static {

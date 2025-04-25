@@ -20,5 +20,5 @@ public class Client {
         byte[] encryptedBytes = cipher.doFinal(password.getBytes(StandardCharsets.UTF_8));
         return Base64.getEncoder().encodeToString(encryptedBytes); // optional: encode to string
     }
-
+    
 }

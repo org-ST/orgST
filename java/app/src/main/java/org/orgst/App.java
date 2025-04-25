@@ -30,6 +30,9 @@ public class App {
             case "flag":
                 Methods.flag();
                 break;
+            case "esc":
+                System.exit(0);
+                break;
             default:
                 break;
         }

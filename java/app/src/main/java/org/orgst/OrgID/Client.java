@@ -22,7 +22,6 @@ public class Client {
 
         System.out.println("Status: " + response.statusCode());
         System.out.println("Body: " + response.body());
-
         } catch (Exception e){
             e.printStackTrace();
         }

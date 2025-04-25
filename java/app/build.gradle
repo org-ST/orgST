@@ -19,7 +19,7 @@ repositories {
 dependencies {
     // This dependency is used by the application.
     implementation libs.guava
-    implementation 'com.google.code.gson:gson:2.13.1'
+    implementation 'org.openjfx:javafx-controls:21'
 }
 
 testing {

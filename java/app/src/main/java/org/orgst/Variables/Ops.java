@@ -11,5 +11,6 @@ public class Ops {
     }
     public class op {
         public Map<String, opInfo> op = new HashMap<>();
+        
     }
 }

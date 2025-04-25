@@ -31,9 +31,10 @@ public class Methods {
                 case "git" : {
                     System.out.println("Command : Git");
                     System.out.println("Function : Prints GitHub Link");
+                    break;
                 }
                 case "sauce" : {
-                    
+
                 }
             }
         } else if (command.length == 1){

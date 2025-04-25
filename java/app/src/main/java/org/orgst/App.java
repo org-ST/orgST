@@ -14,7 +14,7 @@ public class App {
         switch (words[0]) {
             case "run": org.orgst.Extras.ChannelViewer.CV(args);
             case "help":
-                
+                Methods.help(words);
                 break;
             case "sauce":
                 Methods.sauce();

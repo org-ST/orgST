@@ -4,7 +4,7 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-
+import java.util.Scanner;
 public class Client {
     public static void submit(String url, String username, String password){
         try {
@@ -25,5 +25,9 @@ public class Client {
         } catch (Exception e){
             e.printStackTrace();
         }
+    }
+    public static void crusr(){
+        Scanner inp = new Scanner(System.in);
+        
     }
 }

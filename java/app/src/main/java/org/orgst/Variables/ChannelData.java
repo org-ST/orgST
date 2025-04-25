@@ -3,15 +3,14 @@ import java.util.HashMap;
 public class ChannelData {
     public static class Data {
         public String name;
-        public String[] files;
+        public Runnable[] files;
         public String website;
         public boolean products;
         public String[] people;
         public String info;
         public String date;
         public String comment;
-        public Runnable fp;
-        public Data(String name, String[] files, String website, boolean products, String[] people, String info, String date, String comment, String fp) {
+        public Data(String name, Runnable[] files, String website, boolean products, String[] people, String info, String date, String comment) {
             this.name = name;
             this.files = files;
             this.website = website;
@@ -24,7 +23,6 @@ public class ChannelData {
         @Override
         public String toString() {
             return "Name: " + name +
-                   "\nFiles: " + (files != null ? String.join(", ", files) : "none") +
                    "\nWebsite: " + (website != null ? website : "none") +
                    "\nProducts: " + products +
                    "\nPeople: " + String.join(", ", people) +
@@ -39,29 +37,17 @@ public class ChannelData {
     static {
         channels = new HashMap<>();
         String[] orgstpeople = {"@Wdboyes13", "@kaycutier (program.task)"};
-        String[] orgstfiles = null;
-        Data orgst = new Data(
-            "The OrgST Public Channel",
-            orgstfiles,
-            "https://satelliteearth.wordpress.com",
-            false,
-            orgstpeople,
-            "The public orgST channel.",
-            "2024-12-21",
-            "Welcome to OrgST's workspace.",
-            "channels/pub.py"
-            );
-        String[] clactechfiles = {"calctrash.py"};
+        Data orgst = new Data("The OrgST Public Channel", null, "https://satelliteearth.wordpress.com", false, orgstpeople, "The public orgST channel.", "2024-12-21", "Welcome to OrgST's workspace.");
         String[] calctechpeople = {"@chureki (Table)", "@kaycutier (program.task)"};
-        Data calctech = new Data("The CalcTech Channel", clactechfiles, "https://github.com/Chureki/CalcTrash", false, calctechpeople, "A channel for CalcTech!", "2024-12-21", "How about YOU try ASM+", "channels/calctech.py");
+        Data calctech = new Data("The CalcTech Channel", new Runnable[]{() -> {org.orgst.ChannelApps.CalcTrash.Start();}}, "https://github.com/Chureki/CalcTrash", false, calctechpeople, "A channel for CalcTech!", "2024-12-21", "How about YOU try ASM+");
         String[] toyaspeople = {"@toyathing"};
-        Data toyas = new Data("Toyathings MMD channel", null, null, false, toyaspeople, "A channel for MMD!", "2024-12-21", "code thingy", "channels/mmd.py");
+        Data toyas = new Data("Toyathings MMD channel", null, null, false, toyaspeople, "A channel for MMD!", "2024-12-21", "code thingy");
         String[] archivepeople = {"@kaycutier", "@Wdboyes13", "@chureki", "@toyathing"};
-        Data archive = new Data("The Archive Channel", null, null, false, archivepeople, "A channel that archives ANYTHING orgST", "2023-12-21", "when we said ANYTHING, we meant it, sleep tight :)", "channels/archive.py");
+        Data archive = new Data("The Archive Channel", null, null, false, archivepeople, "A channel that archives ANYTHING orgST", "2023-12-21", "when we said ANYTHING, we meant it, sleep tight :)");
         String[] debugpeople = {"@keycutier", "@chureki"};
-        Data debug = new Data("The Debug Channel", null, null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.", "channels/debug.py");
+        Data debug = new Data("The Debug Channel", null, null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.");
         String[] horopeople = {"@kaycutier"};
-        Data horo = new Data("The Home Room Channel", null, null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!", "channels/debug.py");
+        Data horo = new Data("The Home Room Channel", null, null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!");
         channels.put("OrgST Public Channel", orgst);
         channels.put("CalcTech Channel", calctech);
         channels.put("Toyathings MMD Channel", toyas);

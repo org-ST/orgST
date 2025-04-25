@@ -6,8 +6,10 @@ import javax.crypto.*;
 import java.util.Base64;
 import java.nio.charset.StandardCharsets;
 import java.security.interfaces.*;
-import java.io.*;
-import java.net.*;
+import java.net.URI;
+import java.net.http.HttpClient;
+import java.net.http.HttpRequest;
+import java.net.http.HttpResponse;
 
 public class Client {
     public static String encrypt(String password, PublicKey publicKey) throws Exception {
@@ -23,7 +25,7 @@ public class Client {
         byte[] encryptedBytes = cipher.doFinal(password.getBytes(StandardCharsets.UTF_8));
         return Base64.getEncoder().encodeToString(encryptedBytes); // optional: encode to string
     }
-    public static void submit(){
+    public static void submit(String url){
         
     }
 }

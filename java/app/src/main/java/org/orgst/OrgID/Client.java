@@ -31,5 +31,7 @@ public class Client {
         Scanner inp = new Scanner(System.in);
         System.out.print("Enter a username: ");
         String username = inp.nextLine();
+        System.out.print("Enter a password: ");
+        String password = inp.nextLine();
     }
 }

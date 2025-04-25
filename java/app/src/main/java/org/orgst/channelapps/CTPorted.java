@@ -32,7 +32,7 @@ public class CTPorted {
                 System.out.println("Operation Canceled");
                 return false;
             } else {
-                
+                System.out.println("Error: please input a number");
             }
         }
         return false;

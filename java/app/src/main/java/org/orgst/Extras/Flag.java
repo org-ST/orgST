@@ -19,6 +19,6 @@ public class Flag {
         } catch (IOException e){
             e.printStackTrace();
         }
-        
+        System.out.print("..> ");
     }
 }

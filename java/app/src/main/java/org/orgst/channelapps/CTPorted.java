@@ -21,6 +21,7 @@ public class CTPorted {
                     String c = inp.nextLine();
                     int ci = Integer.parseInt(c);
                     Float af = ans[ans.length - ci*2];
+                    return af;
                 } catch (ArrayIndexOutOfBoundsException g){
                     System.out.println("Error: there was no lop to get");
                     return false;

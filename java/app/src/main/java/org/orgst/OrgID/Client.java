@@ -5,7 +5,7 @@ import javax.crypto.spec.*;
 import javax.crypto.*;
 import java.util.Base64;
 import java.nio.charset.StandardCharsets;
-import java.security.interfaces.RSAPublicKey;
+import java.security.interfaces.*;
 public class Client {
     public static String encrypt(String password, PublicKey publicKey) throws Exception {
         Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA-256AndMGF1Padding");

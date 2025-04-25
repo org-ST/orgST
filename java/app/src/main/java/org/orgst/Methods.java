@@ -14,7 +14,8 @@ public class Methods {
                     break;
                 }
                 case "clear" : {
-                    
+                    System.out.println("Command : Clear");
+                    System.out.println("Function : Open's window with pride flag");
                 }
             }
         } else if (command.length == 1){

@@ -37,4 +37,11 @@ public class CTPorted {
         }
         return false;
     }
+    public static boolean check_input(Object to_check){
+        if (to_check instanceof Integer || to_check instanceof Float) {
+            return true;
+        } else {
+            return false;
+        }
+    }
 }

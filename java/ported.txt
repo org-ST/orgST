@@ -14,7 +14,7 @@ PYextras:
     help.py -> x
     main-cases.py -> x
     testing.py -> x
-    TheFlag.py -> TODO
+    TheFlag.py -> org.orgst.Extras.Flag
     channels -> x
     channelapps:
         apptest.py -> (Needs Writing) org.orgst.ChannelApps.AppTester
@@ -39,4 +39,6 @@ ChannelViewer ToDo:
 
 Functions To Port:
     1. orgid
-        ()
+        (In org.orgst.OrgID.Client)
+    2. pride command
+        (In org.orgst.Extras.Flag)

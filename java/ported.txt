@@ -31,10 +31,11 @@ JSONs:
 
 ChannelViewer ToDo:
     1. Port ChannelApps
-        1. Write org.orgst.ChannelApps.AppTester
+        1. Fully port CalcTrash
 
 Functions To Port:
     1. orgid
         (In org.orgst.OrgID.Client)
     2. pride command
         (In org.orgst.Extras.Flag)
+    3. Salvade

@@ -1,5 +1,6 @@
 {
     "java.configuration.updateBuildConfiguration": "interactive",
+    "java.errors.incompleteClasspath.severity": "ignore",
     "emeraldwalk.runonsave": {
       "commands": [
         {

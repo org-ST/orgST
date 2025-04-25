@@ -1,27 +1,38 @@
 package org.orgst.Extras;
+
 import java.io.*;
 import java.nio.file.*;
+
 public class RunCalcTrash {
     public static void start() {
         try {
-            // Define where to extract to
-            Path tempScript = Files.createTempFile("calctrash", ".py");
-
             // Load the JAR and find the resource
-            InputStream in = RunCalcTrash.class.getResourceAsStream("calctrash.py");
-            Files.copy(in, tempScript, StandardCopyOption.REPLACE_EXISTING);
+            InputStream in = RunCalcTrash.class.getResourceAsStream("/org/orgst/ChannelApps/AppDeps/calctrash.py");
 
-            // Make sure it's readable & executable
-            tempScript.toFile().setExecutable(true);
+            // Check if resource is found
+            if (in == null) {
+                System.out.println("Resource not found: /org/orgst/ChannelApps/AppDeps/calctrash.py");
+                return; // Or handle error
+            }
 
-            // Run the script
-            ProcessBuilder pb = new ProcessBuilder("python3", tempScript.toAbsolutePath().toString());
+            // Create a buffered reader to read the script from the InputStream
+            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+
+            // Read the entire script into a string
+            StringBuilder scriptContent = new StringBuilder();
+            String line;
+            while ((line = reader.readLine()) != null) {
+                scriptContent.append(line).append("\n");
+            }
+
+            // Close the reader
+            reader.close();
+
+            // Pass the script content to Python
+            ProcessBuilder pb = new ProcessBuilder("python3", "-c", scriptContent.toString());
             pb.inheritIO();
             Process p = pb.start();
             p.waitFor();
-
-            // Delete the temp file after (optional)
-            Files.delete(tempScript);
         } catch (Exception e) {
             e.printStackTrace();
         }

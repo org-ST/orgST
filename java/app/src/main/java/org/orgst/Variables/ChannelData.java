@@ -10,7 +10,7 @@ public class ChannelData {
         public String info;
         public String date;
         public String comment;
-        public String fp;
+        public Runnable fp;
         public Data(String name, String[] files, String website, boolean products, String[] people, String info, String date, String comment, String fp) {
             this.name = name;
             this.files = files;
@@ -20,7 +20,6 @@ public class ChannelData {
             this.info = info;
             this.date = date;
             this.comment = comment;
-            this.fp = fp;
         }  
         @Override
         public String toString() {

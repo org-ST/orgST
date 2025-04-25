@@ -15,7 +15,11 @@ public class Classes {
         int[] statuses = {0, 0, 0, 0, 0};
         int broken = 0;
         public enemy(String name, int[] stats, String[] skills, String[] dialogue, int aggro) {
-
+            this.name = name;
+            this.stats = stats;
+            this.skills = skills;
+            this.dialogue = dialogue;
+            this.aggro = aggro;
         }
     }
 }

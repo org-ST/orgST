@@ -1,0 +1,36 @@
+x = Removed
+TODO = Needs Porting
+-> (Needs Writing) Classpath = File created but needs to porting
+
+. :
+    main.py -> org.orgst.App
+    functions.py -> org.orgst.Methods
+    main-ext.py -> x
+    betterterm.py -> x
+PYextras:
+    app.py -> x
+    channelviewer.py -> org.orgst.Extras.ChannelViewer
+    cvalt.py -> x
+    help.py -> x
+    main-cases.py -> x
+    testing.py -> x
+    TheFlag.py -> TODO
+    channels -> x
+    channelapps:
+        apptest.py -> (Needs Writing) org.orgst.ChannelApps.AppTester
+        calctrash.py -> (Needs Writing) org.orgst.ChannelApps.CalcTrash
+orgid:
+    client.py -> TODO
+JSONs:
+   channeldata.json -> org.orgst.Variables.ChannelData
+   consoletext.json -> x
+   errordial.json -> x
+   maindata.json -> org.orgst.Variables.AppData
+   orgid.json -> x
+   startext.json -> x 
+ChannelViewer ToDo:
+    1. Port ChannelApps
+    2. Make check command run appropriate ChannelApp
+
+Functions To Port:
+    1. orgid

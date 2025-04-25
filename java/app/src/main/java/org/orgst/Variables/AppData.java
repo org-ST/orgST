@@ -1,9 +1,9 @@
-package org.orgst;
+package org.orgst.Variables;
 
 import java.util.HashMap;
 
 public class AppData {
-    static HashMap<String, String> AppData;
+    public static HashMap<String, String> AppData;
     static {
         AppData = new HashMap<>();
         AppData.put("Version", "1.8.0");

@@ -39,7 +39,14 @@ public class Methods {
                     break;
                 }
                 case "esc" : {
-                    
+                    System.out.println("Command : Esc");
+                    System.out.println("Function : Exits orgST");
+                    break;
+                }
+                case "run" : {
+                    System.out.println("Command : Run");
+                    System.out.println("Function : Starts ChannelViewer");
+                    break;
                 }
             }
         } else if (command.length == 1){

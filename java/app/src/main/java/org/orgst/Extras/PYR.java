@@ -1,8 +1,8 @@
 package org.orgst.Extras;
 import java.io.*;
 
-public class PythonRunnerSimple {
-    public static void main(String[] args) {
+public class PYR {
+    public static void run() {
         try {
             ProcessBuilder pb = new ProcessBuilder("python3", "app.py");
             pb.inheritIO(); // makes it use your terminal I/O directly

@@ -1,6 +1,8 @@
 package org.orgst.Extras;
 
-import java.io.*;
+import java.io.InputStream;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 public class RunCalcTrash {
     public static void start() {
         try {

@@ -11,10 +11,10 @@ public class Ops {
     }
     public class op {
         public String name;
-        
+        public opInfo info;
         public op(String name, opInfo info){
             this.name = name;
-            
+            this.info = info;
         }
     }
 }

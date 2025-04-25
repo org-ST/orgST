@@ -34,7 +34,8 @@ public class Methods {
                     break;
                 }
                 case "sauce" : {
-
+                    System.out.println("Command : Sauce");
+                    System.out.println("Function : Open's window with pride flag");
                 }
             }
         } else if (command.length == 1){

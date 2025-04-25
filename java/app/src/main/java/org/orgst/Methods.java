@@ -36,6 +36,10 @@ public class Methods {
                 case "sauce" : {
                     System.out.println("Command : Sauce");
                     System.out.println("Function : Prints all Channel Data");
+                    break;
+                }
+                case "esc" : {
+                    
                 }
             }
         } else if (command.length == 1){

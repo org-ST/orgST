@@ -30,8 +30,7 @@ JSONs:
    startext.json -> x 
 
 ChannelViewer ToDo:
-    1. Port ChannelApps
-        1. Fully port CalcTrash
+    None
 
 Functions To Port:
     1. orgid

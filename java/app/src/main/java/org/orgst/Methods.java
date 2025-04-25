@@ -15,7 +15,7 @@ public class Methods {
         switch(opt){
             case "V": org.orgst.OrgID.Client.verusr(); break;
             case "C": org.orgst.OrgID.Client.crusr(); break;
-            default: System.out.println("INvalid option");
+            default: System.out.println("Invalid option");
         }
     }
     public static void head() {

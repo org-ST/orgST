@@ -26,7 +26,8 @@ public class CTPorted {
                         opTD[i+1] = opScanner.nextLine();
                     }
                     switch(opTD[0]) {
-                        case "add": String out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2])) ;
+                        case "add": String out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2]));
+                        
                     }
                 }
             }

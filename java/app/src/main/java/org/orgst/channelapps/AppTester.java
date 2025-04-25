@@ -8,6 +8,7 @@ public class AppTester {
             switch(inp) {
                 case "help": System.out.println("help, exit, info");
                 case "exit": org.orgst.Extras.ChannelViewer.CV(args);
+                case "info": System.out.println("print(\"apptest.py for orgST\" + \" | version\" + \" 1\")");
             }       
         }
     }

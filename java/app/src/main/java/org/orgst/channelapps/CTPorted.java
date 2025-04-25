@@ -1,5 +1,6 @@
 package org.orgst.ChannelApps;
 import java.util.*;
+import org.orgst.Variables.Ops;
 public class CTPorted {
     public static Float[] ans;
     public static Object take_input(Boolean special, String prompt){
@@ -47,7 +48,9 @@ public class CTPorted {
             System.out.println("Input operation, else, enter \"help\" for all commands");
             Scanner cScanner = new Scanner(System.in);
             String c = cScanner.nextLine();
-            
+            for (Ops.op o : Ops.ops) {
+                
+            }
         }
     }
 }

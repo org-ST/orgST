@@ -11,5 +11,7 @@ public class AppData {
         AppData.put("Authors", "progman.task, Wdboyes13, chureki");
         AppData.put("Title", "orgST");
         AppData.put("Sponsors", "orgST Public, Archive, CalcTech, toyathing");
+        AppData.put("GitHub", "https://github.com/MakiDevelops/orgST");
+        AppData.put("Website", "https://orgst.ca");
     }
 }

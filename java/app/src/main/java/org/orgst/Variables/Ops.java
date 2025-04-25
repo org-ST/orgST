@@ -9,4 +9,7 @@ public class Ops {
             this.opName = opName;
         }
     }
+    public class op {
+        
+    }
 }

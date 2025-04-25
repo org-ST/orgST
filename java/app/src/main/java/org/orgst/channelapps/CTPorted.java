@@ -4,13 +4,6 @@ import org.orgst.Variables.Ops;
 import java.lang.*;
 public class CTPorted {
     public static String[][] ans;
-    public static boolean check_input(Object to_check){
-        if (to_check instanceof Integer || to_check instanceof Float) {
-            return true;
-        } else {
-            return false;
-        }
-    }
     public static void start(){
         System.out.println("CalcTrash V1.0.3 by @Table");
         while (true){

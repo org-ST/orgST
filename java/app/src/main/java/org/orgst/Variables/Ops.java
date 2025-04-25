@@ -10,8 +10,10 @@ public class Ops {
         }
     }
     public class op {
-        public Map<String, opInfo> op = new HashMap<>();
-        public op(String name , opInfo info){
+        public String name;
+        
+        public op(String name, opInfo info){
+            this.name = name;
             
         }
     }

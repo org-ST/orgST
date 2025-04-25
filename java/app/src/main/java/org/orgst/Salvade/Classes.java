@@ -12,6 +12,8 @@ public class Classes {
         int[] mana = {stats[2], stats[2]};
         int attack = stats[3];
         int crit = 25;
+        int[] statuses = {0, 0, 0, 0, 0};
+        int broken = 0;
         public enemy(String name, int[] stats, String[] skills, String[] dialogue, int aggro) {
 
         }

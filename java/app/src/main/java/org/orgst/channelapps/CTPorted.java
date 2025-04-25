@@ -2,7 +2,7 @@ package org.orgst.ChannelApps;
 import java.util.*;
 import org.orgst.Variables.Ops;
 public class CTPorted {
-    public static Float[] ans;
+    public static String[][] ans;
     public static boolean check_input(Object to_check){
         if (to_check instanceof Integer || to_check instanceof Float) {
             return true;
@@ -19,11 +19,14 @@ public class CTPorted {
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
                     String[] opTD = new String[o.info.argCount];
-                    opTD[0] = c;
+                    opTD[0] = o.info.opName;
                     Scanner opScanner = new Scanner(System.in);
                     for (int i = 0; i < o.info.argCount; i++) {
                         System.out.print("Please enter a number: ");
                         opTD[i+1] = opScanner.nextLine();
+                    }
+                    switch(opTD[0]) {
+                        case "add": String out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2])) ;
                     }
                 }
             }

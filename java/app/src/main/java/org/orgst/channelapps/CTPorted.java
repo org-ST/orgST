@@ -50,7 +50,9 @@ public class CTPorted {
             String c = cScanner.nextLine();
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
-                    
+                    for (int i = 0; i < o.info.argCount; i++) {
+                        
+                    }
                 }
             }
         }

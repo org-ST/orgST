@@ -28,5 +28,4 @@ public class Classes {
             this.attack = stats[3];
         }
     }
-    
 }

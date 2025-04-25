@@ -16,4 +16,7 @@ public class Ops {
             this.info = info;
         }
     }
+
+    op[] ops = {
+        new op("add", new opInfo(1, "add"))};
 }

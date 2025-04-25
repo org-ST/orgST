@@ -2,9 +2,6 @@ package org.orgst.ChannelApps;
 import java.util.*;
 public class CTPorted {
     public static Float[] ans;
-    public static void start(){
-    System.out.println("CalcTrash V1.0.3 by @Table");
-    }
     public static Object take_input(Boolean special, String prompt){
         try {
             System.out.println(prompt);
@@ -42,6 +39,12 @@ public class CTPorted {
             return true;
         } else {
             return false;
+        }
+    }
+    public static void start(){
+        System.out.println("CalcTrash V1.0.3 by @Table");
+        while (true){
+            System.out.println("Input operation, else, enter \"help\" for all commands");
         }
     }
 }

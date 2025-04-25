@@ -7,6 +7,7 @@ import org.orgst.Variables.ChannelData;
 public class Methods {
     public static void flag(){
         new Thread(() -> {org.orgst.Extras.Flag.start();}).start();
+        
     }
     public static void orgid(){
         Scanner inp = new Scanner(System.in);

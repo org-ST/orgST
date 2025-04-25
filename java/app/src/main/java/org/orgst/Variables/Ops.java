@@ -23,6 +23,6 @@ public class Ops {
         new op(new String[]{"mul", "multiply"}, new opInfo(2, "multiply")),
         new op(new String[]{"div", "divide"}, new opInfo(2, "divide")),
         new op(new String[]{"exp", "exponentiate"}, new opInfo(2, "exponentiate")),
-        new op(new String[]{"sqrt", "square root"}, new opInfo(1, ""))
+        new op(new String[]{"sqrt", "square root"}, new opInfo(1, "squareRoot"))
     };
 }

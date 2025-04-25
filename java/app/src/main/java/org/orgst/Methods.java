@@ -5,6 +5,9 @@ import java.util.Scanner;
 import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
+    public static void flag(){
+        new Thread(() -> {org.orgst.Extras.Flag.start();}).start();
+    }
     public static void orgid(){
         Scanner inp = new Scanner(System.in);
         System.out.print("What do you want to do\nC - Create orgID\nV - Verify orgID\n..> ");

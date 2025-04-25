@@ -27,6 +27,9 @@ public class App {
             case "orgid":
                 Methods.orgid();
                 break;
+            case "flag":
+                Methods.flag();
+                break;
             default:
                 break;
         }

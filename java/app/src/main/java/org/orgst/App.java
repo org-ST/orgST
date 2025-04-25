@@ -10,7 +10,8 @@ public class App {
         Methods.head();
         while (true){
         String Cmd = Methods.input();
-        switch (Cmd) {
+        String[] words = Cmd.split("\\s+");
+        switch (words[0]) {
             case "run": org.orgst.Extras.ChannelViewer.CV(args);
             case "help":
                 System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run"); 

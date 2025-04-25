@@ -19,7 +19,7 @@ public class CTPorted {
             String c = cScanner.nextLine();
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
-                    String[] opTD = new String[o.info.argCount];
+                    String[] opTD = new String[o.info.argCount + 1];
                     opTD[0] = o.info.opName;
                     Scanner opScanner = new Scanner(System.in);
                     for (int i = 0; i < o.info.argCount; i++) {

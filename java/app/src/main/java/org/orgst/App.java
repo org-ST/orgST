@@ -14,7 +14,7 @@ public class App {
         switch (words[0]) {
             case "run": org.orgst.Extras.ChannelViewer.CV(args);
             case "help":
-                System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run"); 
+                
                 break;
             case "sauce":
                 Methods.sauce();

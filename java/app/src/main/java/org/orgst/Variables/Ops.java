@@ -22,6 +22,6 @@ public class Ops {
         new op("sauce", new opInfo(1, "add")),
         new op("sub", new opInfo(2, "subtract")),
         new op("subtract", new opInfo(2, "subtract")),
-        
+        new op("mul", new opInfo(2, "multiply"))
     };
 }

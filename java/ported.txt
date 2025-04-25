@@ -18,7 +18,7 @@ PYextras:
     channels -> x
     channelapps:
         apptest.py -> (Needs Writing) org.orgst.ChannelApps.AppTester
-        calctrash.py -> (Needs Writing) org.orgst.ChannelApps.CalcTrash
+        calctrash.py -> org.orgst.ChannelApps.CalcTrash
 orgid:
     client.py -> (Needs Writing) org.orgst.OrgID.Client
 JSONs:
@@ -32,10 +32,6 @@ JSONs:
 ChannelViewer ToDo:
     1. Port ChannelApps
         1. Write org.orgst.ChannelApps.AppTester
-        2. Write org.orgst.ChannelApps.CalcTrash -> Will be just a Python3 runner for the normal CalcTrash
-
-    2. Make check command run appropriate ChannelApp
-        (In org.orgst.Extras.ChannelViewer.CVchannel)
 
 Functions To Port:
     1. orgid

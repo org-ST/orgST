@@ -38,7 +38,7 @@ public class ChannelViewer {
         ChannelData.Data data = ChannelData.channels.get(channel);
         System.out.println("Welcome to: " + data.name);
         while (true){
-            System.out.println("..> ");
+            System.out.print("..> ");
             String inp = scanner.nextLine();
             switch(inp){
                 // Make this actually open the file once ALL of them are ported to Java

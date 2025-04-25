@@ -24,7 +24,8 @@ public class Methods {
                     break;
                 }
                 case "hist" : {
-                    
+                    System.out.println("Command : Hist");
+                    System.out.println("Function : Prints App Data");
                 }
             }
         } else if (command.length == 1){

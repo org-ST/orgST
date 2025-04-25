@@ -7,11 +7,11 @@ public class RunCalcTrash {
     public static void start() {
         try {
             // Load the JAR and find the resource
-            InputStream in = RunCalcTrash.class.getResourceAsStream("/org/orgst/ChannelApps/AppDeps/calctrash.py");
+            InputStream in = RunCalcTrash.class.getResourceAsStream("calctrash.py");
 
             // Check if resource is found
             if (in == null) {
-                System.out.println("Resource not found: /org/orgst/ChannelApps/AppDeps/calctrash.py");
+                System.out.println("Resource not found: calctrash.py");
                 return; // Or handle error
             }
 

@@ -11,6 +11,7 @@ public class Client {
         PublicKey pub = KeyLoader.loadPublicKey();
         String passw = Encrypt.encrypt(password, pub);
         String usr = Encrypt.encrypt(username, pub);
+        
         } catch (Exception e){
             e.printStackTrace();
         }

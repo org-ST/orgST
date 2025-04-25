@@ -35,7 +35,7 @@ public class Methods {
                 }
                 case "sauce" : {
                     System.out.println("Command : Sauce");
-                    System.out.println("Function : Open's window with pride flag");
+                    System.out.println("Function : Prints all Channel Data");
                 }
             }
         } else if (command.length == 1){

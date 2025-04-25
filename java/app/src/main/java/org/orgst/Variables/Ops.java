@@ -1,23 +1,33 @@
 package org.orgst.Variables;
 public class Ops {
-    public class opInfo{
+    public static class opInfo {
         public int argCount;
         public String opName;
-        public opInfo(int argCount, String opName){
+
+        public opInfo(int argCount, String opName) {
             this.argCount = argCount;
             this.opName = opName;
         }
     }
-    public class op {
+
+    public static class op {
         public String[] name;
         public opInfo info;
-        public op(String[] name, opInfo info){
+
+        public op(String[] name, opInfo info) {
             this.name = name;
             this.info = info;
         }
+
+        public boolean hasName(String query) {
+            for (String n : name) {
+                if (n.equals(query)) return true;
+            }
+            return false;
+        }
     }
 
-    op[] ops = {
+    public static final op[] ops = {
         new op(new String[] {"add", "sauce"}, new opInfo(1, "add")),
         new op(new String[]{"sub", "subtract"}, new opInfo(2, "subtract")),
         new op(new String[]{"mul", "multiply"}, new opInfo(2, "multiply")),

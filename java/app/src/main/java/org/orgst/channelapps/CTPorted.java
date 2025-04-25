@@ -28,6 +28,9 @@ public class CTPorted {
                 } catch (Exception f){
                     System.out.println("Error: invalid value");
                 }
+            } else if (a.equals("cancel") && special == true){
+                System.out.println("Operation Canceled");
+                return false;
             }
         }
         return false;

@@ -33,5 +33,7 @@ public class Client {
         String username = inp.nextLine();
         System.out.print("Enter a password: ");
         String password = inp.nextLine();
+        String url = HOST + "/create";
+        submit(url, username, password);
     }
 }

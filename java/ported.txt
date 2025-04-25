@@ -32,7 +32,7 @@ JSONs:
 ChannelViewer ToDo:
     1. Port ChannelApps
         1. Write org.orgst.ChannelApps.AppTester
-        2. Write org.orgst.ChannelApps.CalcTash
+        2. Write org.orgst.ChannelApps.CalcTrash -> Will be just a Python3 runner for the normal CalcTrash
 
     2. Make check command run appropriate ChannelApp
         (In org.orgst.Extras.ChannelViewer.CVchannel)

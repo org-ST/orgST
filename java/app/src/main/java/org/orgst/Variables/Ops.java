@@ -9,19 +9,18 @@ public class Ops {
         }
     }
     public class op {
-        public String name;
+        public String[] name;
         public opInfo info;
-        public op(String name, opInfo info){
+        public op(String[] name, opInfo info){
             this.name = name;
             this.info = info;
         }
     }
 
     op[] ops = {
-        new op("add", new opInfo(1, "add")),
-        new op("sauce", new opInfo(1, "add")),
-        new op("sub", new opInfo(2, "subtract")),
-        new op("subtract", new opInfo(2, "subtract")),
-        new op("mul", new opInfo(2, "multiply"))
+        new op(new String[] {"add", "sauce"}, new opInfo(1, "add")),
+        new op(new String[]{"sub", "subtract"}, new opInfo(2, "subtract")),
+        new op(new String[]{"mul", "multiply"}, new opInfo(2, "multiply")),
+        
     };
 }

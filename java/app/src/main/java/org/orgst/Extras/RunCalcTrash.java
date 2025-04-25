@@ -1,8 +1,6 @@
 package org.orgst.Extras;
 import java.io.*;
 import java.nio.file.*;
-import java.util.jar.*;
-
 public class RunCalcTrash {
     public static void start() {
         try {

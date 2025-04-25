@@ -9,7 +9,7 @@ public class Methods {
         if (command.length == 2){
 
         } else if (command.length == 1){
-
+            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run");
         } else {
             
         }

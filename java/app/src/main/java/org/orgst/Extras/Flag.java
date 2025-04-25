@@ -1,7 +1,10 @@
 package org.orgst.Extras;
 
-import javax.swing.*;
-import java.io.*;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import java.io.InputStream;
+import java.io.IOException;
 import java.awt.image.BufferedImage;
 import javax.imageio.ImageIO;
 public class Flag {

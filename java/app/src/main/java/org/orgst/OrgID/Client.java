@@ -6,7 +6,7 @@ import java.net.http.HttpResponse;
 import java.util.Scanner;
 import java.security.PublicKey;
 public class Client {
-    public static String HOST = "http://localhost:5000";
+    public static String HOST = "https://orgid.onrender.com";
     public static void submit(String url, String username, String password){
         try {
         PublicKey pub = KeyLoader.loadPublicKey();

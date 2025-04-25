@@ -33,8 +33,6 @@ ChannelViewer ToDo:
     None
 
 Functions To Port:
-    1. orgid
-        (In org.orgst.OrgID.Client)
-    2. pride command
+    1. pride command
         (In org.orgst.Extras.Flag)
-    3. Salvade
+    2. Salvade

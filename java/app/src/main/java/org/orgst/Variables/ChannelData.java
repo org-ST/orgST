@@ -30,8 +30,7 @@ public class ChannelData {
                    "\nPeople: " + String.join(", ", people) +
                    "\nInfo: " + info +
                    "\nDate: " + date +
-                   "\nComment: " + comment +
-                   "\nFP: " + fp + "\n";
+                   "\nComment: " + comment + "\n";
         }
 
     }

@@ -26,6 +26,14 @@ public class Methods {
                 case "hist" : {
                     System.out.println("Command : Hist");
                     System.out.println("Function : Prints App Data");
+                    break;
+                }
+                case "git" : {
+                    System.out.println("Command : Git");
+                    System.out.println("Function : Prints GitHub Link");
+                }
+                case "sauce" : {
+                    
                 }
             }
         } else if (command.length == 1){

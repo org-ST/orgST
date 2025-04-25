@@ -1,7 +1,7 @@
 package org.orgst.ChannelApps;
 import java.util.*;
 import org.orgst.Variables.Ops;
-import java.math.*;
+import java.lang.*;
 public class CTPorted {
     public static String[][] ans;
     public static boolean check_input(Object to_check){
@@ -28,11 +28,13 @@ public class CTPorted {
                     }
                     String out;
                     switch(opTD[0]) {
-                        case "add": out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2])); break;
-                        case "subtract": out = Integer.toString(Integer.parseInt(opTD[1]) - Integer.parseInt(opTD[2])); break;
-                        case "multiply": out = Integer.toString(Integer.parseInt(opTD[1]) * Integer.parseInt(opTD[2])); break;
-                        case "divide": out = Integer.toString(Integer.parseInt(opTD[1]) / Integer.parseInt(opTD[2])); break;
+                        case "add": out = Double.toString(Double.parseDouble(opTD[1]) + Double.parseDouble(opTD[2])); break;
+                        case "subtract": out = Double.toString(Double.parseDouble(opTD[1]) - Double.parseDouble(opTD[2])); break;
+                        case "multiply": out = Double.toString(Double.parseDouble(opTD[1]) * Double.parseDouble(opTD[2])); break;
+                        case "divide": out = Double.toString(Double.parseDouble(opTD[1]) / Double.parseDouble(opTD[2])); break;
+                        case "exponentiate": Double.toString(Math.pow(Double.parseDouble(opTD[1]), Double.parseDouble(opTD[2]))); break;
                     }
+                    
                 }
             }
         }

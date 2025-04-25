@@ -39,7 +39,7 @@ public class ChannelData {
         String[] orgstpeople = {"@Wdboyes13", "@kaycutier (program.task)"};
         Data orgst = new Data("The OrgST Public Channel", null, "https://satelliteearth.wordpress.com", false, orgstpeople, "The public orgST channel.", "2024-12-21", "Welcome to OrgST's workspace.");
         String[] calctechpeople = {"@chureki (Table)", "@kaycutier (program.task)"};
-        Data calctech = new Data("The CalcTech Channel", new Runnable[]{() -> {org.orgst.ChannelApps.CalcTrash.Start();}}, "https://github.com/Chureki/CalcTrash", false, calctechpeople, "A channel for CalcTech!", "2024-12-21", "How about YOU try ASM+");
+        Data calctech = new Data("The CalcTech Channel", new Runnable[]{() -> {org.orgst.Extras.RunCalcTrash.start();}}, "https://github.com/Chureki/CalcTrash", false, calctechpeople, "A channel for CalcTech!", "2024-12-21", "How about YOU try ASM+");
         String[] toyaspeople = {"@toyathing"};
         Data toyas = new Data("Toyathings MMD channel", null, null, false, toyaspeople, "A channel for MMD!", "2024-12-21", "code thingy");
         String[] archivepeople = {"@kaycutier", "@Wdboyes13", "@chureki", "@toyathing"};

@@ -32,7 +32,8 @@ public class CTPorted {
                         case "subtract": out = Double.toString(Double.parseDouble(opTD[1]) - Double.parseDouble(opTD[2])); break;
                         case "multiply": out = Double.toString(Double.parseDouble(opTD[1]) * Double.parseDouble(opTD[2])); break;
                         case "divide": out = Double.toString(Double.parseDouble(opTD[1]) / Double.parseDouble(opTD[2])); break;
-                        case "exponentiate": Double.toString(Math.pow(Double.parseDouble(opTD[1]), Double.parseDouble(opTD[2]))); break;
+                        case "exponentiate": out = Double.toString(Math.pow(Double.parseDouble(opTD[1]), Double.parseDouble(opTD[2]))); break;
+                        case "squareRoot": out = Double.toString(Math.sqrt(Double.parseDouble(opTD[1])));
                     }
                     
                 }

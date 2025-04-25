@@ -1,4 +1,4 @@
-package org.orgst.ChannelApps;
+package org.orgst.channelapps;
 import java.util.Scanner;
 public class AppTester {
     public static void start(String[] args){

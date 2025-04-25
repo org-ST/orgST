@@ -45,6 +45,9 @@ public class CTPorted {
         System.out.println("CalcTrash V1.0.3 by @Table");
         while (true){
             System.out.println("Input operation, else, enter \"help\" for all commands");
+            Scanner cScanner = new Scanner(System.in);
+            String c = cScanner.nextLine();
+            
         }
     }
 }

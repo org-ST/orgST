@@ -51,7 +51,7 @@ public class CTPorted {
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
                     for (int i = 0; i < o.info.argCount; i++) {
-                        
+                        System.out.println("Please enter a number");
                     }
                 }
             }

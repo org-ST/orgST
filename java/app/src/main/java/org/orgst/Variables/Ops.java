@@ -20,7 +20,7 @@ public class Ops {
     op[] ops = {
         new op("add", new opInfo(1, "add")),
         new op("sauce", new opInfo(1, "add")),
-        new op("sub", new opInfo(0, null))
+        new op("sub", new opInfo(2, "sub"))
     
     
     

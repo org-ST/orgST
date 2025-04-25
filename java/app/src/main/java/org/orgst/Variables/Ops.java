@@ -21,6 +21,6 @@ public class Ops {
         new op(new String[] {"add", "sauce"}, new opInfo(1, "add")),
         new op(new String[]{"sub", "subtract"}, new opInfo(2, "subtract")),
         new op(new String[]{"mul", "multiply"}, new opInfo(2, "multiply")),
-        
+        new op(new String[]{"div", "divide"}, new opInfo(0, null))
     };
 }

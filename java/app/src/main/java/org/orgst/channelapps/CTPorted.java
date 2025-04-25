@@ -31,6 +31,8 @@ public class CTPorted {
             } else if (a.equals("cancel") && special == true){
                 System.out.println("Operation Canceled");
                 return false;
+            } else {
+                
             }
         }
         return false;

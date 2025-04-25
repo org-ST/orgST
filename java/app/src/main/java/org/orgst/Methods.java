@@ -18,6 +18,7 @@ public class Methods {
         Scanner inp = new Scanner(System.in);
         System.out.print("..> ");
         String Cmd = inp.nextLine();
+        inp.close();
         return Cmd;
     }
     public static void sauce() {

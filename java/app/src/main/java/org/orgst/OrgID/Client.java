@@ -8,6 +8,7 @@ import java.nio.charset.StandardCharsets;
 import java.security.interfaces.*;
 import java.io.*;
 import java.net.*;
+
 public class Client {
     public static String encrypt(String password, PublicKey publicKey) throws Exception {
         Cipher cipher = Cipher.getInstance("RSA/ECB/OAEPWithSHA-256AndMGF1Padding");

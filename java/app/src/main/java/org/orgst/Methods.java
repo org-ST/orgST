@@ -5,6 +5,9 @@ import java.util.Scanner;
 import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
+    public static void help(String[] command){
+
+    }
     public static void flag(){
         new Thread(() -> {org.orgst.Extras.Flag.start();}).start();
         try {

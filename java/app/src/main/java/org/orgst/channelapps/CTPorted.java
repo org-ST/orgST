@@ -1,4 +1,4 @@
-package org.orgst.ChannelApps;
+package org.orgst.channelapps;
 import java.util.*;
 import org.orgst.Variables.Ops;
 public class CTPorted {

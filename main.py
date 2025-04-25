@@ -12,7 +12,7 @@ with open('JSONs/maindata.json', 'r') as file:
 def main():
     match inp:
         case "orgid": fn.orgid() #port: 5
-        case "help": print("CMDS: hist, git, sauce, esc, run, super") # ported
+        case "help": print("CMDS: hist, git, sauce, esc, run") # ported
         case "hist": fn.hist() # ported
         case "git": print(" github link: ", jsonfile["github"]) #port: 1
         case "sauce": fn.sauce(yes_ins, jsonfile) # ported

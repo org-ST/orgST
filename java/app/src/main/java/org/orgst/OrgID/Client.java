@@ -6,6 +6,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 public class Client {
+    public static String HOST = "http://localhost:5000";
     public static void submit(String url, String username, String password){
         try {
         PublicKey pub = KeyLoader.loadPublicKey();
@@ -28,6 +29,7 @@ public class Client {
     }
     public static void crusr(){
         Scanner inp = new Scanner(System.in);
-        
+        System.out.print("Enter a username: ");
+        String username = inp.nextLine();
     }
 }

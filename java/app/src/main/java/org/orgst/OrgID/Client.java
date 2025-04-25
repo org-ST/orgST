@@ -11,8 +11,14 @@ public class Client {
         PublicKey pub = KeyLoader.loadPublicKey();
         String passw = Encrypt.encrypt(password, pub);
         String usr = Encrypt.encrypt(username, pub);
+        String json = "{\"usr\":\"" + usr + "\", \"pass\":\"" + passw + "\"}";
         HttpClient client = HttpClient.newHttpClient();
-        
+        HttpRequest request = HttpRequest.newBuilder()
+            .uri(URI.create(url))
+            .header("Content-Type", "application/json")
+            .POST(HttpRequest.BodyPublishers.ofString(json))
+            .build();
+
         } catch (Exception e){
             e.printStackTrace();
         }

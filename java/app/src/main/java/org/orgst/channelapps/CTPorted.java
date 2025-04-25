@@ -42,7 +42,7 @@ public class CTPorted {
                     System.out.println(c + " Not Found");
                     System.out.println("Available operations:");
                     for (Ops.op os : Ops.ops) {
-                        System.out.println("- " + String.join(", ", o.name));
+                        System.out.println("- " + String.join(", ", os.name));
                     }
                 }
             }

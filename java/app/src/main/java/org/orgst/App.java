@@ -33,6 +33,8 @@ public class App {
             case "esc":
                 System.exit(0);
                 break;
+            case "git":
+                System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
             default:
                 break;
         }

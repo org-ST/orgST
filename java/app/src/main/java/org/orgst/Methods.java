@@ -21,6 +21,7 @@ public class Methods {
                 case "orgid" : {
                     System.out.println("Command : orgID");
                     System.out.println("Function : Start's orgID App");
+                    break;
                 }
             }
         } else if (command.length == 1){

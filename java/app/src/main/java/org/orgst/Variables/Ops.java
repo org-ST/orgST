@@ -1,5 +1,5 @@
 package org.orgst.Variables;
-
+import java.util.*;
 public class Ops {
     public class opInfo{
         public int argCount;
@@ -10,6 +10,6 @@ public class Ops {
         }
     }
     public class op {
-        
+        public Map<String, opInfo> op = new HashMap<>();
     }
 }

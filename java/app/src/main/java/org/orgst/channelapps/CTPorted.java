@@ -25,7 +25,6 @@ public class CTPorted {
                         System.out.print("Please enter a number: ");
                         opTD[i+1] = opScanner.nextLine();
                     }
-
                 }
             }
         }

@@ -28,9 +28,6 @@ public class App {
             case "orgid":
                 Methods.orgid();
                 break;
-            case "pride":
-                Methods.flag();
-                break;
             case "esc":
                 Methods.clear();
                 System.exit(0);

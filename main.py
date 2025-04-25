@@ -17,7 +17,7 @@ def main():
         case "git": print(" github link: ", jsonfile["github"]) #port: 1
         case "sauce": fn.sauce(yes_ins, jsonfile) # ported
         case "esc": return None #port: 2
-        case "run": fn.run() #port: 3
+        case "run": fn.run() #ported
         case 'pride': fn.pride() #port: 4
 
     fn.restart_program()
@@ -38,5 +38,5 @@ ChannelViewer To Be Ported:
     Just need to finish porting channelapps/*
     Once thats done finish check command to open them 
     ONLY port products command IF products start actually being used
-    
+
 """

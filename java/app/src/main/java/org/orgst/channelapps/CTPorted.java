@@ -1,6 +1,7 @@
 package org.orgst.ChannelApps;
 import java.util.*;
 import org.orgst.Variables.Ops;
+import java.math.*;
 public class CTPorted {
     public static String[][] ans;
     public static boolean check_input(Object to_check){
@@ -30,6 +31,7 @@ public class CTPorted {
                         case "add": out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2])); break;
                         case "subtract": out = Integer.toString(Integer.parseInt(opTD[1]) - Integer.parseInt(opTD[2])); break;
                         case "multiply": out = Integer.toString(Integer.parseInt(opTD[1]) * Integer.parseInt(opTD[2])); break;
+                        case "divide": out = Integer.toString(Integer.parseInt(opTD[1]) / Integer.parseInt(opTD[2])); break;
                     }
                 }
             }

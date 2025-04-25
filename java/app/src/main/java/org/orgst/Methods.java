@@ -6,7 +6,13 @@ import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
     public static void help(String[] command){
+        if (command.length == 2){
 
+        } else if (command.length == 1){
+
+        } else {
+            
+        }
     }
     public static void flag(){
         new Thread(() -> {org.orgst.Extras.Flag.start();}).start();

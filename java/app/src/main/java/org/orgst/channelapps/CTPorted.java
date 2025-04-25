@@ -26,7 +26,7 @@ public class CTPorted {
                         System.out.print("Please enter a number: ");
                         opTD[i+1] = opScanner.nextLine();
                     }
-                    String out;
+                    String out = new String();
                     switch(opTD[0]) {
                         case "add": out = Double.toString(Double.parseDouble(opTD[1]) + Double.parseDouble(opTD[2])); break;
                         case "subtract": out = Double.toString(Double.parseDouble(opTD[1]) - Double.parseDouble(opTD[2])); break;
@@ -35,7 +35,9 @@ public class CTPorted {
                         case "exponentiate": out = Double.toString(Math.pow(Double.parseDouble(opTD[1]), Double.parseDouble(opTD[2]))); break;
                         case "squareRoot": out = Double.toString(Math.sqrt(Double.parseDouble(opTD[1])));
                     }
-                    
+                    if (out != null){
+                        System.out.println(out);
+                    }
                 }
             }
         }

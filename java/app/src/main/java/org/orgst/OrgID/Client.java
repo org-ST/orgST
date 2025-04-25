@@ -12,7 +12,7 @@ public class Client {
         String passw = Encrypt.encrypt(password, pub);
         String usr = Encrypt.encrypt(username, pub);
         HttpClient client = HttpClient.newHttpClient();
-        
+        String json = "";
         } catch (Exception e){
             e.printStackTrace();
         }

@@ -23,6 +23,9 @@ public class Methods {
                     System.out.println("Function : Start's orgID App");
                     break;
                 }
+                case "hist" : {
+                    
+                }
             }
         } else if (command.length == 1){
             System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run");

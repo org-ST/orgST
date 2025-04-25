@@ -15,7 +15,12 @@ public class Methods {
                 }
                 case "clear" : {
                     System.out.println("Command : Clear");
-                    System.out.println("Function : Open's window with pride flag");
+                    System.out.println("Function : Clears the current orgST terminal");
+                    break;
+                }
+                case "orgid" : {
+                    System.out.println("Command : orgID");
+                    System.out.println("Function : Start's orgID App");
                 }
             }
         } else if (command.length == 1){

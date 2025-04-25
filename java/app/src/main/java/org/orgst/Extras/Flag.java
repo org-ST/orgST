@@ -12,7 +12,7 @@ public class Flag {
             JFrame frame = new JFrame("Pride");
             ImageIcon flag = new ImageIcon(img);
             JLabel flagLabel = new JLabel(flag);
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
             frame.setSize(300, 200);
             frame.getContentPane().add(flagLabel); // add button to frame
             frame.setVisible(true);

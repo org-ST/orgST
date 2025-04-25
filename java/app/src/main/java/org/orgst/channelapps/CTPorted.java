@@ -25,9 +25,11 @@ public class CTPorted {
                         System.out.print("Please enter a number: ");
                         opTD[i+1] = opScanner.nextLine();
                     }
+                    String out;
                     switch(opTD[0]) {
-                        case "add": String out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2]));
-                        
+                        case "add": out = Integer.toString(Integer.parseInt(opTD[1]) + Integer.parseInt(opTD[2])); break;
+                        case "subtract": out = Integer.toString(Integer.parseInt(opTD[1]) - Integer.parseInt(opTD[2])); break;
+                        case "multiply": out = Integer.toString(Integer.parseInt(opTD[1]) * Integer.parseInt(opTD[2])); break;
                     }
                 }
             }

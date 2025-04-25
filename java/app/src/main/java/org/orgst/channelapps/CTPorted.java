@@ -49,7 +49,9 @@ public class CTPorted {
             Scanner cScanner = new Scanner(System.in);
             String c = cScanner.nextLine();
             for (Ops.op o : Ops.ops) {
-                
+                if (o.hasName(c)) {
+                    
+                }
             }
         }
     }

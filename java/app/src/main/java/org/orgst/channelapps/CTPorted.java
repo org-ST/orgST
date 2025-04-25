@@ -1,7 +1,6 @@
 package org.orgst.ChannelApps;
 import java.util.*;
 import org.orgst.Variables.Ops;
-import java.lang.*;
 public class CTPorted {
     public static String[][] ans;
     public static void start(){

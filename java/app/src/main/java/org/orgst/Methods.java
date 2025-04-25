@@ -7,7 +7,9 @@ import org.orgst.Variables.ChannelData;
 public class Methods {
     public static void help(String[] command){
         if (command.length == 2){
-
+            switch(command[1]){
+                
+            }
         } else if (command.length == 1){
             System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run");
         } else {

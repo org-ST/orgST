@@ -2,6 +2,7 @@ package org.orgst;
 import java.util.Map;
 import java.util.Scanner;
 
+import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
     public static void head() {

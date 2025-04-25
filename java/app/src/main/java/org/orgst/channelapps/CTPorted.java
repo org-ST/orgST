@@ -18,9 +18,12 @@ public class CTPorted {
             String c = cScanner.nextLine();
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
+                    String[] opTD = new String[o.info.argCount];
                     for (int i = 0; i < o.info.argCount; i++) {
                         System.out.println("Please enter a number");
+                        
                     }
+
                 }
             }
         }

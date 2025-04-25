@@ -1,0 +1,86 @@
+name: Build Native Images
+
+on:
+  push:
+    branches: [main]
+
+env:
+  JAR_PATH: jars/app-all.jar
+
+jobs:
+  build-linux:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up GraalVM (Linux)
+      uses: ayltai/setup-graalvm@v1
+      with:
+        java-version: '21'
+        graalvm-version: '21.0.0'
+        native-image: true
+
+    - name: Build Linux x86_64 native image
+      run: |
+        native-image --no-fallback -jar "$JAR_PATH" linux-x86_64
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: linux-native
+        path: linux-x86_64
+
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up GraalVM (Windows)
+      uses: ayltai/setup-graalvm@v1
+      with:
+        java-version: '21'
+        graalvm-version: '21.0.0'
+        native-image: true
+
+    - name: Build Windows native image
+      run: |
+        native-image.cmd --no-fallback -jar "%JAR_PATH%" windows-x86_64.exe
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: windows-native
+        path: windows-x86_64.exe
+
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up GraalVM (macOS)
+      uses: ayltai/setup-graalvm@v1
+      with:
+        java-version: '21'
+        graalvm-version: '21.0.0'
+        native-image: true
+
+    - name: Build macOS aarch64 image
+      run: |
+        native-image --target-arch=aarch64 --no-fallback -jar "$JAR_PATH" macos-aarch64
+
+    - name: Build macOS x86_64 image
+      run: |
+        native-image --target-arch=x86_64 --no-fallback -jar "$JAR_PATH" macos-x86_64
+
+    - name: Create universal binary
+      run: |
+        lipo -create -output macos-universal macos-aarch64 macos-x86_64
+
+    - uses: actions/upload-artifact@v4
+      with:
+        name: macos-native
+        path: |
+          macos-aarch64
+          macos-x86_64
+          macos-universal

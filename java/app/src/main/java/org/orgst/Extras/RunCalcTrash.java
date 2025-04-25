@@ -8,7 +8,7 @@ public class RunCalcTrash {
             Path tempScript = Files.createTempFile("calctrash", ".py");
 
             // Load the JAR and find the resource
-            InputStream in = RunCalcTrash.class.getResourceAsStream("/org/orgst/ChannelApps/AppDeps/calctrash.py");
+            InputStream in = RunCalcTrash.class.getResourceAsStream("calctrash.py");
             Files.copy(in, tempScript, StandardCopyOption.REPLACE_EXISTING);
 
             // Make sure it's readable & executable

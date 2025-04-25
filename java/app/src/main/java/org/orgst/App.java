@@ -32,6 +32,7 @@ public class App {
                 Methods.flag();
                 break;
             case "esc":
+                Methods.clear();
                 System.exit(0);
                 break;
             case "git":

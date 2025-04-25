@@ -13,7 +13,7 @@ public class App {
         switch (Cmd) {
             case "run": org.orgst.Extras.ChannelViewer.CV(args);
             case "help":
-                System.out.println("Cmd's: hist, git, sauce, esc, run, super"); 
+                System.out.println("Cmd's: orgid, hist, git, sauce, esc, run, super"); 
                 break;
             case "sauce":
                 Methods.sauce();
@@ -23,6 +23,9 @@ public class App {
                 break;
             case "hist":
                 Methods.hist();
+                break;
+            case "orgid":
+                Methods.orgid();
                 break;
             default:
                 break;

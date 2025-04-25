@@ -36,4 +36,13 @@ public class Client {
         String url = HOST + "/create";
         submit(url, username, password);
     }
+    public static void verusr(){
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Enter your username: ");
+        String username = inp.nextLine();
+        System.out.print("Enter your password: ");
+        String password = inp.nextLine();
+        String url = HOST + "/verify";
+        submit(url, username, password);
+    }
 }

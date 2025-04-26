@@ -1,8 +1,4 @@
 package org.orgst.OrgID;
-<<<<<<< HEAD
-=======
-import java.security.*;
->>>>>>> dfacd1d47010f495def0263b145f5ade0d7f0da6
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;

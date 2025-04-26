@@ -1,5 +1,5 @@
 package org.orgst.channelapps;
-import java.util.*;
+import java.util.Scanner;
 import org.orgst.Variables.Ops;
 public class CTPorted {
     public static String[][] ans;

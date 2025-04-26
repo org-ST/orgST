@@ -5,7 +5,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.orgst.Variables.ChannelData;
-
+import java.util.List;
+import java.util.Arrays;
 public class Channel {
     public static void Start(ChannelData.Data data) {
         Stage stage = new Stage(); // create a NEW stage

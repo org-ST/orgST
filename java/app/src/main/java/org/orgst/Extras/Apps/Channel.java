@@ -15,7 +15,7 @@ public class Channel {
         Button site = new Button("WebSite");
         Button date = new Button("Date");
         Button comm = new Button("Comment");
-        
+        List<Button> buttons = Arrays.asList(name, site, date, comm);
         name.setOnAction(e -> label.setText(data.name));
         site.setOnAction(e -> label.setText(data.website));
         date.setOnAction(e -> label.setText(data.date));

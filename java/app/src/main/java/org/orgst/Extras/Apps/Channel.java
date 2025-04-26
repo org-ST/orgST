@@ -4,8 +4,6 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
-import org.orgst.App;
 import org.orgst.Variables.ChannelData;
 import java.util.List;
 import java.util.Arrays;

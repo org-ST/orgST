@@ -5,7 +5,7 @@ import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 public class ChannelMenu extends Application {
-    Button[] buttons = new Button[ChannelData.Channels.length];
+    
     int btnY = 20;
     int btnX = 20;
     public static void main(String[] args) {
@@ -13,6 +13,7 @@ public class ChannelMenu extends Application {
         launch(args);
     }
     public void start(Stage primStage){
+        Button[] buttons = new Button[ChannelData.Channels.length];
         Group root = new Group();
         for (int i = 0; i < ChannelData.Channels.length; i++){
             buttons[i] = new Button(ChannelData.Channels[i]);

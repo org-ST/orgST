@@ -32,7 +32,7 @@ public class ChannelData {
         }
 
     }
-    public static String[] Channels = {"OrgST Public Channel", "CalcTech Channel", "Toyathings MMD Channel", "The Archive Channel", "The Debuc Channel", "The Home Room Channel"};
+    public static String[] Channels = {"OrgST Public Channel", "CalcTech Channel", "Toyathings MMD Channel", "The Archive Channel", "The Debug Channel", "The Home Room Channel"};
     public static HashMap<String, Data> channels = new HashMap<>();
     static {
         channels = new HashMap<>();

@@ -4,7 +4,6 @@ import javafx.application.*;
 import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
-import javafx.scene.control.Menu;
 public class ChannelMenu extends Application {
     Button[] buttons;
     int btnY = 20;

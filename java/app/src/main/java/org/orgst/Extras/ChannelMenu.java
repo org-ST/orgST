@@ -14,7 +14,7 @@ public class ChannelMenu extends Application {
         for (int i = 0; i < ChannelData.Channels.length; i++){
             buttons[i] = new Button(ChannelData.Channels[i]);
         }
-                for (int i = 0; i < buttons.length; i++){
+            for (int i = 0; i < buttons.length; i++){
             final int index = i;
             buttons[i].setOnAction(e -> {});
             buttons[i].setTranslateX(btnX);

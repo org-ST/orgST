@@ -12,7 +12,7 @@ public class App {
         String Cmd = Methods.input();
         String[] words = Cmd.split("\\s+");
         switch (words[0]) {
-            case "run": org.orgst.Extras.ChannelViewer.CV(args);
+            case "run": Methods.run();
             case "help":
                 Methods.help(words);
                 break;

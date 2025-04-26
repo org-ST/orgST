@@ -23,7 +23,7 @@ public class Channel {
         for (int i = 0; i < buttons.size(); i++) {
             Button button = buttons.get(i);
             button.setLayoutX(20);
-            button.setLayoutY(20 + i * 40);
+            button.setLayoutY(20 + (i * 40));
         }
         Group root = new Group(label, name, site, date, comm);
         Scene scene = new Scene(root, 300, 200);

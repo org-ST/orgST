@@ -28,7 +28,7 @@ public class Channel {
             button.setLayoutY(20 + (i * 40));
         }
         Group root = new Group(label, name, site, date, comm);
-        Scene scene = new Scene(root, 300, 200);
+        Scene scene = new Scene(root, 500, 200);
         stage.setScene(scene);
         stage.setTitle(data.name);
         stage.show();

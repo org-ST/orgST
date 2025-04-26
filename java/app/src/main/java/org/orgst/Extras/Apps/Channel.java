@@ -4,6 +4,8 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+
+import org.orgst.App;
 import org.orgst.Variables.ChannelData;
 import java.util.List;
 import java.util.Arrays;
@@ -29,6 +31,9 @@ public class Channel {
         }
         Group root = new Group(label, name, site, date, comm);
         Scene scene = new Scene(root, 500, 200);
+        stage.setOnCloseRequest(e -> {
+            org.orgst.App.main(null);
+        });
         stage.setScene(scene);
         stage.setTitle(data.name);
         stage.show();

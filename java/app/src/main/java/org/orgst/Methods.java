@@ -5,6 +5,7 @@ import java.util.Scanner;
 import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
+    // Contains help entries for every function in this file
     public static void help(String[] command){
         if (command.length == 2){
             switch(command[1]){

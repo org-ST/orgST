@@ -8,6 +8,10 @@ public class ChannelMenu extends Application {
     Button[] buttons;
     int btnY = 20;
     int btnX = 20;
+    public static void main(String[] args) {
+        System.out.println("Launching");
+        launch(args);
+    }
     public void start(Stage primStage){
         Group root = new Group();
         for (int i = 0; i < ChannelData.Channels.length; i++){

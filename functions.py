@@ -47,7 +47,7 @@ def pride():
 
 def head():
     import socket
-    print(f"orgST © 2024-2025 by Wdboyes13, progman.task is licensed under CC BY-NC-ND 4.0\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
+    print(f"orgST by Wdboyes13, progman.task is marked with CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
     print("---------------------------------------")
     print("orgST Terminal 1.8")
     print("Refer to the readme for more information.")

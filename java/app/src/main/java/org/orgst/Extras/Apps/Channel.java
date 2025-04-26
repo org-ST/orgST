@@ -1,0 +1,47 @@
+package org.orgst.Extras.Apps;
+import javafx.scene.Scene;
+import javafx.scene.Group;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import org.orgst.Variables.ChannelData;
+import java.util.List;
+import java.util.Arrays;
+public class Channel {
+    public static void Start(ChannelData.Data data) {
+        Stage stage = new Stage(); // create a NEW stage
+        Label label = new Label();
+        label.setTranslateY(80);
+        label.setTranslateX(125);
+        Button name = new Button("Name");
+        Button site = new Button("WebSite");
+        Button date = new Button("Date");
+        Button comm = new Button("Comment");
+        List<Button> buttons = Arrays.asList(name, site, date, comm);
+        name.setOnAction(e -> label.setText(data.name));
+        site.setOnAction(e -> {
+                    if (data.website !=null){
+                        label.setText("Opening..."); org.orgst.Extras.WebOpener.open(data.website);
+                    } else {
+                        label.setText("There is no website :(");
+                    }
+
+                }
+            );
+        date.setOnAction(e -> label.setText(data.date));
+        comm.setOnAction(e -> label.setText(data.comment));
+        for (int i = 0; i < buttons.size(); i++) {
+            Button button = buttons.get(i);
+            button.setLayoutX(20);
+            button.setLayoutY(20 + (i * 40));
+        }
+        Group root = new Group(label, name, site, date, comm);
+        Scene scene = new Scene(root, 500, 200);
+        stage.setOnCloseRequest(e -> {
+            org.orgst.App.main(null);
+        });
+        stage.setScene(scene);
+        stage.setTitle(data.name);
+        stage.show();
+    }
+}

@@ -28,6 +28,6 @@ public class ChannelMenu extends Application {
         }
         Scene scene = new Scene(root, 400, 400);
         primStage.setScene(scene);
-        
+        primStage.show();
     }
 }

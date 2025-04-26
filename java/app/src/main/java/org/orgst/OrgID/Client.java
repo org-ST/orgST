@@ -7,7 +7,7 @@ import java.util.Scanner;
 import java.security.PublicKey;
 public class Client {
     public static String HOST = "https://orgid.onrender.com";
-    public static void submit(String url, String username, String password){
+    public static int submit(String url, String username, String password){
         try {
         PublicKey pub = KeyLoader.loadPublicKey();
         String passw = Encrypt.encrypt(password, pub);
@@ -23,8 +23,10 @@ public class Client {
 
         System.out.println("Status: " + response.statusCode());
         System.out.println("Body: " + response.body());
+        return response.statusCode();
         } catch (Exception e){
             e.printStackTrace();
+            return 1;
         }
     }
     public static void crusr(){

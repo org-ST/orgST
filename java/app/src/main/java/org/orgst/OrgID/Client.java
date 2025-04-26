@@ -40,16 +40,22 @@ public class Client {
         switch(res){
             case 200 : return true;
             case 409 : return false;
+            default : return false;
         }
-        return false;
     }
-    public static void verusr(){
+    public static boolean verusr(){
         Scanner inp = new Scanner(System.in);
         System.out.print("Enter your username: ");
         String username = inp.nextLine();
         System.out.print("Enter your password: ");
         String password = inp.nextLine();
         String url = HOST + "/verify";
-        submit(url, username, password);
+        int res = submit(url, username, password);
+        switch(res){
+            case 200 : return true;
+            case 404 : return false;
+            case 401 : return false;
+            default : return false;
+        }
     }
 }

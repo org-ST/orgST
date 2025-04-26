@@ -1,9 +1,9 @@
 package org.orgst.Extras.Apps;
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class Channel extends Application {
@@ -16,7 +16,7 @@ public class Channel extends Application {
             label.setText("Button was pressed! 🎉");
         });
 
-        VBox root = new VBox(10, label, button);
+        Group root = new Group();
         Scene scene = new Scene(root, 300, 200);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Text Update Demo");

@@ -9,7 +9,7 @@ import javafx.stage.Stage;
 public class Channel extends Application {
     @Override
     public void start(Stage primaryStage) {
-        Label label = new Label("");
+        Label label = new Label();
         Button button = new Button("Press me");
 
         button.setOnAction(e -> {

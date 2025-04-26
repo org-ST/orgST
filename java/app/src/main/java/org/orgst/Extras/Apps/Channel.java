@@ -30,7 +30,7 @@ public class Channel extends Application {
         Group root = new Group();
         Scene scene = new Scene(root, 300, 200);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Text Update Demo");
+        primaryStage.setTitle(data.name);
         primaryStage.show();
     }
 

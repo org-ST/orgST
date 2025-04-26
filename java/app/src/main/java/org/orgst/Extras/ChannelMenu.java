@@ -26,6 +26,7 @@ public class ChannelMenu extends Application {
             root.getChildren().add(buttons[i]);
             btnY += 40;
         }
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 400, 400);
+        
     }
 }

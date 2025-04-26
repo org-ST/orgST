@@ -52,6 +52,7 @@ public class CTPorted {
                     if (out != null){
                         System.out.println(out);
                     }
+                    break;
                 } 
             } if (!found) {
                 System.out.println(c + " Not Found");

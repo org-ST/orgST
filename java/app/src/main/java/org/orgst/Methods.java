@@ -77,7 +77,7 @@ public class Methods {
         System.out.print("\033[H\033[2J");
         System.out.flush();
         System.out.println("orgST by Wdboyes13, progman.task is marked with CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/\n" + "'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.");
-        System.out.println("---------------------------------------");
+        System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("orgST Terminal 1.8 - Java Ported");
         System.out.println("Ported by Wdboyes13");
         System.out.println("Refer to the readme for more information.");

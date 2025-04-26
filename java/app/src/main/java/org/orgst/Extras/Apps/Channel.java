@@ -20,7 +20,11 @@ public class Channel {
         site.setOnAction(e -> label.setText(data.website));
         date.setOnAction(e -> label.setText(data.date));
         comm.setOnAction(e -> label.setText(data.comment));
-        
+        for (int i = 0; i < buttons.size(); i++) {
+            Button button = buttons.get(i);
+            button.setLayoutX(20);          // X position (constant, left aligned)
+            button.setLayoutY(20 + i * 40);  // Y position (stacked vertically)
+        }
         Group root = new Group(label, name, site, date, comm);
         Scene scene = new Scene(root, 300, 200);
         stage.setScene(scene);

@@ -29,14 +29,19 @@ public class Client {
             return 1;
         }
     }
-    public static void crusr(){
+    public static boolean crusr(){
         Scanner inp = new Scanner(System.in);
         System.out.print("Enter a username: ");
         String username = inp.nextLine();
         System.out.print("Enter a password: ");
         String password = inp.nextLine();
         String url = HOST + "/create";
-        submit(url, username, password);
+        int res = submit(url, username, password);
+        switch(res){
+            case 200 : return true;
+            case 409 : return false;
+        }
+        return false;
     }
     public static void verusr(){
         Scanner inp = new Scanner(System.in);

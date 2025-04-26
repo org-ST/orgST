@@ -18,7 +18,7 @@ public class ChannelMenu extends Application {
         for (int i = 0; i < ChannelData.Channels.length; i++){
             buttons[i] = new Button(ChannelData.Channels[i]);
             final int index = i;
-            buttons[i].setOnAction(e -> {ChannelData.channels.get(ChannelData.Channels[index]);});
+            buttons[i].setOnAction(e -> {org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));});
             buttons[i].setTranslateX(btnX);
             buttons[i].setTranslateY(btnY);
             root.getChildren().add(buttons[i]);

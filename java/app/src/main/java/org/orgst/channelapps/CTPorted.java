@@ -52,7 +52,7 @@ public class CTPorted {
                     if (out != null){
                         System.out.println(out);
                     }
-                } else {
+                } if (!found) {
                     System.out.println(c + " Not Found");
                     System.out.println("Available operations:");
                     for (Ops.op os : Ops.ops) {

@@ -27,6 +27,7 @@ public class ChannelMenu extends Application {
             btnY += 40;
         }
         Scene scene = new Scene(root, 400, 400);
+        primStage.setScene(scene);
         
     }
 }

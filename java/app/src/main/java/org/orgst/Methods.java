@@ -104,4 +104,14 @@ public class Methods {
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
     }
+    public static void run(){
+        System.out.print("Which ChannelViewer do you want\n1 - UI\n2 - Terminal\nPlease Enter your option\n..>");
+        String sel = new Scanner(System.in).nextLine();
+        String[] args = {};
+        switch(sel){
+            case "1" : org.orgst.Extras.ChannelMenu.main(args);
+            case "2" : org.orgst.Extras.ChannelViewer.CV(args);
+        }
+        
+    }
 }

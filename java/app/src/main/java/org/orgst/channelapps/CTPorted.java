@@ -6,11 +6,13 @@ public class CTPorted {
     public static void start(){
         System.out.println("CalcTrash V1.0.3 by @Table");
         while (true){
+            boolean found = false;
             System.out.println("Input operation, else, enter \"help\" for all commands");
             Scanner cScanner = new Scanner(System.in);
             String c = cScanner.nextLine();
             for (Ops.op o : Ops.ops) {
                 if (o.hasName(c)) {
+                    found = true;
                     String[] opTD = new String[o.info.argCount + 1];
                     opTD[0] = o.info.opName;
                     Scanner opScanner = new Scanner(System.in);

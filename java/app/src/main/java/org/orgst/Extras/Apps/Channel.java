@@ -11,12 +11,22 @@ public class Channel extends Application {
     @Override
     public void start(Stage primaryStage) {
         Label label = new Label();
-        Button button = new Button("Press me");
-
-        button.setOnAction(e -> {
-            label.setText("Button was pressed! 🎉");
+        Button name = new Button("Name");
+        Button site = new Button("WebSite");
+        Button date = new Button("Date");
+        Button comm = new Button("Comment");
+        name.setOnAction(e -> {
+            label.setText(data.name);
         });
-
+        site.setOnAction(e -> {
+            label.setText(data.website);
+        });
+        date.setOnAction(e -> {
+            label.setText(data.date);
+        });
+        comm.setOnAction(e -> {
+            label.setText(data.comment);
+        });
         Group root = new Group();
         Scene scene = new Scene(root, 300, 200);
         primaryStage.setScene(scene);

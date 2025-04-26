@@ -5,7 +5,7 @@ import javafx.stage.*;
 import javafx.scene.*;
 import javafx.scene.control.Button;
 public class ChannelMenu extends Application {
-    Button[] buttons;
+    Button[] buttons = new Button[ChannelData.Channels.length];
     int btnY = 20;
     int btnX = 20;
     public static void main(String[] args) {

@@ -12,7 +12,7 @@ public class Channel {
         Stage stage = new Stage(); // create a NEW stage
         Label label = new Label();
         label.setTranslateY(80);
-        label.setTranslateX(175);
+        label.setTranslateX(125);
         Button name = new Button("Name");
         Button site = new Button("WebSite");
         Button date = new Button("Date");

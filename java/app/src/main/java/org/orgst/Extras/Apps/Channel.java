@@ -7,6 +7,7 @@ import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import org.orgst.Variables.ChannelData;
 public class Channel extends Application {
+    static ChannelData.Data data;
     @Override
     public void start(Stage primaryStage) {
         Parameters data = getParameters();
@@ -24,7 +25,8 @@ public class Channel extends Application {
         primaryStage.show();
     }
 
-    public static void Start(ChannelData.Data data) {
+    public static void Start(ChannelData.Data dataarg) {
+        data = dataarg;
         launch();
     }
 }

@@ -19,7 +19,7 @@ public class Channel {
         Button comm = new Button("Comment");
         List<Button> buttons = Arrays.asList(name, site, date, comm);
         name.setOnAction(e -> label.setText(data.name));
-        site.setOnAction(e -> label.setText(data.website));
+        site.setOnAction(e -> label.setText("Opening..."));
         date.setOnAction(e -> label.setText(data.date));
         comm.setOnAction(e -> label.setText(data.comment));
         for (int i = 0; i < buttons.size(); i++) {

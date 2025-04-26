@@ -46,7 +46,7 @@ public class ChannelData {
         Data archive = new Data("The Archive Channel", null, null, false, archivepeople, "A channel that archives ANYTHING orgST", "2023-12-21", "when we said ANYTHING, we meant it, sleep tight :)");
         String[] debugpeople = {"@keycutier", "@chureki"};
         String[] args = {};
-        Data debug = new Data("The Debug Channel", new Runnable[]{() -> {org.orgst.Extras.ChannelMenu.main(orgstpeople);;}}, null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.");
+        Data debug = new Data("The Debug Channel", new Runnable[]{() -> {org.orgst.Extras.ChannelMenu.main(args);;}}, null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.");
         String[] horopeople = {"@kaycutier"};
         Data horo = new Data("The Home Room Channel", null, null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!");
         channels.put("OrgST Public Channel", orgst);

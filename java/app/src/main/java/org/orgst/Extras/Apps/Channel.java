@@ -11,6 +11,8 @@ public class Channel {
     public static void Start(ChannelData.Data data) {
         Stage stage = new Stage(); // create a NEW stage
         Label label = new Label();
+        label.setTranslateY(80);
+        
         Button name = new Button("Name");
         Button site = new Button("WebSite");
         Button date = new Button("Date");

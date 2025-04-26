@@ -21,7 +21,11 @@ public class Channel {
         name.setOnAction(e -> label.setText(data.name));
         site.setOnAction(e -> {
                     if (data.website !=null){
-                    label.setText("Opening..."); org.orgst.Extras.WebOpener.open(data.website);}
+                        label.setText("Opening..."); org.orgst.Extras.WebOpener.open(data.website);
+                    } else {
+                        label.setText("There is no website :(");
+                    }
+
                 }
             );
         date.setOnAction(e -> label.setText(data.date));

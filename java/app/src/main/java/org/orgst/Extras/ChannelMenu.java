@@ -15,7 +15,7 @@ public class ChannelMenu extends Application {
         }
             for (int i = 0; i < buttons.length; i++){
             final int index = i;
-            buttons[i].setOnAction(e -> {});
+            buttons[i].setOnAction(e -> {System.out.println(index);});
             buttons[i].setTranslateX(btnX);
             buttons[i].setTranslateY(btnY);
             root.getChildren().add(buttons[i]);

@@ -24,8 +24,7 @@ public class Channel extends Application {
         primaryStage.show();
     }
 
-    public static void main(String[] args) {
-        ChannelData.Data cdata;
-        launch(args);
+    public static void Start(ChannelData.Data data) {
+        launch();
     }
 }

@@ -5,7 +5,7 @@ import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-
+import org.orgst.Variables.ChannelData;
 public class Channel extends Application {
     @Override
     public void start(Stage primaryStage) {
@@ -25,6 +25,7 @@ public class Channel extends Application {
     }
 
     public static void main(String[] args) {
+        ChannelData.Data cdata;
         launch(args);
     }
 }

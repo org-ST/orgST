@@ -10,7 +10,6 @@ public class Channel extends Application {
     static ChannelData.Data data;
     @Override
     public void start(Stage primaryStage) {
-        Parameters data = getParameters();
         Label label = new Label();
         Button button = new Button("Press me");
 

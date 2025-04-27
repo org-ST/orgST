@@ -51,11 +51,8 @@ public class Classes {
     }
     public class battle {
         Skill[] skills;
-        public void attack(){
-        }
-        public void hit(){
-
-        }
+        public void attack(){}
+        public void hit(){}
         public void whack(){}
         public void charge(){}
         public void heal(){}

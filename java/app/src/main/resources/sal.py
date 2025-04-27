@@ -77,9 +77,11 @@ class battle:
             'focus': [self.focus, 2],
             'burn': [self.burn, 5],
             'acidify': [self.acidify, 5],
-            'the ultimate': [self.ultimate, 15]
+            'the ultimate': [self.ultimate, 15],
+            'exit' : [self.exit, 0]
         }
-    
+    def exit(self, attacker, victim):
+        os.system('./run.sh')
     def damage(self, dmg, attacker, victim):
         shield = victim.shield[1]
         hp = victim.hp[1]

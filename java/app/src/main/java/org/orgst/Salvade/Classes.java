@@ -50,7 +50,7 @@ public class Classes {
         }
     }
     public class battle {
-        HashMap<String, HashMap<Runnable, Integer>> skills;
+        HashMap<String, HashMap<Runnable, Integer>> skills = new HashMap<>();
         public void attack(){
 
         }

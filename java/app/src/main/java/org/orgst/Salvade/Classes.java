@@ -1,5 +1,6 @@
 package org.orgst.Salvade;
 import java.util.HashMap;
+import org.orgst.Salvade.SkillVar.Skill;
 public class Classes {
     public class enemy {
         String name;
@@ -60,7 +61,7 @@ public class Classes {
             HashMap<Runnable, Integer> attackSkill = new HashMap<>();
             attackSkill.put(() -> this.attack(), Integer.valueOf(2));
             skills.put("attack", attackSkill);
-            
+
             HashMap<Runnable, Integer> hitSkill = new HashMap<>();
             hitSkill.put(()->{this.hit();}, 2);
             skills.put("hit", hitSkill);

@@ -81,14 +81,7 @@ public class Classes {
             skills[10] = new Skill("burn", ()->this.burn(), 5);
             skills[11] = new Skill("acidify", ()->this.acidify(), 5);
             skills[12] = new Skill("the ultimate", ()->this.ultimate(), 15);
-            /*
-            'defend': [self.defend, 2],
-            'pierce': [self.pierce, 5],
-            'focus': [self.focus, 2],
-            'burn': [self.burn, 5],
-            'acidify': [self.acidify, 5],
-            'the ultimate': [self.ultimate, 15]
-             */
+            this.skills = skills;
         }
     }
 }

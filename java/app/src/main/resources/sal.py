@@ -3,7 +3,13 @@ import os
 import time
 import random
 import sys
-
+import platform
+def clear():
+    os_name = platform.system()
+    if os_name == "Windows":
+        os.system('cls')
+    else:
+        os.system('clear')
 def make_bar(val, max_val, length, color):
     colorkey = {
         'red': Fore.RED,
@@ -207,14 +213,14 @@ print(Fore.GREEN + Style.BRIGHT + 'SALVADE V0.5' + Style.RESET_ALL)
 print('Press enter to play')
 input()
 
-os.system('cls')
+clear()
 
 print('What is your name?')
 player = player(input('>> '))
 
 player.mana[0], player.mana[1] = 15, 15
 
-os.system('cls')
+clear()
 time.sleep(0.5)
 
 
@@ -223,7 +229,7 @@ if player.name.lower() == 'frisk':
 else:
     print('Hello, ' + player.name)
 time.sleep(1)
-os.system('cls')
+clear()
 battle = battle()
 enemy = enemy('Dummy', [350, 80, 10, 50], ['attack'], ['random', '...',"it's just a dummy","what are you doing?", 'the storm approaches', '*does a little shimmy*', 'DANCE BATTLE!!!', '***dummytext***'], 60)
 if player.name.lower() == 't+':
@@ -270,13 +276,13 @@ while True:
             elif check == 'broke':
                 print('come back when youre... a little richer')
                 time.sleep(2)
-                os.system('cls')
+                clear()
                 continue
             elif a in ['Skills', 'skills']:
                 for i in range(len(battle.skills.keys())):
                     print(list(battle.skills.keys())[i])
                 input()
-                os.system('cls')
+                clear()
                 continue
             elif a.lower() == 'salvage':
                 if enemy.broken >= 5 and enemy.hp[1] <= enemy.hp[0]/10:
@@ -286,12 +292,12 @@ while True:
                     print('requirements unsatisfied.')
                     print(f'enemy shield broken: {enemy.broken}/5, enemy hp needs to be under 10%')
                     time.sleep(3)
-                    os.system('cls')
+                    clear()
                     continue
             else:
                 print('That isn\'t a valid action, for more info, please use the skills command')
                 time.sleep(2)
-                os.system('cls')
+                clear()
                 continue
         else:
             if enemy.mana[1] < 2:
@@ -310,7 +316,7 @@ while True:
                 print(enemy.name + ' charged!')
                 time.sleep(2)
                 battle.check('charge', True, enemy, player)
-        os.system('cls')
+        clear()
         
         if turner == player:
             turner = enemy

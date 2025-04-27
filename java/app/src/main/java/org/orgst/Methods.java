@@ -5,6 +5,7 @@ import java.util.Scanner;
 import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
 public class Methods {
+    // Contains help entries for every function in this file
     public static void help(String[] command){
         if (command.length == 2){
             switch(command[1]){
@@ -103,5 +104,15 @@ public class Methods {
         for (Map.Entry<String, String> entry : AppData.AppData.entrySet()){
             System.out.println(entry.getKey() + " : " + entry.getValue());
         }
+    }
+    public static void run(){
+        System.out.print("Which ChannelViewer do you want\n1 - UI\n2 - Terminal\nPlease Enter your option\n..>");
+        String sel = new Scanner(System.in).nextLine();
+        String[] args = {};
+        switch(sel){
+            case "1" : org.orgst.Extras.ChannelMenu.main(args);
+            case "2" : org.orgst.Extras.ChannelViewer.CV(args);
+        }
+        
     }
 }

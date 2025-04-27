@@ -1,6 +1,6 @@
 package org.orgst.Salvade;
 public class SkillVar {
-    public class Skill{
+    public static class Skill{
     String name;
     Runnable fun;
     int num;

@@ -52,19 +52,14 @@ public class Classes {
     }
     public class battle {
         HashMap<String, HashMap<Runnable, Integer>> skills = new HashMap<>();
+        Skill attack;
         public void attack(){
         }
         public void hit(){
 
         }
         public battle(){
-            HashMap<Runnable, Integer> attackSkill = new HashMap<>();
-            attackSkill.put(() -> this.attack(), Integer.valueOf(2));
-            skills.put("attack", attackSkill);
-
-            HashMap<Runnable, Integer> hitSkill = new HashMap<>();
-            hitSkill.put(()->{this.hit();}, 2);
-            skills.put("hit", hitSkill);
+            this.attack = new Skill("attack", ()->{this.attack();}, 2);
         }
     }
 }

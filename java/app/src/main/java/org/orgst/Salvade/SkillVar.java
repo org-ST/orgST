@@ -9,6 +9,7 @@ public class SkillVar {
     int num;
     public Skill(String name, Runnable run, int num) {
         HashMap<Runnable, Integer> skillMap = new HashMap<>();
+        skillMap.put(run, Integer.valueOf(num));
         
     }}
 }

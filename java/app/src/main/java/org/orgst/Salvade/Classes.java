@@ -1,5 +1,5 @@
 package org.orgst.Salvade;
-
+import java.util.HashMap;
 public class Classes {
     public class enemy {
         String name;
@@ -50,6 +50,6 @@ public class Classes {
         }
     }
     public class battle {
-        
+        HashMap<String, HashMap<Runnable, Integer>> skills;
     }
 }

@@ -34,6 +34,7 @@ public class App {
             case "git":
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
             default:
+                System.out.println("Command not found " + words[0]);
                 break;
         }
     }

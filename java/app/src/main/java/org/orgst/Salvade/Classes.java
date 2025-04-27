@@ -57,7 +57,7 @@ public class Classes {
         public battle(){
             HashMap<Runnable, Integer> attackSkill = new HashMap<>();
             attackSkill.put(() -> this.attack(), Integer.valueOf(5));
-            skills.put("attck", attackSkill);
+            skills.put("attack", attackSkill);
         }
     }
 }

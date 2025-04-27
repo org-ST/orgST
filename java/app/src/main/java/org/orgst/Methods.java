@@ -9,6 +9,11 @@ public class Methods {
     public static void help(String[] command){
         if (command.length == 2){
             switch(command[1]){
+                case "sal" : {
+                    System.out.println("Command : sal");
+                    System.out.println("Function : Run's salvade (Requires Python 3)");
+                    break;
+                }
                 case "pride" : {
                     System.out.println("Command : Pride");
                     System.out.println("Function : Open's window with pride flag");

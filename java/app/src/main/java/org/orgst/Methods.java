@@ -56,7 +56,7 @@ public class Methods {
                 }
             }
         } else if (command.length == 1){
-            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run");
+            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run, sal");
         } else {
             System.out.println("Invalid call of Method org.orgst.Methods.help()");
         }

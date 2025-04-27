@@ -42,6 +42,11 @@ public class Classes {
             this.name = name;
             this.hp = new int[]{100, 100};
             this.sheild = new int[]{15, 15};
+            this.mana = new int[]{10, 10};
+            this.attack = 10;
+            this.crit = 25;
+            this.statuses = new int[]{0,0,0,0,0};
+            this.broken = 0;
         }
     }
 }

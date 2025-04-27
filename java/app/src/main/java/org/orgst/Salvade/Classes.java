@@ -81,7 +81,6 @@ public class Classes {
             skills[10] = new Skill("burn", ()->this.burn(), 5);
             skills[11] = new Skill("acidify", ()->this.acidify(), 5);
             skills[12] = new Skill("the ultimate", ()->this.ultimate(), 15);
-            this.skills = skills;
         }
     }
 }

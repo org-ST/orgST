@@ -1,4 +1,4 @@
-ver = 1
+vers = 1
 import subprocess
 import os
 from time import sleep

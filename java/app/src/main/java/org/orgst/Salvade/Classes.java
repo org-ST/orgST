@@ -61,7 +61,12 @@ public class Classes {
         public void heal(){}
         public void stun(){}
         public void thit(){}
-        
+        public void defend(){}
+        public void pierce(){}
+        public void focus(){}
+        public void burn(){}
+        public void acidify(){}
+        public void ultimate(){}
         public battle(){
             skills[0] = new Skill("attack", ()->{this.attack();}, 2);
             skills[1] = new Skill("hit", ()->{this.hit();}, 2);

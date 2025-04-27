@@ -1,5 +1,4 @@
 package org.orgst.Salvade;
-import java.util.HashMap;
 import org.orgst.Salvade.SkillVar.Skill;
 public class Classes {
     public class enemy {

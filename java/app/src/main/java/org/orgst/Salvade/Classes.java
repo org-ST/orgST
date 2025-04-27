@@ -51,5 +51,12 @@ public class Classes {
     }
     public class battle {
         HashMap<String, HashMap<Runnable, Integer>> skills;
+        public void attack(){
+
+        }
+        public battle(){
+            HashMap<Runnable, Integer> attackSkill = new HashMap<>();
+            attackSkill.put(() -> this.attack(), Integer.valueOf(5));
+        }
     }
 }

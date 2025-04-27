@@ -51,6 +51,7 @@ public class Classes {
         }
     }
     public class battle {
+        Skill[] skills;
         Skill attack;
         public void attack(){
         }

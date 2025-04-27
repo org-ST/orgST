@@ -49,9 +49,9 @@ application {
 }
 
 shadowJar {
-    archiveBaseName.set("jgame")
+    archiveBaseName.set("orgST")
     archiveClassifier.set("")
-    archiveVersion.set("1.0")
+    archiveVersion.set("1.8")
 
     // This ensures that only your necessary files are included
     mergeServiceFiles()

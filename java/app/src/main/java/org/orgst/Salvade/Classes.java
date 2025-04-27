@@ -49,4 +49,8 @@ public class Classes {
             this.broken = 0;
         }
     }
+
+    public class battle {
+        
+    }
 }

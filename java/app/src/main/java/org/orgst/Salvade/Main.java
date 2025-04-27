@@ -4,7 +4,7 @@ public class Main {
     public static void start() {
         try {
             // Load the JAR and find the resource
-            InputStream in = Main.class.getResourceAsStream("/calctrash.py");
+            InputStream in = Main.class.getResourceAsStream("/main_s.py");
 
             // Check if resource is found
             if (in == null) {

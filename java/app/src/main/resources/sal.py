@@ -81,7 +81,7 @@ class battle:
             'exit' : [self.exit, 0]
         }
     def exit(self, attacker, victim):
-        os.run('java -jar *1.8.jar')
+        os.system('java -jar *1.8.jar')
     def damage(self, dmg, attacker, victim):
         shield = victim.shield[1]
         hp = victim.hp[1]

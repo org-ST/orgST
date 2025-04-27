@@ -1,7 +1,4 @@
 package org.orgst.Salvade;
-
-import java.util.HashMap;
-
 public class SkillVar {
     public class Skill{
     String name;

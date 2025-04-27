@@ -28,4 +28,18 @@ public class Classes {
             this.attack = stats[3];
         }
     }
+    public class player {
+        String name;
+        int[] hp;
+        int[] sheild;
+        int[] mana;
+        int attack;
+        int crit;
+        int[] statuses;
+        int broken;
+
+        public player(String name) {
+ 
+        }
+    }
 }

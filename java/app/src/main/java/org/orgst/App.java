@@ -1,5 +1,4 @@
 package org.orgst;
-
 public class App {
     String[] yes_ins = {"Yes","yes","Y","y"};
    

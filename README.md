@@ -53,4 +53,4 @@ Where do I find this?
 -info
   
 
-![orgST logo](logo.png)  
+![orgST logo](image.png)  

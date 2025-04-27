@@ -36,6 +36,7 @@ public class App {
                 break;
             case "sal":
                 org.orgst.Salvade.Main.start();
+                break;
             default:
                 System.out.println("Command not found " + words[0]);
                 break;

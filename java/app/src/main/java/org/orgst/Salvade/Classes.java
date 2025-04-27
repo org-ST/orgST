@@ -59,7 +59,7 @@ public class Classes {
 
         }
         public battle(){
-            this.attack = new Skill("attack", ()->{this.attack();}, 2);
+            skills[0] = new Skill("attack", ()->{this.attack();}, 2);
         }
     }
 }

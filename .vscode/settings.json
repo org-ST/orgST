@@ -8,5 +8,6 @@
         }
       ]
     },
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onWindowChange",
+    "java.compile.nullAnalysis.mode": "automatic"
   }

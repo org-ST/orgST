@@ -30,12 +30,18 @@ def make_bar(val, max_val, length, color):
 print(Fore.GREEN + Style.BRIGHT + 'SALVADE V0.5' + Style.RESET_ALL)
 print('Press enter to play')
 input()
+
 os.system('cls')
+
 print('What is your name?')
 player = player(input('>> '))
+
 player.mana[0], player.mana[1] = 15, 15
+
 os.system('cls')
 time.sleep(0.5)
+
+
 if player.name.lower() == 'frisk':
     print('The true name.')
 else:

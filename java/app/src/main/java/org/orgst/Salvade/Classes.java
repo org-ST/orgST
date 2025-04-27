@@ -56,10 +56,28 @@ public class Classes {
         public void hit(){
 
         }
+        public void whack(){}
+        public void charge(){}
+        public void heal(){}
+        public void stun(){}
+        public void thit(){}
+        
         public battle(){
             skills[0] = new Skill("attack", ()->{this.attack();}, 2);
             skills[1] = new Skill("hit", ()->{this.hit();}, 2);
-            
+            /*
+            'whack': [self.whack, 10],
+            'charge': [self.charge, 0],
+            'heal': [self.heal, 5],
+            'stun': [self.stun, 5],
+            'triple hit': [self.triple_hit, 5],
+            'defend': [self.defend, 2],
+            'pierce': [self.pierce, 5],
+            'focus': [self.focus, 2],
+            'burn': [self.burn, 5],
+            'acidify': [self.acidify, 5],
+            'the ultimate': [self.ultimate, 15]
+             */
         }
     }
 }

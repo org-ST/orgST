@@ -64,6 +64,8 @@ public class Classes {
         public void burn(){}
         public void acidify(){}
         public void ultimate(){}
+        public void increase(){}
+        public void damage(){}
         public battle(){
             skills[0] = new Skill("attack", ()->this.attack(), 2);
             skills[1] = new Skill("hit", ()->this.hit(), 2);

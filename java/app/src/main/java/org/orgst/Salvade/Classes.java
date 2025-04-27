@@ -39,7 +39,9 @@ public class Classes {
         int broken;
 
         public player(String name) {
- 
+            this.name = name;
+            this.hp = new int[]{100, 100};
+            this.sheild = new int[]{15, 15};
         }
     }
 }

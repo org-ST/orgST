@@ -54,7 +54,7 @@ public class Classes {
         public void attack(){
         }
         public void hit(){
-            
+
         }
         public battle(){
             HashMap<Runnable, Integer> attackSkill = new HashMap<>();
@@ -62,6 +62,7 @@ public class Classes {
             skills.put("attack", attackSkill);
             HashMap<Runnable, Integer> hitSkill = new HashMap<>();
             hitSkill.put(()->{this.hit();}, 2);
+            skills.put("hit", hitSkill);
         }
     }
 }

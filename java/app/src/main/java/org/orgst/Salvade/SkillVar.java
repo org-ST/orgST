@@ -8,8 +8,8 @@ public class SkillVar {
     Runnable fun;
     int num;
     public Skill(String name, Runnable run, int num) {
-        HashMap<Runnable, Integer> skillMap = new HashMap<>();
-        skillMap.put(run, Integer.valueOf(num));
-        
+        this.name = name;
+        this.fun = run;
+        this.num = num;
     }}
 }

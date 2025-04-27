@@ -38,7 +38,8 @@ public class Channel {
         Group root = new Group(label, name, site, date, comm);
         Scene scene = new Scene(root, 500, 200);
         stage.setOnCloseRequest(e -> {
-            org.orgst.App.main(null);
+            stage.close();
+            org.orgst.App.main(new String[]{});
         });
         stage.setScene(scene);
         stage.setTitle(data.name);

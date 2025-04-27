@@ -33,6 +33,7 @@ public class App {
                 break;
             case "git":
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
+                break;
             case "sal":
                 org.orgst.Salvade.Main.start();
             default:

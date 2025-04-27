@@ -58,6 +58,8 @@ public class Classes {
         }
         public battle(){
             skills[0] = new Skill("attack", ()->{this.attack();}, 2);
+            skills[1] = new Skill("hit", ()->{this.hit();}, 2);
+            
         }
     }
 }

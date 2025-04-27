@@ -271,7 +271,7 @@ while True:
         if turner == player:
             a = input('>> ')
             if a == "exit" or a == "esc":
-                exit
+                exit(0)
             check = battle.check(a, False, player, enemy)
             if check == True:
                 print(turner.name + ' used ' + a + '!')

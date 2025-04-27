@@ -4,11 +4,11 @@ public class Main {
     public static void start() {
         try {
             // Load the JAR and find the resource
-            InputStream in = Main.class.getResourceAsStream("/main_s.py");
+            InputStream in = Main.class.getResourceAsStream("/sal.py");
 
             // Check if resource is found
             if (in == null) {
-                System.out.println("Resource not found: /calctrash.py");
+                System.out.println("Resource not found: /sal.py");
                 return; // Or handle error
             }
 

@@ -74,12 +74,14 @@ public class Classes {
             skills[3] = new Skill("charge", ()->this.charge(), 0);
             skills[4] = new Skill("heal", ()->this.heal(), 5);
             skills[5] = new Skill("stun", ()->this.stun(), 5);
+            skills[6] = new Skill("triple hit", ()->this.thit(), 5);
+            skills[7] = new Skill("defend", ()->this.defend(), 2);
+            skills[8] = new Skill("pierce", ()->this.pierce(), 5);
+            skills[9] = new Skill("focus", ()->this.focus(), 2);
+            skills[10] = new Skill("burn", ()->this.burn(), 5);
+            skills[11] = new Skill("acidify", ()->this.acidify(), 5);
+            skills[12] = new Skill("the ultimate", ()->this.ultimate(), 15);
             /*
-            'whack': [self.whack, 10],
-            'charge': [self.charge, 0],
-            'heal': [self.heal, 5],
-            'stun': [self.stun, 5],
-            'triple hit': [self.triple_hit, 5],
             'defend': [self.defend, 2],
             'pierce': [self.pierce, 5],
             'focus': [self.focus, 2],

@@ -1,7 +1,5 @@
 package org.orgst.Salvade;
 
-import org.orgst.Salvade.Skill.SkillAction;
-
 public class Skill {
     public interface Participant {
         int[] getHp();

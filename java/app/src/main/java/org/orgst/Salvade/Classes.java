@@ -68,8 +68,12 @@ public class Classes {
         public void acidify(){}
         public void ultimate(){}
         public battle(){
-            skills[0] = new Skill("attack", ()->{this.attack();}, 2);
-            skills[1] = new Skill("hit", ()->{this.hit();}, 2);
+            skills[0] = new Skill("attack", ()->this.attack(), 2);
+            skills[1] = new Skill("hit", ()->this.hit(), 2);
+            skills[2] = new Skill("whack", ()->this.whack(), 10);
+            skills[3] = new Skill("charge", ()->this.charge(), 0);
+            skills[4] = new Skill("heal", ()->this.heal(), 5);
+            skills[5] = new Skill("stun", ()->this.stun(), 5);
             /*
             'whack': [self.whack, 10],
             'charge': [self.charge, 0],

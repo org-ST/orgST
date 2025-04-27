@@ -9,6 +9,11 @@ public class Methods {
     public static void help(String[] command){
         if (command.length == 2){
             switch(command[1]){
+                case "sal" : {
+                    System.out.println("Command : sal");
+                    System.out.println("Function : Run's salvade (Requires Python 3)");
+                    break;
+                }
                 case "pride" : {
                     System.out.println("Command : Pride");
                     System.out.println("Function : Open's window with pride flag");
@@ -51,7 +56,7 @@ public class Methods {
                 }
             }
         } else if (command.length == 1){
-            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run");
+            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run, sal");
         } else {
             System.out.println("Invalid call of Method org.orgst.Methods.help()");
         }
@@ -77,7 +82,7 @@ public class Methods {
     public static void head() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
-        System.out.println("orgST by Wdboyes13, progman.task is marked with CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/\n" + "'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.");
+        System.out.println("orgST © 2024-2025 by Wdboyes13, progman.task is licensed under CC BY-NC-ND 4.0\nhttps://creativecommons.org/licenses/by-nc-nd/4.0/\n\"orgST\", \"organizationSTATION\", and the orgST logo are trademarks of orgST.\n");
         System.out.println("-----------------------------------------------------------------------------------------------------------------------------------------------");
         System.out.println("orgST Terminal 1.8 - Java Ported");
         System.out.println("Ported by Wdboyes13");

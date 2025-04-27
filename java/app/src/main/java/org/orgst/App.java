@@ -33,7 +33,10 @@ public class App {
                 break;
             case "git":
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
+            case "sal":
+                org.orgst.Salvade.Main.start();
             default:
+                System.out.println("Command not found " + words[0]);
                 break;
         }
     }

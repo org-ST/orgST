@@ -10,6 +10,7 @@ plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
     id 'application'
     id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
 }
 def cmsg = "Updated Java Port"
 repositories {
@@ -47,30 +48,16 @@ application {
     mainClass = 'org.orgst.App'
 }
 
-tasks.register('mkJar', Jar) {
-    dependsOn classes
-    group = 'build'
-    description = 'Creates fat JAR with dependencies'
+shadowJar {
+    archiveBaseName.set("jgame")
+    archiveClassifier.set("")
+    archiveVersion.set("1.0")
 
-    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
-    archiveClassifier.set('all')
-
-    manifest {
-        attributes('Main-Class': application.mainClass.get())
-    }
-
-    from {
-        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
-    }
-    from sourceSets.main.output
-}
-
-task pkg(type: Exec) {
-    dependsOn mkJar
-    commandLine 'bash', '-c', 'cd ~/coding/orgST/java && ./package.sh'
+    // This ensures that only your necessary files are included
+    mergeServiceFiles()
 }
 task upload(type: Exec) {
-    dependsOn pkg
+    dependsOn shadowJar
     commandLine 'bash', '-c', "cd ~/coding/orgST && git add . && git commit -m '${cmsg}' &&  git push origin java"
     
     // Ensure the output and error are printed to the console

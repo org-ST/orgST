@@ -26,16 +26,6 @@ dependencies {
     implementation libs.guava
 }
 
-testing {
-    suites {
-        // Configure the built-in test suite
-        test {
-            // Use JUnit Jupiter test framework
-            useJUnitJupiter('5.11.3')
-        }
-    }
-}
-
 // Apply a specific Java toolchain to ease working on different environments.
 java {
     toolchain {
@@ -56,14 +46,14 @@ shadowJar {
     // This ensures that only your necessary files are included
     mergeServiceFiles()
 }
-task upload(type: Exec) {
+task mvJar(type: Exec) {
     dependsOn shadowJar
+    commandLine 'bash', '-c', 'mv', '~/coding/orgST/java/app/build/libs/*.jar', '~/coding/jars/'
+}
+task upload(type: Exec) {
+    dependsOn mvJar
     commandLine 'bash', '-c', "cd ~/coding/orgST && git add . && git commit -m '${cmsg}' &&  git push origin java"
-    
-    // Ensure the output and error are printed to the console
-    standardOutput = System.out
-    errorOutput = System.err
-    ignoreExitValue = true  // This allows the task to continue even if some commands fail
+    ignoreExitValue = true
 }
 
 build.dependsOn upload

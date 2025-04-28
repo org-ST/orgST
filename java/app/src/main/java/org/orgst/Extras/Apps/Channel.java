@@ -1,9 +1,6 @@
 package org.orgst.Extras.Apps;
 import javafx.scene.Scene;
-<<<<<<< HEAD
 import javafx.application.Platform;
-=======
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -11,10 +8,7 @@ import javafx.stage.Stage;
 import org.orgst.Variables.ChannelData;
 import java.util.List;
 import java.util.Arrays;
-<<<<<<< HEAD
 // Add people - info - check
-=======
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9
 public class Channel {
     public static void Start(ChannelData.Data data) {
         Stage stage = new Stage(); // create a NEW stage
@@ -25,7 +19,6 @@ public class Channel {
         Button site = new Button("WebSite");
         Button date = new Button("Date");
         Button comm = new Button("Comment");
-<<<<<<< HEAD
         Button peple = new Button("People");
         Button info = new Button("Info");
         Button check = new Button("Check");
@@ -50,9 +43,6 @@ public class Channel {
             }
             label.setText(peopleStringBuilder.toString());
         });
-=======
-        List<Button> buttons = Arrays.asList(name, site, date, comm);
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9
         name.setOnAction(e -> label.setText(data.name));
         site.setOnAction(e -> {
                     if (data.website !=null){
@@ -70,18 +60,10 @@ public class Channel {
             button.setLayoutX(20);
             button.setLayoutY(20 + (i * 40));
         }
-<<<<<<< HEAD
         Group root = new Group(label, name, site, date, comm, peple, info, check);
         Scene scene = new Scene(root, 500, 200);
         stage.setOnCloseRequest(e -> {
             Platform.exit();
-=======
-        Group root = new Group(label, name, site, date, comm);
-        Scene scene = new Scene(root, 500, 200);
-        stage.setOnCloseRequest(e -> {
-            stage.close();
-            org.orgst.App.main(new String[]{});
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9
         });
         stage.setScene(scene);
         stage.setTitle(data.name);

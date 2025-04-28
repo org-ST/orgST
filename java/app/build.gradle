@@ -56,6 +56,10 @@ task upload(type: Exec) {
     ignoreExitValue = true
 }
 
+<<<<<<< HEAD
 if (project.hasProperty('autoupload')) {
     build.dependsOn upload
 }
+=======
+build.dependsOn upload
+>>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9

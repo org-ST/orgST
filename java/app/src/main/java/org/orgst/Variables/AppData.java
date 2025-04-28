@@ -1,0 +1,17 @@
+package org.orgst.Variables;
+
+import java.util.HashMap;
+
+public class AppData {
+    public static HashMap<String, String> AppData;
+    static {
+        AppData = new HashMap<>();
+        AppData.put("Version", "1.8.0");
+        AppData.put("Updates", "9");
+        AppData.put("Authors", "progman.task, Wdboyes13, chureki");
+        AppData.put("Title", "orgST");
+        AppData.put("Sponsors", "orgST Public, Archive, CalcTech, toyathing");
+        AppData.put("GitHub", "https://github.com/MakiDevelops/orgST");
+        AppData.put("Website", "https://orgst.ca");
+    }
+}

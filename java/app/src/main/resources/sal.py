@@ -81,7 +81,7 @@ class battle:
             'exit' : [self.exit, 0]
         }
     def exit(self, attacker, victim):
-        os.system('./run.sh')
+        exit()
     def damage(self, dmg, attacker, victim):
         shield = victim.shield[1]
         hp = victim.hp[1]

@@ -33,8 +33,10 @@ public class App {
                 break;
             case "git":
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
-            case "sal":
-                org.orgst.Salvade.Main.start();
+                break;
+            case "apl":
+                AppLoader.start();
+                break;
             default:
                 System.out.println("Command not found " + words[0]);
                 break;

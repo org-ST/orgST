@@ -1,0 +1,2 @@
+JAVA_OPTS=-XX:+TieredCompilation -XX:+AggresiveOpts -XX:CompileThreshhold=1000 -XX:+UseStringDeduplication -XX:+AlwaysPreTouch -XX:+UseCodeCacheFlushing -Xms1G -Xmx4G -XX:MaxGCPauseMillis=200 -XX:+ParallelRefProcEnabled -XX:TieredStopAtLevel=1
+java $JAVA_OPTS -jar orgST-1.8.jar

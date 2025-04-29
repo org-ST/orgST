@@ -30,8 +30,8 @@ public class ChannelViewer {
                     case "help" : help(); break;
                     case "exit" : App.main(args); break;
                     case "DON'T YOU FRICKIN DARE" : System.out.println("ok man geez"); break;
-                    case "edit": org.orgst.channelapps.AppTester.start(args); break;
-                    case "mkchannel" : org.orgst.Extras.Apps.ChannelHelper.main(args); break;
+                    case "edit": org.orgst.Extras.Apps.ChannelHelper.main(args);; break;
+                    case "test": org.orgst.channelapps.AppTester.start(args);
                 } 
             }
         }

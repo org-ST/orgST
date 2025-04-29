@@ -41,7 +41,7 @@ shadowJar {
 }
 task mvJar(type: Exec) {
     dependsOn shadowJar
-    commandLine 'bash', '-c', "mv ~/coding/orgST/java/app/build/libs/*.jar ~/coding/orgST/jars/"
+    commandLine 'bash', '-c', "mv ~/coding/orgST/java/app/build/libs/*.jar ~/coding/orgST/jars/ && gzip -9 ~/coding/orgST/jars/*.jar && rm ~/coding/orgST/*.jar"
 }
 build.dependsOn mvJar
 task upload(type: Exec) {

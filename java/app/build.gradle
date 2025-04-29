@@ -16,8 +16,6 @@ javafx {
 dependencies {
     // This dependency is used by the application.
     implementation libs.guava
-    implementation("org.graalvm.polyglot:polyglot:24.2.0")
-    implementation("org.graalvm.polyglot:python:24.2.0")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -41,7 +39,7 @@ shadowJar {
 }
 task mvJar(type: Exec) {
     dependsOn shadowJar
-    commandLine 'bash', '-c', "mv ~/coding/orgST/java/app/build/libs/*.jar ~/coding/orgST/jars/ && gzip -9 ~/coding/orgST/jars/*.jar && rm ~/coding/orgST/*.jar"
+    commandLine 'bash', '-c', "mv ~/coding/orgST/java/app/build/libs/*.jar ~/coding/orgST/jars/"
 }
 build.dependsOn mvJar
 task upload(type: Exec) {

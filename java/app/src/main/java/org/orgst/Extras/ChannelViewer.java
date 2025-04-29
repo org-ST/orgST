@@ -8,7 +8,7 @@ public class ChannelViewer {
     String[] yes_ins = {"y","yes","Yes","Y","check","Check"};
     String[] no_ins = {"n","no","No","N"};
     public static void help(){
-        System.out.println("commands: check, products, people, website, info, comment, mkchannel");
+        System.out.println("commands: check, products, people, website, info, comment, edit, test");
     }
     public static void CV(String[] args) {
 

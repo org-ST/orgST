@@ -33,7 +33,6 @@ application {
 shadowJar {
     archiveBaseName.set("orgST")
     archiveClassifier.set("")
-    archiveVersion.set("1.8")
 
     // This ensures that only your necessary files are included
     mergeServiceFiles()

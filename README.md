@@ -1,6 +1,8 @@
 # orgST™
 -- -- -- --
-a console in python that comes with apps. 
+a console in python that comes with apps.
+
+IMPORTANT ANNOUNCEMENT: orgST will be switching to Java eventually. we'll keep you updated.
 
 [orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [progman.task](https://github.com/MakiDevelops) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
 “orgST”, "organizationSTATION", and the orgST logo are trademarks of orgST.  

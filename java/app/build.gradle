@@ -16,6 +16,8 @@ javafx {
 dependencies {
     // This dependency is used by the application.
     implementation libs.guava
+    implementation("org.graalvm.polyglot:polyglot:24.2.0")
+    implementation("org.graalvm.polyglot:python:24.2.0")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.

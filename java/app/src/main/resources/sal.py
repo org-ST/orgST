@@ -1,4 +1,3 @@
-from colorama import Fore, Style, Back
 import os 
 import time
 import random
@@ -12,23 +11,23 @@ def clear():
         os.system('clear')
 def make_bar(val, max_val, length, color):
     colorkey = {
-        'red': Fore.RED,
-        'blue': Fore.BLUE,
-        'green': Fore.GREEN,
-        'grey': Style.DIM + Fore.WHITE,
-        'cyan': Fore.CYAN,
-        'yellow': Fore.YELLOW,
-        'white': Fore.WHITE,
+        "red": "\033[31m",
+        "blue": "\033[34m",
+        "green": "\033[32m",
+        "grey": "\033[90m",
+        "cyan": "\033[36m",
+        "yellow": "\033[33m",
+        "white": "\033[37m"
     }
     string = ['[']
     for i in range(length):
         if val > max_val*((1/length)*(i)):
-            string.append(colorkey[color] + '-' + Style.RESET_ALL)
+            string.append(colorkey[color] + '-' + "\033[0m")
         else:
             if color == 'grey':
                 string.append(' ')
             else:
-                string.append(f'{colorkey[color]}{Style.DIM}-{Style.RESET_ALL}')
+                string.append(f'{colorkey[color]}{"\033[2m"}-{"\033[0m"}')
     string.append(']')
     return ''.join(string)
 
@@ -211,7 +210,7 @@ class battle:
         self.again(attacker, victim)
 
 
-print(Fore.GREEN + Style.BRIGHT + 'SALVADE V0.5' + Style.RESET_ALL)
+print("\033[32m" + "\033[1m" + 'SALVADE V0.5' + "\033[0m")
 print('Press enter to play')
 input()
 
@@ -255,11 +254,11 @@ while True:
             print('Do better next time, ok?')
             sys.exit(0)
         
-        print(f'{player.name}: {make_bar(player.hp[1], player.hp[0], 6, 'red')} {player.hp[1]}/{player.hp[0]} {make_bar(player.shield[1], player.shield[0], 6, 'white')} {player.shield[1]}/{player.shield[0]} {make_bar(player.mana[1], player.mana[0], 6, 'cyan')} {player.mana[1]}/{player.mana[0]} | statuses: {Fore.RED}{player.statuses[0]} {Fore.GREEN}{player.statuses[1]} {Fore.YELLOW}{player.statuses[2]} {Fore.WHITE}{Style.DIM}{player.statuses[3]} {Fore.WHITE}{Style.NORMAL}{player.statuses[4]}{Style.RESET_ALL}')
-        print(f'{enemy.name}: {make_bar(enemy.hp[1], enemy.hp[0], 6, 'red')} {enemy.hp[1]}/{enemy.hp[0]} {make_bar(enemy.shield[1], enemy.shield[0], 6, 'white')} {enemy.shield[1]}/{enemy.shield[0]} {make_bar(enemy.mana[1], enemy.mana[0], 6, 'cyan')} {enemy.mana[1]}/{enemy.mana[0]} | statuses: {Fore.RED}{enemy.statuses[0]} {Fore.GREEN}{enemy.statuses[1]} {Fore.YELLOW}{enemy.statuses[2]} {Fore.WHITE}{Style.DIM}{enemy.statuses[3]} {Fore.WHITE}{Style.NORMAL}{enemy.statuses[4]}{Style.RESET_ALL}')
+        print(f'{player.name}: {make_bar(player.hp[1], player.hp[0], 6, 'red')} {player.hp[1]}/{player.hp[0]} {make_bar(player.shield[1], player.shield[0], 6, 'white')} {player.shield[1]}/{player.shield[0]} {make_bar(player.mana[1], player.mana[0], 6, 'cyan')} {player.mana[1]}/{player.mana[0]} | statuses: {"\033[31m"}{player.statuses[0]} {"\033[32m"}{player.statuses[1]} {"\033[33m"}{player.statuses[2]} {"\033[37m"}{"\033[2m"}{player.statuses[3]} {"\033[37m"}{"\033[0m"}{player.statuses[4]}{"\033[0m"}')
+        print(f'{enemy.name}: {make_bar(enemy.hp[1], enemy.hp[0], 6, 'red')} {enemy.hp[1]}/{enemy.hp[0]} {make_bar(enemy.shield[1], enemy.shield[0], 6, 'white')} {enemy.shield[1]}/{enemy.shield[0]} {make_bar(enemy.mana[1], enemy.mana[0], 6, 'cyan')} {enemy.mana[1]}/{enemy.mana[0]} | statuses: {"\033[31m"}{enemy.statuses[0]} {"\033[32m"}{enemy.statuses[1]} {"\033[33m"}{enemy.statuses[2]} {"\033[37m"}{"\033[2m"}{enemy.statuses[3]} {"\033[37m"}{"\033[0m"}{enemy.statuses[4]}{"\033[0m"}')
         
         if enemy.broken >= 5 and enemy.hp[1] <= enemy.hp[0]/10 and turner == player:
-            print('You can now ' + Fore.GREEN + Style.BRIGHT + 'SALVAGE' + Style.RESET_ALL)
+            print('You can now ' + "\033[32m" + "\033[1m" + 'SALVAGE' + "\033[0m")
         
         if enemy.dialogue[0] == 'random':
             dialogue_list = []

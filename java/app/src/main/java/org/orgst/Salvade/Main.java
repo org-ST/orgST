@@ -1,6 +1,5 @@
 package org.orgst.Salvade;
 import java.io.*;
-<<<<<<< HEAD
 
 public class Main {
     public static void start() {
@@ -35,44 +34,8 @@ public class Main {
             // Clean up temp file if you want
             tempScript.deleteOnExit();
 
-=======
-public class Main {
-    public static void start() {
-        try {
-            // Load the JAR and find the resource
-            InputStream in = Main.class.getResourceAsStream("/sal.py");
-
-            // Check if resource is found
-            if (in == null) {
-                System.out.println("Resource not found: /sal.py");
-                return; // Or handle error
-            }
-
-            // Create a buffered reader to read the script from the InputStream
-            BufferedReader reader = new BufferedReader(new InputStreamReader(in));
-
-            // Read the entire script into a string
-            StringBuilder scriptContent = new StringBuilder();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                scriptContent.append(line).append("\n");
-            }
-
-            // Close the reader
-            reader.close();
-
-            // Pass the script content to Python
-            ProcessBuilder pb = new ProcessBuilder("python3", "-c", scriptContent.toString());
-            pb.inheritIO();
-            Process p = pb.start();
-            p.waitFor();
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 2d375c70e4e5980501842c7f104567d5fe9181b9

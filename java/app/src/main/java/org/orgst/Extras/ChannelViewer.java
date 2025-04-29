@@ -8,7 +8,7 @@ public class ChannelViewer {
     String[] yes_ins = {"y","yes","Yes","Y","check","Check"};
     String[] no_ins = {"n","no","No","N"};
     public static void help(){
-        System.out.println("commands: check, products, people, website, info, comment");
+        System.out.println("commands: check, products, people, website, info, comment, edit, test");
     }
     public static void CV(String[] args) {
 
@@ -30,7 +30,8 @@ public class ChannelViewer {
                     case "help" : help(); break;
                     case "exit" : App.main(args); break;
                     case "DON'T YOU FRICKIN DARE" : System.out.println("ok man geez"); break;
-                    case "edit": org.orgst.channelapps.AppTester.start(args); break;
+                    case "edit": org.orgst.Extras.Apps.ChannelHelper.main(args);; break;
+                    case "test": org.orgst.channelapps.AppTester.start(args);
                 } 
             }
         }

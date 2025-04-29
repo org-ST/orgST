@@ -1,5 +1,6 @@
 package org.orgst.Extras.Apps;
 import javafx.scene.Scene;
+import javafx.application.Platform;
 import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -7,6 +8,7 @@ import javafx.stage.Stage;
 import org.orgst.Variables.ChannelData;
 import java.util.List;
 import java.util.Arrays;
+// Add people - info - check
 public class Channel {
     public static void Start(ChannelData.Data data) {
         Stage stage = new Stage(); // create a NEW stage
@@ -17,7 +19,30 @@ public class Channel {
         Button site = new Button("WebSite");
         Button date = new Button("Date");
         Button comm = new Button("Comment");
-        List<Button> buttons = Arrays.asList(name, site, date, comm);
+        Button peple = new Button("People");
+        Button info = new Button("Info");
+        Button check = new Button("Check");
+        List<Button> buttons = Arrays.asList(name, site, date, comm, peple, info, check);
+        info.setOnAction(e -> {
+            label.setText(data.info);
+        });
+        check.setOnAction(e -> {
+            if (data.files != null){
+                label.setText("Please check your terminal...");
+                for (Runnable file : data.files){
+                    file.run();
+                }
+            } else {
+                label.setText("No files available");
+            }
+        });
+        peple.setOnAction(e -> {
+            StringBuilder peopleStringBuilder = new StringBuilder();
+            for (String st : data.people){
+                peopleStringBuilder.append(st + ", ");
+            }
+            label.setText(peopleStringBuilder.toString());
+        });
         name.setOnAction(e -> label.setText(data.name));
         site.setOnAction(e -> {
                     if (data.website !=null){
@@ -35,11 +60,10 @@ public class Channel {
             button.setLayoutX(20);
             button.setLayoutY(20 + (i * 40));
         }
-        Group root = new Group(label, name, site, date, comm);
-        Scene scene = new Scene(root, 500, 200);
+        Group root = new Group(label, name, site, date, comm, peple, info, check);
+        Scene scene = new Scene(root, 500, 350);
         stage.setOnCloseRequest(e -> {
-            stage.close();
-            org.orgst.App.main(new String[]{});
+            Platform.exit();
         });
         stage.setScene(scene);
         stage.setTitle(data.name);

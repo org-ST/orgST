@@ -61,7 +61,7 @@ public class Channel {
             button.setLayoutY(20 + (i * 40));
         }
         Group root = new Group(label, name, site, date, comm, peple, info, check);
-        Scene scene = new Scene(root, 500, 200);
+        Scene scene = new Scene(root, 500, 350);
         stage.setOnCloseRequest(e -> {
             Platform.exit();
         });

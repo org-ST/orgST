@@ -3,23 +3,19 @@ def restart_program():
     import sys
     python = sys.executable
     os.execl(python, python, * sys.argv)
-def run():
-        import subprocess
-        pel = input("Run which:?\nA- orgST visual | C- Channels\n>> ").lower()
 
-        if pel == 'a':
-            subprocess.run(["python3", "PYextras/app.py"])
-        if pel == 'c':
-            inpu = input("W - WebServer : T - Terminal ").lower()
-            match inpu:
-                case "w":
-                    subprocess.run(['cd', 'cv', '|', 'python3', 'server.py'])
-                case "t":
-                    subprocess.run(["python3", "PYextras/channelviewer.py"])
-        else:
-            print("please input the assigned letter of a certain choice, and not the name")
-            print('')
-            restart_program()
+
+def run():
+    import subprocess
+    pel = input("w (Webserver), c (Channelviewer), a (Apps)\n>> ").lower()
+
+    if pel == 'w':
+        subprocess.run(['cd', 'cv', '|', 'python3', 'server.py'])
+    if pel == 'c':
+        subprocess.run(["python3", "PYextras/channelviewer.py"])
+    if pel == 'a':
+        subprocess.run(["python3", "apploader.py"])
+
 def sauce(yes_ins, jsonfile):
         print(" Would you like to dump raw data?")
         d = input(" Y/N: ")

@@ -1,0 +1,53 @@
+plugins {
+    // Apply the application plugin to add support for building a CLI application in Java.
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.1.0'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+def cmsg = "Updated Java Port"
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+javafx {
+    version = "21"
+    modules = ['javafx.controls', 'javafx.fxml']
+}
+dependencies {
+    // This dependency is used by the application.
+    implementation libs.guava
+}
+
+// Apply a specific Java toolchain to ease working on different environments.
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    // Define the main class for the application.
+    mainClass = 'org.orgst.App'
+}
+
+shadowJar {
+    archiveBaseName.set("orgST")
+    archiveClassifier.set("")
+
+    // This ensures that only your necessary files are included
+    mergeServiceFiles()
+}
+task mvJar(type: Exec) {
+    dependsOn shadowJar
+    commandLine 'bash', '-c', "mv ~/coding/orgST/java/app/build/libs/*.jar ~/coding/orgST/jars/"
+}
+build.dependsOn mvJar
+task upload(type: Exec) {
+    dependsOn mvJar
+    commandLine 'bash', '-c', "cd ~/coding/orgST && git add . && git commit -m '${cmsg}' &&  git push origin java"
+    ignoreExitValue = true
+}
+
+if (project.hasProperty('autoupload')) {
+    build.dependsOn upload
+}

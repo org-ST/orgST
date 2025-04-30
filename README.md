@@ -12,6 +12,21 @@ original code: https://github.com/MakiDevelops/diary/tree/py
 If you are on Windows download the install.ps1 from the latest release and run it  
 If you are on MacOS or Linux download the install.sh file from the latest release and run it  
 
+=======
+a console in python that comes with apps.
+
+IMPORTANT ANNOUNCEMENT: orgST will be switching to Java eventually. we'll keep you updated.
+
+[orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [progman.task](https://github.com/MakiDevelops) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
+“orgST”, "organizationSTATION", and the orgST logo are trademarks of orgST.  
+  
+original code: https://github.com/MakiDevelops/diary/tree/py  
+  
+# install and run
+-- -- -- -- -- --
+If you are on Windows download the install.ps1 from the latest release and run it  
+If you are on MacOS or Linux download the install.sh file from the latest release and run it  
+
 Now open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)  
 Enter the command `cd { BASE DIR }/orgST`  
 Windows: `python main.py`  

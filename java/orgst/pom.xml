@@ -81,7 +81,7 @@
                         <arguments>
                             <argument>commit</argument>
                             <argument>-m</argument>
-                            <argument>"Updated v${version}"</argument>
+                            <argument>Updated v${version}</argument>
                         </arguments>
                     </configuration>
                 </execution>

@@ -57,8 +57,6 @@ public class AppLoader {
                         break;
                     }
                     case "exit": {
-                        window.close();
-                        org.orgst.App.main(new String[0]);
                         break;
                     }
                     default: {

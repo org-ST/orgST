@@ -1,0 +1,69 @@
+package org.orgst.Salvade;
+import java.io.*;
+import java.net.*;
+import java.nio.file.*;
+import java.util.*;
+
+public class DLpypy {
+    public static void main(String[] args) {
+        try {
+            // Check if PyPy is installed
+            String command = "which pypy"; // or "pypy --version"
+            String os = System.getProperty("os.name").toLowerCase();
+
+            if (os.contains("win")) {
+                command = "where pypy";
+            }
+
+            Process process = Runtime.getRuntime().exec(command);
+            int exitCode = process.waitFor();
+
+            // If PyPy is not installed (exitCode 1)
+            if (exitCode != 0) {
+                System.out.println("PyPy not found. Downloading...");
+
+                // Select download URL based on OS
+                String url = "";
+                String destFile = "pypy.tar.bz2";
+
+                if (os.contains("win")) {
+                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-win32.zip"; // Windows
+                    destFile = "pypy.zip";
+                } else if (os.contains("mac")) {
+                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-darwin64.tar.bz2"; // macOS
+                    destFile = "pypy-macos.tar.bz2";
+                } else if (os.contains("nix") || os.contains("nux")) {
+                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-linux64.tar.bz2"; // Linux
+                    destFile = "pypy-linux.tar.bz2";
+                }
+
+                try (InputStream in = new URL(url).openStream()) {
+                    Files.copy(in, new File(destFile).toPath(), StandardCopyOption.REPLACE_EXISTING);
+                    System.out.println("Downloaded PyPy!");
+
+                    // Extract the downloaded file (based on the type of archive)
+                    if (os.contains("win")) {
+                        // Windows uses .zip, so we need to unzip
+                        Process unzip = new ProcessBuilder("cmd", "/c", "powershell Expand-Archive " + destFile).start();
+                        unzip.waitFor();
+                        System.out.println("Extracted PyPy on Windows.");
+                    } else {
+                        // macOS and Linux use .tar.bz2, so we use tar
+                        Process tar = new ProcessBuilder("tar", "-xjf", destFile).start();
+                        tar.waitFor();
+                        System.out.println("Extracted PyPy on " + (os.contains("mac") ? "macOS" : "Linux"));
+                    }
+
+                    // Optionally, set up installation (add to PATH or move to desired directory)
+                    System.out.println("PyPy is ready to use.");
+                } catch (IOException e) {
+                    System.out.println("Failed to download or extract PyPy: " + e.getMessage());
+                }
+            } else {
+                System.out.println("PyPy is already installed!");
+            }
+        } catch (IOException | InterruptedException e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+    }
+}

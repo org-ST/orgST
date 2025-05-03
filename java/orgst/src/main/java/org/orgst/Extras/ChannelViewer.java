@@ -48,9 +48,7 @@ public class ChannelViewer {
                     System.out.println("There are no files associated with this channel");
                 } else {
                     System.out.println("We found some files");
-                    for (Runnable file : data.files){
-                        file.run();
-                    }
+                        data.files.run();
                 }
                 break;
                 case "web" : if (data.website == null){

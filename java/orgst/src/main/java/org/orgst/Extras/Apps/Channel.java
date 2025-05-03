@@ -29,9 +29,7 @@ public class Channel {
         check.setOnAction(e -> {
             if (data.files != null){
                 label.setText("Please check your terminal...");
-                for (Runnable file : data.files){
-                    file.run();
-                }
+                    data.files.run();
             } else {
                 label.setText("No files available");
             }

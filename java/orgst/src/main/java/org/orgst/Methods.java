@@ -62,7 +62,7 @@ public class Methods {
         }
     }
     public static void flag(){
-        new Thread(() -> {org.orgst.Extras.Flag.start();}).start();
+        new Thread(() -> {org.orgst.Extras.Flag.main(new String[0]);;}).start();
         try {
         Thread.sleep(1000);
         } catch (InterruptedException e){

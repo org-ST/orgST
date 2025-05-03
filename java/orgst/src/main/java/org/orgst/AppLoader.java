@@ -20,7 +20,6 @@ public class AppLoader {
             Panel panel = new Panel();
             panel.setLayoutManager(new GridLayout(2));
             panel.addComponent(new Label("Options: "));
-            panel.addComponent(new EmptySpace(new TerminalSize(0, 0)));
             panel.addComponent(new Label("salvade"));
             panel.addComponent(new EmptySpace(new TerminalSize(0, 0)));
             panel.addComponent(new Label("exit"));

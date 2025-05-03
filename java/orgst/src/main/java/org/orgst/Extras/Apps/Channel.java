@@ -61,6 +61,7 @@ public class Channel {
         Group root = new Group(label, name, site, date, comm, peple, info, check);
         Scene scene = new Scene(root, 500, 350);
         stage.setOnCloseRequest(e -> {
+        	stage.close();
             Platform.exit();
             org.orgst.App.main(new String[0]);
         });

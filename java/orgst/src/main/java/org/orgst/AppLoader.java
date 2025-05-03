@@ -78,6 +78,5 @@ public class AppLoader {
 
     // Method to handle console input after GUI interaction
     private static void startConsoleInput() {
-        org.orgst.App.main(new String[0]);
     }
 }

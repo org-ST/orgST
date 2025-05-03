@@ -6,7 +6,7 @@ public class ChannelHelper {
     public static void main(String[] a){
     Scanner inp = new Scanner(System.in);
     try {
-        System.out.println("Alll fields MUST be filled out");
+        System.out.println("All fields MUST be filled out");
         System.out.print("Enter channel name : ");
         StringBuilder data = new StringBuilder();
         String name = inp.nextLine();

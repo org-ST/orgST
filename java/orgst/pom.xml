@@ -65,7 +65,7 @@
                         <executable>bash</executable>
                         <arguments>
                             <argument>-c</argument>
-                            <argument>cd .. &amp;&amp; git add .</argument>
+                            <argument>cd ../.. &amp;&amp; git add .</argument>
                         </arguments>
                     </configuration>
                 </execution>

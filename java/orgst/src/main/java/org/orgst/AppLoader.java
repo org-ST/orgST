@@ -26,7 +26,7 @@ public class AppLoader {
         startConsoleInput();
     }
 
-    // Method to start the lanterna GUI
+    // Method to start the laterna GUI
     private static void startGUI() {
         try {
             Terminal terminal = new DefaultTerminalFactory().createTerminal();

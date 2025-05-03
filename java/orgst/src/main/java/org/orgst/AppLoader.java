@@ -20,10 +20,26 @@ public class AppLoader {
         panel.setLayoutManager(new GridLayout(2));
 
         panel.addComponent(new Label("App Name"));
-        panel.addComponent(new TextBox());
+        TextBox nameIn = new TextBox();
+        panel.addComponent(nameIn);
 
         panel.addComponent(new EmptySpace(new TerminalSize(0,0))); // Empty space underneath labels
-        panel.addComponent(new Button("Open"));
+        panel.addComponent(new Button("Open", () -> {
+            String input = nameIn.getText().trim().toLowerCase(); // normalize input
+
+            switch (input) {
+                case "salvade":{
+                    org.orgst.Salvade.Main.start();
+                    break;
+                }
+                case "exit": {
+                    org.orgst.App.main(new String[0]);
+                }
+                default:
+                    System.out.println("Unknown app: " + input);
+                    break;
+            }
+        }));
 
         // Create window to hold the panel
         BasicWindow window = new BasicWindow();

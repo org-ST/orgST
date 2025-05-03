@@ -1,26 +1,32 @@
-package org.orgst.Extras;
+import javafx.application.Application;
+import javafx.scene.Scene;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.ImageIcon;
-import java.io.InputStream;
-import java.io.IOException;
-import java.awt.image.BufferedImage;
-import javax.imageio.ImageIO;
-public class Flag {
-    public static void start(){
-        try {
-            InputStream is = Flag.class.getResourceAsStream("/flag.png");
-            BufferedImage img = ImageIO.read(is);
-            JFrame frame = new JFrame("Pride");
-            ImageIcon flag = new ImageIcon(img);
-            JLabel flagLabel = new JLabel(flag);
-            frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-            frame.setSize(300, 200);
-            frame.getContentPane().add(flagLabel); // add button to frame
-            frame.setVisible(true);
-        } catch (IOException e){
-            e.printStackTrace();
-        }
+public class Flag extends Application {
+
+    @Override
+    public void start(Stage primaryStage) {
+        // Load the image from the resources folder
+        Image image = new Image(getClass().getResourceAsStream("/flag.png"));
+
+        // Create an ImageView to display the image
+        ImageView imageView = new ImageView(image);
+
+        // Add the ImageView to the layout (StackPane in this case)
+        StackPane root = new StackPane();
+        root.getChildren().add(imageView);
+
+        // Create the scene and add it to the stage
+        Scene scene = new Scene(root, 300, 250);
+        primaryStage.setTitle("Pride Flag");
+        primaryStage.setScene(scene);
+        primaryStage.show();
+    }
+
+    public static void main(String[] args) {
+        launch(args);
     }
 }

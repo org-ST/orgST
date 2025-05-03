@@ -10,7 +10,7 @@ import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
 public class AppLoader {
-    public static void main(String[] args) {
+    public static void main() {
         // Start the GUI in a separate thread
         Thread guiThread = new Thread(() -> startGUI());
         guiThread.start();

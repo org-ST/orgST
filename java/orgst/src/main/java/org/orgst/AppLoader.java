@@ -20,15 +20,16 @@ public class AppLoader {
             Panel panel = new Panel();
             panel.setLayoutManager(new GridLayout(2));
             panel.addComponent(new Label("Options: "));
+            panel.addComponent(new EmptySpace(new TerminalSize(0, 0)));
             panel.addComponent(new Label("salvade"));
+            panel.addComponent(new EmptySpace(new TerminalSize(0, 0)));
             panel.addComponent(new Label("exit"));
             panel.addComponent(new Label("App Name"));
             TextBox nameIn = new TextBox();
             panel.addComponent(nameIn);
             BasicWindow window = new BasicWindow();
             window.setComponent(panel);
-            panel.addComponent(new EmptySpace(new TerminalSize(0, 0))); // Empty space underneath labels
-
+            panel.addComponent(new EmptySpace(new TerminalSize(0, 0))); 
             panel.addComponent(new Button("Open", () -> {
                 String input = nameIn.getText().trim().toLowerCase(); // normalize input
                 boolean appFound = false; // Flag to track whether the app was found

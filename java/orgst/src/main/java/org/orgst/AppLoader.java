@@ -51,14 +51,23 @@ public class AppLoader {
 
                 switch (input) {
                     case "salvade": {
-                        window.close();
+                    	try {
+                            window.close();
+                            screen.stopScreen();
+                            terminal.close(); } catch(IOException e) {
+                            	e.printStackTrace();
+                            }
                         org.orgst.Salvade.Main.start();
                         break;
                     }
                     case "exit": {
+                    	try {
                         window.close();
-                        // Exit the program after closing the window
-                        System.exit(0); // Properly terminate the application
+                        screen.stopScreen();
+                        terminal.close(); } catch(IOException e) {
+                        	e.printStackTrace();
+                        }
+                    	org.orgst.App.main(new String[0]);
                         break;
                     }
                     default: {

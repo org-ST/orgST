@@ -6,7 +6,6 @@ public class AppTester {
             System.out.print(">> ");
             Scanner input = new Scanner(System.in);
             String inp = input.nextLine();
-            input.close();
             switch(inp) {
                 case "help": System.out.println("help, exit, info");
                 case "exit": org.orgst.Extras.ChannelViewer.CV(args);

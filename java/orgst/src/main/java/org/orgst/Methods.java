@@ -73,7 +73,6 @@ public class Methods {
         Scanner inp = new Scanner(System.in);
         System.out.print("What do you want to do\nC - Create orgID\nV - Verify orgID\n..> ");
         String opt = inp.nextLine();
-        inp.close();
         switch(opt){
             case "V": org.orgst.OrgID.Client.verusr(); break;
             case "C": org.orgst.OrgID.Client.crusr(); break;
@@ -93,7 +92,6 @@ public class Methods {
         Scanner inp = new Scanner(System.in);
         System.out.print("..> ");
         String Cmd = inp.nextLine();
-        inp.close();
         return Cmd;
     }
     public static void sauce() {
@@ -117,7 +115,6 @@ public class Methods {
         Scanner inp = new Scanner(System.in);
         String sel = inp.nextLine();
         String[] args = {};
-        inp.close();
         switch(sel){
             case "1" : org.orgst.Extras.ChannelMenu.main(args);
             case "2" : org.orgst.Extras.ChannelViewer.CV(args);

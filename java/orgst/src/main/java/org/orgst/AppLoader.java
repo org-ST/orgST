@@ -1,7 +1,6 @@
 package org.orgst;
 
 import java.io.IOException;
-import java.util.Scanner;
 import com.googlecode.lanterna.TerminalSize;
 import com.googlecode.lanterna.TextColor;
 import com.googlecode.lanterna.gui2.*;
@@ -57,6 +56,9 @@ public class AppLoader {
                         break;
                     }
                     case "exit": {
+                        window.close();
+                        // Exit the program after closing the window
+                        System.exit(0); // Properly terminate the application
                         break;
                     }
                     default: {

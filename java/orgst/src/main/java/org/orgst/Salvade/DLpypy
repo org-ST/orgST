@@ -5,7 +5,7 @@ import java.nio.file.*;
 import java.util.*;
 
 public class DLpypy {
-    public static void main(String[] args) {
+    public static void main() {
         try {
             // Check if PyPy is installed
             String command = "which pypy"; // or "pypy --version"
@@ -27,13 +27,31 @@ public class DLpypy {
                 String destFile = "pypy.tar.bz2";
 
                 if (os.contains("win")) {
-                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-win32.zip"; // Windows
-                    destFile = "pypy.zip";
+                    if (arch.contains("arm")) {
+                        // For ARM on Windows, it's not well-supported by PyPy, so we might skip it
+                        System.out.println("ARM-based Windows support for PyPy is Not Available.");
+                        return;
+                    } else {
+                        url = "https://downloads.python.org/pypy/pypy3.10-v7.3.19-win64.zip"; // Windows x86
+                        destFile = "pypy.zip";
+                    }
                 } else if (os.contains("mac")) {
-                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-darwin64.tar.bz2"; // macOS
+                    if (arch.contains("aarch64")) {
+                        // ARM-based macOS (Apple M1/M2)
+                        url = "https://downloads.python.org/pypy/pypy3.11-v7.3.19-macos_arm64.tar.bz2"; // macOS ARM
+                    } else {
+                        // Intel macOS
+                        url = "https://downloads.python.org/pypy/pypy3.11-v7.3.19-macos_x86_64.tar.bz2"; // macOS x86_64
+                    }
                     destFile = "pypy-macos.tar.bz2";
                 } else if (os.contains("nix") || os.contains("nux")) {
-                    url = "https://downloads.python.org/pypy/pypy3.7-v7.3.9-linux64.tar.bz2"; // Linux
+                    if (arch.contains("aarch64")) {
+                        // Linux ARM (aarch64)
+                        url = "https://downloads.python.org/pypy/pypy3.11-v7.3.19-aarch64.tar.bz2"; // Linux ARM
+                    } else {
+                        // x86_64 Linux
+                        url = "https://downloads.python.org/pypy/pypy3.10-v7.3.19-linux64.tar.bz2"; // Linux x86_64
+                    }
                     destFile = "pypy-linux.tar.bz2";
                 }
 

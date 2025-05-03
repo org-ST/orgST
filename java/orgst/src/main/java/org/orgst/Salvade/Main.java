@@ -4,7 +4,19 @@ import java.io.*;
 public class Main {
     public static void start() {
         try {
+            String command = "which pypy"; // or "pypy --version"
+            String os = System.getProperty("os.name").toLowerCase();
+
+            if (os.contains("win")) {
+                command = "where pypy";
+            }
+
+            Process process = Runtime.getRuntime().exec(command);
+            int exitCode = process.waitFor();
             // Load the resource
+            if (exitCode!=0){
+                org.orgst.Salvade.DLpypy.main();
+            }
             InputStream in = Main.class.getResourceAsStream("/sal.py");
 
             if (in == null) {

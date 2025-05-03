@@ -27,7 +27,6 @@ public class ChannelMenu extends Application {
             	} else {
             	org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));
             }});
-            root.getChildren().add(buttons[i]);
             root.add(buttons[i] , 0, i);
         }
         primStage.setOnCloseRequest(e -> {

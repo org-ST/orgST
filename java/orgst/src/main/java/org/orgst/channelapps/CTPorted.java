@@ -20,6 +20,7 @@ public class CTPorted {
                         System.out.print("Please enter a number: ");
                         opTD[i+1] = opScanner.nextLine();
                     }
+                    opScanner.close();
                     String out = new String();
                     switch(opTD[0]) {
                         case "add": out = Double.toString(Double.parseDouble(opTD[1]) + Double.parseDouble(opTD[2])); break;
@@ -43,6 +44,7 @@ public class CTPorted {
                                 } catch (Exception e) {
                                     System.out.println("Invalid input.");
                                 }
+                                lopScanner.close();
                             } else {
                                 System.out.println("No previous operation available.");
                             }
@@ -61,6 +63,7 @@ public class CTPorted {
                     System.out.println("- " + String.join(", ", os.name));
                 }
             }
+            cScanner.close();
         }
     }
 }

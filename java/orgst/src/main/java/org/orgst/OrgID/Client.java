@@ -37,6 +37,7 @@ public class Client {
         String password = inp.nextLine();
         String url = HOST + "/create";
         int res = submit(url, username, password);
+        inp.close();
         switch(res){
             case 200 : return true;
             case 409 : return false;
@@ -51,6 +52,7 @@ public class Client {
         String password = inp.nextLine();
         String url = HOST + "/verify";
         int res = submit(url, username, password);
+        inp.close();
         switch(res){
             case 200 : return true;
             case 404 : return false;

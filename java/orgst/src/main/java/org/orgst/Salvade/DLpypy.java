@@ -2,7 +2,6 @@ package org.orgst.Salvade;
 import java.io.*;
 import java.net.*;
 import java.nio.file.*;
-import java.util.*;
 
 public class DLpypy {
     public static void main() {
@@ -10,12 +9,14 @@ public class DLpypy {
             // Check if PyPy is installed
             String command = "which pypy"; // or "pypy --version"
             String os = System.getProperty("os.name").toLowerCase();
-
+            String arch = System.getProperty("os.arch").toLowerCase();
             if (os.contains("win")) {
                 command = "where pypy";
             }
 
-            Process process = Runtime.getRuntime().exec(command);
+            ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
             int exitCode = process.waitFor();
 
             // If PyPy is not installed (exitCode 1)
@@ -54,8 +55,10 @@ public class DLpypy {
                     }
                     destFile = "pypy-linux.tar.bz2";
                 }
+                try {
+                URL downloadUrl = new URI(url).toURL();
 
-                try (InputStream in = new URL(url).openStream()) {
+                try (InputStream in = downloadUrl.openStream()) {
                     Files.copy(in, new File(destFile).toPath(), StandardCopyOption.REPLACE_EXISTING);
                     System.out.println("Downloaded PyPy!");
 
@@ -77,6 +80,7 @@ public class DLpypy {
                 } catch (IOException e) {
                     System.out.println("Failed to download or extract PyPy: " + e.getMessage());
                 }
+            } catch (URISyntaxException e) {e.printStackTrace();}
             } else {
                 System.out.println("PyPy is already installed!");
             }

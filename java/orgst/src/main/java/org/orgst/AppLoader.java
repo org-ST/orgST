@@ -31,7 +31,6 @@ public class AppLoader {
             panel.addComponent(new EmptySpace(new TerminalSize(0, 0))); 
             panel.addComponent(new Button("Open", () -> {
                 String input = nameIn.getText().trim().toLowerCase(); // normalize input
-                boolean appFound = false; // Flag to track whether the app was found
                 
                 switch (input) {
                     case "salvade": {

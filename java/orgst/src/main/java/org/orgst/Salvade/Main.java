@@ -11,8 +11,11 @@ public class Main {
                 command = "where pypy";
             }
 
-            Process process = Runtime.getRuntime().exec(command);
+            ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
+            processBuilder.redirectErrorStream(true);
+            Process process = processBuilder.start();
             int exitCode = process.waitFor();
+            
             // Load the resource
             if (exitCode!=0){
                 org.orgst.Salvade.DLpypy.main();

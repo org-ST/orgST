@@ -35,7 +35,7 @@ public class App {
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
                 break;
             case "apl":
-                AppLoader.main();
+                AppLoader.main(new String[0]);
                 break;
             default:
                 System.out.println("Command not found " + words[0]);

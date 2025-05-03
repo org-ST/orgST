@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
+import javafx.application.Platform;
 public class Flag extends Application {
 
     @Override
@@ -25,6 +25,11 @@ public class Flag extends Application {
         primaryStage.setTitle("Pride Flag");
         primaryStage.setScene(scene);
         primaryStage.show();
+        primaryStage.setOnCloseRequest( event -> {
+        		Platform.exit();
+        		org.orgst.App.main(new String[0]);
+        	}
+        );
     }
 
     public static void main(String[] args) {

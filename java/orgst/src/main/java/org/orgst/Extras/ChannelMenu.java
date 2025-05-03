@@ -24,6 +24,11 @@ public class ChannelMenu extends Application {
             root.getChildren().add(buttons[i]);
             btnY += 40;
         }
+        primStage.setOnCloseRequest( event -> {
+    			Platform.exit();
+    			org.orgst.App.main(new String[0]);
+    		}
+        );
         Scene scene = new Scene(root, 400, 400);
         primStage.setScene(scene);
         primStage.show();

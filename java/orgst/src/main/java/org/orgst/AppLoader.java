@@ -35,27 +35,20 @@ public class AppLoader {
                 
                 switch (input) {
                     case "salvade": {
-                        appFound = true;
+                        window.close();
                         org.orgst.Salvade.Main.start();
                         break;
                     }
                     case "exit": {
-                        appFound = true;
+                        window.close();
                         org.orgst.App.main(new String[0]);
                         break;
                     }
                     default: {
                         System.out.println("Unknown app: " + input);
+                        nameIn.setText("");
                         break;
                     }
-                }
-                
-                if (appFound) {
-                    window.close(); // Close the window only if a valid app was found
-                } else {
-                    // You could add a "try again" message or make some changes here if needed.
-                    System.out.println("Invalid option. Please try again.");
-                    nameIn.setText(""); // Clear the text box for a new attempt
                 }
             }));
 

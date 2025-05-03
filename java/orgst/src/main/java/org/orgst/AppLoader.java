@@ -22,28 +22,31 @@ public class AppLoader {
         panel.addComponent(new Label("App Name"));
         TextBox nameIn = new TextBox();
         panel.addComponent(nameIn);
-
+        BasicWindow window = new BasicWindow();
+        window.setComponent(panel);
         panel.addComponent(new EmptySpace(new TerminalSize(0,0))); // Empty space underneath labels
         panel.addComponent(new Button("Open", () -> {
             String input = nameIn.getText().trim().toLowerCase(); // normalize input
 
             switch (input) {
                 case "salvade":{
+                    window.close();
                     org.orgst.Salvade.Main.start();
                     break;
                 }
                 case "exit": {
+                    window.close();
                     org.orgst.App.main(new String[0]);
                 }
                 default:
+                    window.close();
                     System.out.println("Unknown app: " + input);
                     break;
             }
         }));
 
         // Create window to hold the panel
-        BasicWindow window = new BasicWindow();
-        window.setComponent(panel);
+        
 
         // Create gui and start gui
         MultiWindowTextGUI gui = new MultiWindowTextGUI(screen, new DefaultWindowManager(), new EmptySpace(TextColor.ANSI.BLUE));

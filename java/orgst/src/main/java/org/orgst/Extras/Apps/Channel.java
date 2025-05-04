@@ -1,73 +1,82 @@
 package org.orgst.Extras.Apps;
-import javafx.scene.Scene;
-import javafx.application.Platform;
-import javafx.scene.Group;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.stage.Stage;
-import org.orgst.Variables.ChannelData;
+
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.ActionEvent;
 import java.util.List;
 import java.util.Arrays;
-// Add people - info - check
+import org.orgst.Variables.ChannelData;
+
 public class Channel {
     public static void Start(ChannelData.Data data) {
-        Stage stage = new Stage(); // create a NEW stage
-        Label label = new Label();
-        label.setTranslateY(80);
-        label.setTranslateX(125);
-        Button name = new Button("Name");
-        Button site = new Button("WebSite");
-        Button date = new Button("Date");
-        Button comm = new Button("Comment");
-        Button peple = new Button("People");
-        Button info = new Button("Info");
-        Button check = new Button("Check");
-        List<Button> buttons = Arrays.asList(name, site, date, comm, peple, info, check);
-        info.setOnAction(e -> {
-            label.setText(data.info);
-        });
-        check.setOnAction(e -> {
-            if (data.files != null){
+        // Create JFrame instead of Stage
+        JFrame frame = new JFrame(data.name); // Set the title to data.name
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500, 350);
+        frame.setLocationRelativeTo(null); // Center the window on the screen
+
+        // Create a label for displaying information
+        JLabel label = new JLabel("", SwingConstants.CENTER);
+        label.setBounds(125, 80, 250, 20); // Set position for label
+
+        // Create buttons
+        JButton nameButton = new JButton("Name");
+        JButton siteButton = new JButton("WebSite");
+        JButton dateButton = new JButton("Date");
+        JButton commButton = new JButton("Comment");
+        JButton peopleButton = new JButton("People");
+        JButton infoButton = new JButton("Info");
+        JButton checkButton = new JButton("Check");
+
+        // List of buttons
+        List<JButton> buttons = Arrays.asList(nameButton, siteButton, dateButton, commButton, peopleButton, infoButton, checkButton);
+
+        // Set ActionListeners for buttons
+        infoButton.addActionListener(e -> label.setText(data.info));
+        checkButton.addActionListener(e -> {
+            if (data.files != null) {
                 label.setText("Please check your terminal...");
-                	stage.close();
-                	Platform.exit();
-                    data.files.run();
+                // Here, you might want to close the window or handle the file execution differently
+                frame.setVisible(false);
+                data.files.run();
             } else {
                 label.setText("No files available");
             }
         });
-        peple.setOnAction(e -> {
+        peopleButton.addActionListener(e -> {
             StringBuilder peopleStringBuilder = new StringBuilder();
-            for (String st : data.people){
-                peopleStringBuilder.append(st + ", ");
+            for (String st : data.people) {
+                peopleStringBuilder.append(st).append(", ");
             }
             label.setText(peopleStringBuilder.toString());
         });
-        name.setOnAction(e -> label.setText(data.name));
-        site.setOnAction(e -> {
-                    if (data.website !=null){
-                        label.setText("Opening..."); org.orgst.Extras.WebOpener.open(data.website);
-                    } else {
-                        label.setText("There is no website :(");
-                    }
-
-                }
-            );
-        date.setOnAction(e -> label.setText(data.date));
-        comm.setOnAction(e -> label.setText(data.comment));
-        for (int i = 0; i < buttons.size(); i++) {
-            Button button = buttons.get(i);
-            button.setLayoutX(20);
-            button.setLayoutY(20 + (i * 40));
-        }
-        Group root = new Group(label, name, site, date, comm, peple, info, check);
-        Scene scene = new Scene(root, 500, 350);
-        stage.setOnCloseRequest(e -> {
-        	stage.close();
-            Platform.exit();
+        nameButton.addActionListener(e -> label.setText(data.name));
+        siteButton.addActionListener(e -> {
+            if (data.website != null) {
+                label.setText("Opening...");
+                org.orgst.Extras.WebOpener.open(data.website); // Assuming this method works for Swing
+            } else {
+                label.setText("There is no website :(");
+            }
         });
-        stage.setScene(scene);
-        stage.setTitle(data.name);
-        stage.show();
+        dateButton.addActionListener(e -> label.setText(data.date));
+        commButton.addActionListener(e -> label.setText(data.comment));
+
+        // Set layout to null for absolute positioning (or use another layout manager)
+        frame.setLayout(null);
+
+        // Set positions for buttons
+        int yPosition = 20;
+        for (JButton button : buttons) {
+            button.setBounds(20, yPosition, 100, 30); // Positioning buttons vertically
+            yPosition += 40; // Spacing between buttons
+            frame.add(button);
+        }
+
+        // Add label to the frame
+        frame.add(label);
+
+        // Display the frame
+        frame.setVisible(true);
     }
 }

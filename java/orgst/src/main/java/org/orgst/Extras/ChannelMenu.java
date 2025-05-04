@@ -1,34 +1,36 @@
 package org.orgst.Extras;
+
 import org.orgst.Variables.ChannelData;
-import javafx.application.*;
-import javafx.stage.*;
-import javafx.scene.*;
-import javafx.scene.control.Button;
-import javafx.scene.layout.GridPane;
-import javafx.geometry.Pos;
-public class ChannelMenu extends Application {
+import org.orgst.Extras.Apps.Channel;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class ChannelMenu {
     public static void main(String[] args) {
         System.out.println("Launching");
-        launch(args);
-    }
-    public void start(Stage primStage){
-        Button[] buttons = new Button[ChannelData.Channels.length];
-        GridPane root = new GridPane();
-        root.setVgap(10);
-        root.setHgap(10);
-        for (int i = 0; i < ChannelData.Channels.length; i++){
-            buttons[i] = new Button(ChannelData.Channels[i]);
+
+        // Create frame
+        JFrame frame = new JFrame("Channel Menu");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(400, 400);
+        frame.setLocationRelativeTo(null); // Center window
+
+        // Use a grid layout: 1 column, variable rows
+        JPanel panel = new JPanel(new GridLayout(ChannelData.Channels.length, 1, 10, 10));
+        panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Padding
+
+        for (int i = 0; i < ChannelData.Channels.length; i++) {
+            String name = ChannelData.Channels[i];
+            JButton button = new JButton(name);
             final int index = i;
-            buttons[i].setOnAction(e -> {org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));});
-            root.add(buttons[i] , 0, i);
+            button.addActionListener(e ->
+                    Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]))
+            );
+            panel.add(button);
         }
-        primStage.setOnCloseRequest(e -> {
-        	primStage.close();
-            Platform.exit();
-        });
-        root.setAlignment(Pos.CENTER);
-        Scene scene = new Scene(root, 400, 400);
-        primStage.setScene(scene);
-        primStage.show();
+
+        frame.add(panel);
+        frame.setVisible(true);
     }
 }

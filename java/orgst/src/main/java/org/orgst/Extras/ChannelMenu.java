@@ -25,7 +25,6 @@ public class ChannelMenu extends Application {
         primStage.setOnCloseRequest(e -> {
         	primStage.close();
             Platform.exit();
-            org.orgst.App.main(new String[0]);
         });
         root.setAlignment(Pos.CENTER);
         Scene scene = new Scene(root, 400, 400);

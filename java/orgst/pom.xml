@@ -40,13 +40,11 @@
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-controls</artifactId>
         <version>${javafx.version}</version>
-        <classifier>${javafx.platform}</classifier>
     </dependency>
     <dependency>
         <groupId>org.openjfx</groupId>
         <artifactId>javafx-fxml</artifactId>
         <version>${javafx.version}</version>
-        <classifier>${javafx.platform}</classifier>
     </dependency>
 </dependencies>
 
@@ -123,7 +121,6 @@
                     <goals><goal>shade</goal></goals>
                     <configuration>
                         <createDependencyReducedPom>false</createDependencyReducedPom>
-                        <finalName>${finalName}</finalName>
                         <transformers>
                             <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
                                 <mainClass>${mainClass}</mainClass>
@@ -135,37 +132,5 @@
         </plugin>
     </plugins>
 </build>
-<profiles>
-    <profile>
-        <id>win</id>
-        <properties>
-            <finalName>orgST-win</finalName>
-            <javafx.platform>win</javafx.platform>
-        </properties>
-    </profile>
 
-    <profile>
-        <id>linux</id>
-        <properties>
-            <finalName>orgST-lin</finalName>
-            <javafx.platform>linux</javafx.platform>
-        </properties>
-    </profile>
-
-    <profile>
-        <id>mac-intel</id>
-        <properties>
-            <finalName>orgST-mac</finalName>
-            <javafx.platform>mac</javafx.platform>
-        </properties>
-    </profile>
-
-    <profile>
-        <id>mac-arm</id>
-        <properties>
-            <finalName>orgST-mac-aarch</finalName>
-            <javafx.platform>mac-aarch64</javafx.platform>
-        </properties>
-    </profile>
-</profiles>
 </project>

@@ -65,7 +65,6 @@ public class Channel {
         stage.setOnCloseRequest(e -> {
         	stage.close();
             Platform.exit();
-            org.orgst.App.main(new String[0]);
         });
         stage.setScene(scene);
         stage.setTitle(data.name);

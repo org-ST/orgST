@@ -5,6 +5,8 @@ import org.orgst.Extras.Apps.Channel;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 
 public class ChannelMenu {
     public static void main(String[] args) {
@@ -12,7 +14,16 @@ public class ChannelMenu {
 
         // Create frame
         JFrame frame = new JFrame("Channel Menu");
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Close the window but don't exit the application
+
+        // Add a WindowListener to run a custom function on close
+        frame.addWindowListener(new WindowAdapter() {
+            @Override
+            public void windowClosing(WindowEvent e) {
+                org.orgst.Extras.ChannelMenu.main(new String[0]);
+                frame.dispose(); // Disposes the window after running the function
+            }
+        });
         frame.setSize(400, 400);
         frame.setLocationRelativeTo(null); // Center window
 

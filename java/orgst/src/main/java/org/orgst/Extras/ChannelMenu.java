@@ -19,13 +19,7 @@ public class ChannelMenu extends Application {
         for (int i = 0; i < ChannelData.Channels.length; i++){
             buttons[i] = new Button(ChannelData.Channels[i]);
             final int index = i;
-            buttons[i].setOnAction(e -> {
-            	if (org.orgst.Variables.ChannelData.Channels[index].equals("The Home Room Channel")) {
-            		primStage.close();
-            		org.orgst.Extras.Apps.Channel.Start(org.orgst.Variables.ChannelData.channels.get("The Home Room Channel"));
-            	} else {
-            	org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));
-            }});
+            buttons[i].setOnAction(e -> {org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));});
             root.add(buttons[i] , 0, i);
         }
         primStage.setOnCloseRequest(e -> {

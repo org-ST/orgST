@@ -1,57 +1,57 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
+<modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.orgst</groupId>
-    <version>1.8</version>
-    <artifactId>orgST</artifactId>
-    <name>orgST</name>
-    <url>https://orgst.ca</url>
+<groupId>org.orgst</groupId>
+<version>1.8</version>
+<artifactId>orgST</artifactId>
+<name>orgST</name>
+<url>https://orgst.ca</url>
 
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>21</maven.compiler.source>
-        <maven.compiler.target>21</maven.compiler.target>
-        <mainClass>org.orgst.App</mainClass>
-        <javafx.version>21</javafx.version>
-        <mavenVersion>3.9.9</mavenVersion>
-        <maven.build.timestamp.format>dd-MM-yyyy'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-    </properties>
+<properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>21</maven.compiler.source>
+    <maven.compiler.target>21</maven.compiler.target>
+    <mainClass>org.orgst.App</mainClass>
+    <javafx.version>21</javafx.version>
+    <mavenVersion>3.9.9</mavenVersion>
+    <maven.build.timestamp.format>dd-MM-yyyy'T'HH:mm:ss'Z'</maven.build.timestamp.format>
+</properties>
 
-    <repositories>
-        <repository>
-            <id>central</id>
-            <url>https://repo.maven.apache.org/maven2</url>
-        </repository>
-    </repositories>
+<repositories>
+    <repository>
+        <id>central</id>
+        <url>https://repo.maven.apache.org/maven2</url>
+    </repository>
+</repositories>
 
-    <dependencies>
-            <!-- Lanterna -->
-            <dependency>
-                <groupId>com.googlecode.lanterna</groupId>
-                <artifactId>lanterna</artifactId>
-                <version>3.1.1</version>
-            </dependency>
+<dependencies>
+    <!-- Lanterna -->
+    <dependency>
+        <groupId>com.googlecode.lanterna</groupId>
+        <artifactId>lanterna</artifactId>
+        <version>3.1.1</version>
+    </dependency>
 
-            <!-- JavaFX platform-aware -->
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-controls</artifactId>
-                <version>${javafx.version}</version>
-                <classifier>${javafx.platform}</classifier>
-            </dependency>
-            <dependency>
-                <groupId>org.openjfx</groupId>
-                <artifactId>javafx-fxml</artifactId>
-                <version>${javafx.version}</version>
-                <classifier>${javafx.platform}</classifier>
-            </dependency>
-    </dependencies>
+    <!-- JavaFX platform-aware -->
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>${javafx.version}</version>
+        <classifier>${javafx.platform}</classifier>
+    </dependency>
+    <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-fxml</artifactId>
+        <version>${javafx.version}</version>
+        <classifier>${javafx.platform}</classifier>
+    </dependency>
+</dependencies>
 
-    <build>
-        <plugins>
+<build>
+    <plugins>
         <plugin>
             <groupId>org.codehaus.mojo</groupId>
             <artifactId>exec-maven-plugin</artifactId>
@@ -103,68 +103,69 @@
                 </execution>
             </executions>
         </plugin>
-            <!-- Maven Compiler -->
-            <plugin>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.11.0</version>
-                <configuration>
-                    <release>21</release>
-                </configuration>
-            </plugin>
+        <!-- Maven Compiler -->
+        <plugin>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.11.0</version>
+            <configuration>
+                <release>21</release>
+            </configuration>
+        </plugin>
 
-            <!-- Maven Shade = ShadowJar -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.0</version>
-                <executions>
-                    <execution>
-                        <phase>package</phase>
-                        <goals><goal>shade</goal></goals>
-                        <configuration>
-                            <createDependencyReducedPom>false</createDependencyReducedPom>
-                            <transformers>
-                                <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>${mainClass}</mainClass>
-                                </transformer>
-                            </transformers>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
-    </build>
-    <profiles>
-        <profile>
-            <id>win</id>
-            <properties>
-                <finalName>orgST-win</finalName>
-                <javafx.platform>win</javafx.platform>
-            </properties>
-        </profile>
+        <!-- Maven Shade = ShadowJar -->
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-shade-plugin</artifactId>
+            <version>3.5.0</version>
+            <executions>
+                <execution>
+                    <phase>package</phase>
+                    <goals><goal>shade</goal></goals>
+                    <configuration>
+                        <createDependencyReducedPom>false</createDependencyReducedPom>
+                        <finalName>${finalName}</finalName>
+                        <transformers>
+                            <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+                                <mainClass>${mainClass}</mainClass>
+                            </transformer>
+                        </transformers>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+</build>
+<profiles>
+    <profile>
+        <id>win</id>
+        <properties>
+            <finalName>orgST-win</finalName>
+            <javafx.platform>win</javafx.platform>
+        </properties>
+    </profile>
 
-        <profile>
-            <id>linux</id>
-            <properties>
-                <finalName>orgST-lin</finalName>
-                <javafx.platform>linux</javafx.platform>
-            </properties>
-        </profile>
+    <profile>
+        <id>linux</id>
+        <properties>
+            <finalName>orgST-lin</finalName>
+            <javafx.platform>linux</javafx.platform>
+        </properties>
+    </profile>
 
-        <profile>
-            <id>mac-intel</id>
-            <properties>
-                <finalName>orgST-mac</finalName>
-                <javafx.platform>mac</javafx.platform>
-            </properties>
-        </profile>
+    <profile>
+        <id>mac-intel</id>
+        <properties>
+            <finalName>orgST-mac</finalName>
+            <javafx.platform>mac</javafx.platform>
+        </properties>
+    </profile>
 
-        <profile>
-            <id>mac-arm</id>
-            <properties>
-                <finalName>orgST-mac-aarch</finalName>
-                <javafx.platform>mac-aarch64</javafx.platform>
-            </properties>
-        </profile>
-    </profiles>
+    <profile>
+        <id>mac-arm</id>
+        <properties>
+            <finalName>orgST-mac-aarch</finalName>
+            <javafx.platform>mac-aarch64</javafx.platform>
+        </properties>
+    </profile>
+</profiles>
 </project>

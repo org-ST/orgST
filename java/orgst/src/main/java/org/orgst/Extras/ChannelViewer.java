@@ -7,14 +7,16 @@ public class ChannelViewer {
     String[] yes_ins = {"y","yes","Yes","Y","check","Check"};
     String[] no_ins = {"n","no","No","N"};
     public static void help(){
-        System.out.println("commands: check, products, people, website, info, comment, edit, test");
+        System.out.println("Channel Commands: check, products, people, website, info, comment\nMain Menu Commands: edit, test, rl\nExtras : exit, help");
     }
-    public static void CV(String[] args) {
-        System.out.println("Channel Viewer V2.0.1 - Java Beta");
+    public static void get(){
         GetUsrChannels.get();
         for (int i = 0; i < ChannelData.Channels.toArray().length; i++){
             System.out.println( i+1 + " " + ChannelData.Channels.get(i));
-        }
+        }}
+    public static void CV(String[] args) {
+        System.out.println("Channel Viewer V2.0.1 - Java Beta");
+        get();
         Scanner inpscanner = new Scanner(System.in);
         while (true){
             System.out.print("..> ");
@@ -25,6 +27,7 @@ public class ChannelViewer {
             CVchannel(channel, inpscanner, args);
             } catch (Exception e) {
                 switch(inp){
+                    case "rl": get(); break;
                     case "help" : help(); break;
                     case "exit" : App.main(args); break;
                     case "DON'T YOU FRICKIN DARE" : System.out.println("ok man geez"); break;

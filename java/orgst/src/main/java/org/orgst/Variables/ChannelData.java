@@ -1,5 +1,7 @@
 package org.orgst.Variables;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 public class ChannelData {
     public static class Data {
         public String name;
@@ -32,7 +34,15 @@ public class ChannelData {
         }
 
     }
-    public static String[] Channels = {"OrgST Public Channel", "CalcTech Channel", "Toyathings MMD Channel", "The Archive Channel", "The Debug Channel", "The Home Room Channel"};
+    public static List<String> Channels = new ArrayList<String>();
+    static {
+        Channels.add("OrgST Public Channel");
+        Channels.add("CalcTech Channel");
+        Channels.add("Toyathings MMD Channel");
+        Channels.add("The Archive Channel");
+        Channels.add("The Debug Channel");
+        Channels.add("The Home Room Channel");
+    }
     public static HashMap<String, Data> channels = new HashMap<>();
     static {
         channels = new HashMap<>();

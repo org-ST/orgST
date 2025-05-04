@@ -27,15 +27,15 @@ public class ChannelMenu {
         frame.setLocationRelativeTo(null); // Center window
 
         // Use a grid layout: 1 column, variable rows
-        JPanel panel = new JPanel(new GridLayout(ChannelData.Channels.length, 1, 10, 10));
+        JPanel panel = new JPanel(new GridLayout(ChannelData.Channels.toArray().length, 1, 10, 10));
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20)); // Padding
 
-        for (int i = 0; i < ChannelData.Channels.length; i++) {
-            String name = ChannelData.Channels[i];
+        for (int i = 0; i < ChannelData.Channels.toArray().length; i++) {
+            String name = ChannelData.Channels.get(i);
             JButton button = new JButton(name);
             final int index = i;
             button.addActionListener(e ->
-                    Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]))
+                    Channel.Start(ChannelData.channels.get(ChannelData.Channels.get(index)))
             );
             panel.add(button);
         }

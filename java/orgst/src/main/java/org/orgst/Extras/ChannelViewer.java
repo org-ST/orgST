@@ -1,7 +1,6 @@
 package org.orgst.Extras;
 
 import java.util.Scanner;
-
 import org.orgst.App;
 import org.orgst.Variables.ChannelData;
 public class ChannelViewer {
@@ -11,11 +10,10 @@ public class ChannelViewer {
         System.out.println("commands: check, products, people, website, info, comment, edit, test");
     }
     public static void CV(String[] args) {
-
         System.out.println("Channel Viewer V2.0.1 - Java Beta");
         System.out.println("Would you like to check the current channels?");
-        for (int i = 0; i < ChannelData.Channels.length; i++){
-            System.out.println( i+1 + " " + ChannelData.Channels[i]);
+        for (int i = 0; i < ChannelData.Channels.toArray().length; i++){
+            System.out.println( i+1 + " " + ChannelData.Channels.get(i));
         }
         Scanner inpscanner = new Scanner(System.in);
         while (true){
@@ -23,7 +21,7 @@ public class ChannelViewer {
             String inp = inpscanner.nextLine();   
             try {
             int inpi = Integer.parseInt(inp);
-            String channel = ChannelData.Channels[inpi-1];
+            String channel = ChannelData.Channels.get(inpi-1);
             CVchannel(channel, inpscanner, args);
             } catch (Exception e) {
                 switch(inp){

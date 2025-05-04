@@ -28,6 +28,11 @@
 </repositories>
 
 <dependencies>
+    <dependency>
+        <groupId>com.github.javaparser</groupId>
+        <artifactId>javaparser-core</artifactId>
+        <version>3.24.0</version>
+    </dependency>
     <!-- Lanterna -->
     <dependency>
         <groupId>com.googlecode.lanterna</groupId>

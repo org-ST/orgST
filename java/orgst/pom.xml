@@ -138,7 +138,7 @@
         <profile>
             <id>win</id>
             <properties>
-                <artifactId>orgST-win</artifactId>
+                <finalName>orgST-win</finalName>
                 <javafx.platform>win</javafx.platform>
             </properties>
         </profile>
@@ -146,7 +146,7 @@
         <profile>
             <id>linux</id>
             <properties>
-                <artifactId>orgST-lin</artifactId>
+                <finalName>orgST-lin</finalName>
                 <javafx.platform>linux</javafx.platform>
             </properties>
         </profile>
@@ -154,7 +154,7 @@
         <profile>
             <id>mac-intel</id>
             <properties>
-                <artifactId>orgST-mac</artifactId>
+                <finalName>orgST-mac</finalName>
                 <javafx.platform>mac</javafx.platform>
             </properties>
         </profile>
@@ -162,7 +162,7 @@
         <profile>
             <id>mac-arm</id>
             <properties>
-                <artifactId>orgST-mac-aarch</artifactId>
+                <finalName>orgST-mac-aarch</finalName>
                 <javafx.platform>mac-aarch64</javafx.platform>
             </properties>
         </profile>

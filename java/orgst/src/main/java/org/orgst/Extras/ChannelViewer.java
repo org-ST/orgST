@@ -11,7 +11,7 @@ public class ChannelViewer {
     }
     public static void CV(String[] args) {
         System.out.println("Channel Viewer V2.0.1 - Java Beta");
-        System.out.println("Would you like to check the current channels?");
+        GetUsrChannels.get();
         for (int i = 0; i < ChannelData.Channels.toArray().length; i++){
             System.out.println( i+1 + " " + ChannelData.Channels.get(i));
         }

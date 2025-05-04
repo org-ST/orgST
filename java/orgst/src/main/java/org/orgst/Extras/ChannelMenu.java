@@ -10,6 +10,7 @@ import java.awt.event.WindowEvent;
 
 public class ChannelMenu {
     public static void main(String[] args) {
+        GetUsrChannels.get();
         System.out.println("Launching");
 
         // Create frame

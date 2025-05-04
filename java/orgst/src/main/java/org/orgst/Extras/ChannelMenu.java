@@ -22,8 +22,7 @@ public class ChannelMenu extends Application {
             buttons[i].setOnAction(e -> {
             	if (org.orgst.Variables.ChannelData.Channels[index].equals("The Home Room Channel")) {
             		primStage.close();
-            		org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));
-                    Platform.exit();
+            		org.orgst.Extras.Apps.Channel.Start(org.orgst.Variables.ChannelData.channels.get("The Home Room Channel"));
             	} else {
             	org.orgst.Extras.Apps.Channel.Start(ChannelData.channels.get(ChannelData.Channels[index]));
             }});

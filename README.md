@@ -1,6 +1,10 @@
 # orgST™
 -- -- -- --
-a console in python that comes with apps. 
+
+## important announcement!
+the python release of orgST will be finished on 2025-05-06 and will be deprecated later. please switch to the beta java version!
+-- -- -- --
+a console in python/java that comes with apps. 
 
 [orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [progman.task](https://github.com/MakiDevelops) is licensed under [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)  
 “orgST”, "organizationSTATION", and the orgST logo are trademarks of orgST.  

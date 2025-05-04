@@ -46,9 +46,8 @@ public class ChannelViewer {
             switch(inp){
                 // Make this actually open the file once ALL of them are ported to Java
                 case "check" : if (data.files == null){
-                    System.out.println("There are no files associated with this channel");
+                    System.out.println("There are no files/functions associated with this channel");
                 } else {
-                    System.out.println("We found some files");
                         data.files.run();
                 }
                 break;

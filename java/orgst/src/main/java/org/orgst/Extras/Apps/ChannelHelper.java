@@ -11,7 +11,7 @@ public class ChannelHelper {
         StringBuilder data = new StringBuilder();
         String name = inp.nextLine();
         data.append("import org.orgst.Variables.ChannelData.Data; public class " + name.replace(" ", "") + " { public static void data(){ Data " + name.toLowerCase().replace(" ", "") + " = new Data(");
-        FileWriter writer = new FileWriter(name.replace(" ", "") + ".java");
+        FileWriter writer = new FileWriter("UserChannels/" + name.replace(" ", "") + ".java");
         System.out.print("Enter your channel comment : ");
         System.out.print("Enter the JAVA Method for your channel to run (Must include semicolon): ");
         String meth = inp.nextLine();

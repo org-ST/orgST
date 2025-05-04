@@ -26,7 +26,6 @@ public class ChannelHelper {
         data.append("\"" + name + "\",new Runnable[]{()-> {" + meth + "}},\"" + site + "\",new String[]{\"" + pepls + "\"},\"" + info + "\",\"" + date + "\");}");
         writer.write(data.toString());
         writer.close();
-        inp.close();
     } catch (IOException e){
         e.printStackTrace();
     }}

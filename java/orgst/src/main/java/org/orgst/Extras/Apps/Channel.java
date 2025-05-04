@@ -49,8 +49,8 @@ public class Channel {
             if (data.files != null) {
                 label.setText("Please check your terminal...");
                 // Here, you might want to close the window or handle the file execution differently
-                frame.setVisible(false);
                 data.files.run();
+                frame.setVisible(false);
             } else {
                 label.setText("No files available");
             }

@@ -10,9 +10,10 @@ public class ChannelHelper {
         System.out.print("Enter channel name : ");
         StringBuilder data = new StringBuilder();
         String name = inp.nextLine();
-        data.append("import org.orgst.Variables.ChannelData.Data; public class " + name.replace(" ", "") + " { public static void data(){ Data " + name.toLowerCase().replace(" ", "") + " = new Data(");
+        data.append("import org.orgst.Variables.ChannelData.Data; public class " + name.replace(" ", "") + " { public static Data data(){ return new Data(");
         FileWriter writer = new FileWriter("UserChannels/" + name.replace(" ", "") + ".java");
         System.out.print("Enter your channel comment : ");
+        String comment = inp.nextLine();
         System.out.print("Enter the JAVA Method for your channel to run (Must include semicolon): ");
         String meth = inp.nextLine();
         System.out.print("Enter your channels website : ");
@@ -23,7 +24,7 @@ public class ChannelHelper {
         String info = inp.nextLine();
         System.out.print("Enter your channels creation date : ");
         String date = inp.nextLine();
-        data.append("\"" + name + "\",new Runnable[]{()-> {" + meth + "}},\"" + site + "\",new String[]{\"" + pepls + "\"},\"" + info + "\",\"" + date + "\");}");
+        data.append("\"" + name + "\",()-> {" + meth + "},\"" + site + "\",false,new String[]{\"" + pepls + "\"},\"" + info + "\",\"" + date + "\",\""+comment+"\");}}");
         writer.write(data.toString());
         writer.close();
     } catch (IOException e){

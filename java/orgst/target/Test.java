@@ -1,1 +1,0 @@
-import org.orgst.Variables.ChannelData.Data; public class Test { public static void data(){ Data test = new Data("Test",new Runnable[]{()-> {System.out.println("Hello from the test chnl");}},"https://weelam.ca",new String[]{"Wdboyes13"},"This is a test channel :3","2025-05-04");}

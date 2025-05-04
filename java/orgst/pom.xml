@@ -126,6 +126,25 @@
                                     <mainClass>${mainClass}</mainClass>
                                 </transformer>
                             </transformers>
+                            <!-- Include native libraries in the shaded JAR -->
+                            <artifactSet>
+                                <includes>
+                                    <!-- Add the libraries you want to include in the shaded JAR -->
+                                    <include>org.openjfx:javafxpackager:${javafx.version}</include>
+                                    <!-- Example of including native libraries -->
+                                    <include>com.example:my-native-lib</include>
+                                </includes>
+                            </artifactSet>
+                            <filters>
+                                <filter>
+                                    <artifact>*:*</artifact>
+                                    <includes>
+                                        <include>**/*.dylib</include>
+                                        <include>**/*.so</include>
+                                        <include>**/*.dll</include>
+                                    </includes>
+                                </filter>
+                            </filters>
                         </configuration>
                     </execution>
                 </executions>

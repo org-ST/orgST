@@ -1,0 +1,300 @@
+[
+  {
+    "name" : "javafx.scene.chart.Chart",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"getAnimated","parameterTypes":[] },
+      {"name":"setAnimated","parameterTypes":["boolean"] }
+    ]
+  },
+  {
+    "name" : "javafx.scene.chart.LineChart",
+    "methods":[
+      {"name":"<init>","parameterTypes":["javafx.scene.chart.Axis", "javafx.scene.chart.Axis"] },
+      {"name":"getCreateSymbols","parameterTypes":[] },
+      {"name":"setCreateSymbols","parameterTypes":["boolean"] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.chart.XYChart",
+    "methods":[
+      {"name":"<init>","parameterTypes":["javafx.scene.chart.Axis", "javafx.scene.chart.Axis"] },
+      {"name":"isHorizontalZeroLineVisible","parameterTypes":[] },
+      {"name":"setHorizontalZeroLineVisible","parameterTypes":["boolean"] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.chart.NumberAxis",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.chart.Axis",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"getSide","parameterTypes":[] },
+      {"name":"setSide","parameterTypes":["javafx.geometry.Side"] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.control.Control"
+  }
+,
+  {
+    "name":"javafx.scene.control.Button",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"setDefaultButton","parameterTypes":["boolean"] },
+      {"name":"isDefaultButton","parameterTypes":[] },
+      {"name":"setCancelButton","parameterTypes":["boolean"] },
+      {"name":"isCancelButton","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.skin.ButtonSkin",
+    "methods":[
+      {"name":"<init>","parameterTypes":["javafx.scene.control.Button"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ButtonBase",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"setOnAction","parameterTypes":["javafx.event.EventHandler"] },
+      {"name":"getOnAction","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.CheckBox",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"isSelected","parameterTypes":[] },
+      {"name":"setSelected","parameterTypes":["boolean"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ContentDisplay",
+    "methods":[
+      {"name":"valueOf","parameterTypes":["java.lang.String"] },
+      {"name":"values","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.Hyperlink",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"<init>","parameterTypes":["java.lang.String","javafx.scene.Node"] },
+      {"name":"isVisited","parameterTypes":[] },
+      {"name":"setVisited","parameterTypes":["boolean"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.Label",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.Labeled",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"setText","parameterTypes":["java.lang.String"] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"getGraphic","parameterTypes":[] },
+      {"name":"setGraphic","parameterTypes":["javafx.scene.Node"] },
+      {"name":"getAlignment","parameterTypes":[] },
+      {"name":"setAlignment","parameterTypes":["javafx.geometry.Pos"] },
+      {"name":"getTextAlignment","parameterTypes":[] },
+      {"name":"setTextAlignment","parameterTypes":["javafx.scene.text.TextAlignment"] },
+      {"name":"getContentDisplay","parameterTypes":[] },
+      {"name":"setContentDisplay","parameterTypes":["javafx.scene.control.ContentDisplay"] },
+      {"name":"setMnemonicParsing","parameterTypes":["boolean"] },
+      {"name":"isMnemonicParsing","parameterTypes":[] },
+      {"name":"setWrapText","parameterTypes":["boolean"] },
+      {"name":"isWrapText","parameterTypes":[] },
+      {"name":"setGraphicTextGap","parameterTypes":["double"] },
+      {"name":"getGraphicTextGap","parameterTypes":[] },
+      {"name":"setTextFill","parameterTypes":["javafx.scene.paint.Paint"] },
+      {"name":"getTextFill","parameterTypes":[] },
+      {"name":"setFont","parameterTypes":["javafx.scene.text.Font"] },
+      {"name":"getFont","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ListView",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["javafx.collections.ObservableList"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.PasswordField",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.control.ProgressBar",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["double"] }
+    ]
+  }
+,
+  {
+    "name" : "javafx.scene.control.RadioButton",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ScrollPane",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["javafx.scene.Node"] },
+      {"name":"getContent","parameterTypes":[] },
+      {"name":"setContent","parameterTypes":["javafx.scene.Node"] },
+      {"name":"isFitToWidth","parameterTypes":[] },
+      {"name":"setFitToWidth","parameterTypes":["boolean"] },
+      {"name":"isFitToHeight","parameterTypes":[] },
+      {"name":"setFitToHeight","parameterTypes":["boolean"] },
+      {"name":"getHbarPolicy","parameterTypes":[] },
+      {"name":"setHbarPolicy","parameterTypes":["javafx.scene.control.ScrollPane$ScrollBarPolicy"] },
+      {"name":"getVbarPolicy","parameterTypes":[] },
+      {"name":"setVbarPolicy","parameterTypes":["javafx.scene.control.ScrollPane$ScrollBarPolicy"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ScrollPane$ScrollBarPolicy",
+    "methods":[
+      {"name":"valueOf","parameterTypes":["java.lang.String"] },
+      {"name":"values","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.Separator",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["javafx.geometry.Orientation"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.Tab",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"<init>","parameterTypes":["java.lang.String", "javafx.scene.Node"] },
+      {"name":"getId","parameterTypes":[] },
+      {"name":"setId","parameterTypes":["java.lang.String"] },
+      {"name":"getContent","parameterTypes":[] },
+      {"name":"setContent","parameterTypes":["javafx.scene.Node"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.TabPane",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["javafx.scene.control.Tab[]"] },
+      {"name":"setTabClosingPolicy","parameterTypes":["javafx.scene.control.TabPane$TabClosingPolicy"] },
+      {"name":"getTabClosingPolicy","parameterTypes":[] },
+      {"name":"getTabs","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.TabPane$TabClosingPolicy",
+    "methods":[
+      {"name":"valueOf","parameterTypes":["java.lang.String"] },
+      {"name":"values","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.TextInputControl",
+    "methods":[
+      {"name":"setText","parameterTypes":["java.lang.String"] },
+      {"name":"getText","parameterTypes":[] },
+      {"name":"setPromptText","parameterTypes":["java.lang.String"] },
+      {"name":"getPromptText","parameterTypes":[] },
+      {"name":"setEditable","parameterTypes":["boolean"] },
+      {"name":"isEditable","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.TextArea",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] },
+      {"name":"setWrapText","parameterTypes":["boolean"] },
+      {"name":"isWrapText","parameterTypes":[] }
+    ],
+    "fields":[{"name": "wrapText"}]
+  }
+,
+  {
+    "name":"javafx.scene.control.TextField",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["java.lang.String"] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ToggleGroup",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ToggleButton",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"setToggleGroup","parameterTypes":["javafx.scene.control.ToggleGroup"] },
+      {"name":"getToggleGroup","parameterTypes":[] }
+    ]
+  }
+,
+  {
+    "name":"javafx.scene.control.ToolBar",
+    "methods":[
+      {"name":"<init>","parameterTypes":[] },
+      {"name":"<init>","parameterTypes":["javafx.scene.Node[]"] },
+      {"name":"getItems","parameterTypes":[] }
+    ],
+    "fields":[ {"name": "items"}]
+  }
+,
+  {
+    "name":"com.sun.javafx.scene.control.skin.Utils",
+    "methods":[{"name":"getResource","parameterTypes":["java.lang.String"] }]
+  }
+]

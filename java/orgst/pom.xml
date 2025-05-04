@@ -5,9 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.orgst</groupId>
-    <artifactId>orgST</artifactId>
     <version>1.8</version>
-
+    <artifactId>orgST</artifactId>
     <name>orgST</name>
     <url>https://orgst.ca</url>
 
@@ -139,6 +138,7 @@
         <profile>
             <id>win</id>
             <properties>
+                <artifactId>orgST-win</artifactId>
                 <javafx.platform>win</javafx.platform>
             </properties>
         </profile>
@@ -146,6 +146,7 @@
         <profile>
             <id>linux</id>
             <properties>
+                <artifactId>orgST-lin</artifactId>
                 <javafx.platform>linux</javafx.platform>
             </properties>
         </profile>
@@ -153,6 +154,7 @@
         <profile>
             <id>mac-intel</id>
             <properties>
+                <artifactId>orgST-mac</artifactId>
                 <javafx.platform>mac</javafx.platform>
             </properties>
         </profile>
@@ -160,6 +162,7 @@
         <profile>
             <id>mac-arm</id>
             <properties>
+                <artifactId>orgST-mac-aarch</artifactId>
                 <javafx.platform>mac-aarch64</javafx.platform>
             </properties>
         </profile>

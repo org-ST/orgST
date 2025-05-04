@@ -16,7 +16,6 @@ public class Channel {
         frame.setLocationRelativeTo(null); // Center the window on the screen
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Close the window but don't exit the application
 
-        // Add a WindowListener to run a custom function on close
         frame.addWindowListener(new WindowAdapter() {
                                     @Override
                                     public void windowClosing(WindowEvent e) {

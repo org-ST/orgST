@@ -116,8 +116,8 @@ public class Methods {
         String sel = inp.nextLine();
         String[] args = {};
         switch(sel){
-            case "1" : org.orgst.Extras.ChannelMenu.main(args);
-            case "2" : org.orgst.Extras.ChannelViewer.CV(args);
+            case "1" : org.orgst.Extras.ChannelMenu.main(args); break;
+            case "2" : org.orgst.Extras.ChannelViewer.CV(args); break;
         }
         
     }

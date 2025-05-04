@@ -12,7 +12,6 @@ public class Channel {
     public static void Start(ChannelData.Data data) {
         // Create JFrame instead of Stage
         JFrame frame = new JFrame(data.name); // Set the title to data.name
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 350);
         frame.setLocationRelativeTo(null); // Center the window on the screen
         frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Close the window but don't exit the application

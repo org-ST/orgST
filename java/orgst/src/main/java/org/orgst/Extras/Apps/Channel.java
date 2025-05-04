@@ -6,7 +6,8 @@ import java.awt.event.ActionEvent;
 import java.util.List;
 import java.util.Arrays;
 import org.orgst.Variables.ChannelData;
-
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 public class Channel {
     public static void Start(ChannelData.Data data) {
         // Create JFrame instead of Stage
@@ -14,6 +15,18 @@ public class Channel {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 350);
         frame.setLocationRelativeTo(null); // Center the window on the screen
+        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE); // Close the window but don't exit the application
+
+        // Add a WindowListener to run a custom function on close
+        frame.addWindowListener(new WindowAdapter() {
+                                    @Override
+                                    public void windowClosing(WindowEvent e) {
+                                        org.orgst.Extras.ChannelMenu.main(new String[0]);
+                                        frame.dispose(); // Disposes the window after running the function
+                                    }
+                                });
+
+        frame.setVisible(true);
 
         // Create a label for displaying information
         JLabel label = new JLabel("", SwingConstants.CENTER);
@@ -30,7 +43,6 @@ public class Channel {
 
         // List of buttons
         List<JButton> buttons = Arrays.asList(nameButton, siteButton, dateButton, commButton, peopleButton, infoButton, checkButton);
-
         // Set ActionListeners for buttons
         infoButton.addActionListener(e -> label.setText(data.info));
         checkButton.addActionListener(e -> {

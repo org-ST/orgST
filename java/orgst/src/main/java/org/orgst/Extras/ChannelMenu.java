@@ -20,7 +20,6 @@ public class ChannelMenu {
         frame.addWindowListener(new WindowAdapter() {
             @Override
             public void windowClosing(WindowEvent e) {
-                org.orgst.Extras.ChannelMenu.main(new String[0]);
                 frame.dispose(); // Disposes the window after running the function
             }
         });

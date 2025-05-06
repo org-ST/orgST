@@ -46,6 +46,8 @@ def head():
     print(f"orgST by Wdboyes13, progman.task is marked with CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
     print("---------------------------------------")
     print("orgST Terminal 1.8")
+    print("! PYTHON RELEASE WILL STOP DEVELOPMENT ON 2025-05-12 !")
+    print("! PLEASE SWITCH TO THE BETA JAVA VERSION !")
     print("Refer to the readme for more information.")
     inp = input(f"{socket.gethostname()} >>")
     return inp

@@ -8,10 +8,9 @@ public class CTPorted {
     public static void start() {
         System.out.println("CalcTrash V1.0.3 by @Table");
         Scanner cScanner = new Scanner(System.in);
-
+        System.out.println("Input operation, else, enter \"help\" for all commands");
         while (true) {
             boolean found = false;
-            System.out.println("Input operation, else, enter \"help\" for all commands");
             String c = cScanner.nextLine();
 
             for (Ops.op o : Ops.ops) {
@@ -29,6 +28,8 @@ public class CTPorted {
                     String out = null;
                     try {
                         switch(opTD[0]) {
+                            case "exit":
+                                System.exit(0);
                             case "add":
                                 out = Double.toString(Double.parseDouble(opTD[1]) + Double.parseDouble(opTD[2]));
                                 break;

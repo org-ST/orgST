@@ -10,7 +10,7 @@ public class AppTester {
                 case "help": System.out.println("help, exit, info");
                 case "exit": org.orgst.Extras.ChannelViewer.CV(args);
                 case "info": System.out.println("apptest.py for orgST" + " | version" + " 1");
-            }       
+            }
         }
     }
 }

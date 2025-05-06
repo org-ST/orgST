@@ -1,1 +1,0 @@
-import org.orgst.Variables.ChannelData.Data; public class WillsChannel { public static Data data(){ return new Data("Wills Channel",()-> {System.out.println("You can email me at william@weelam.ca");},"https://weelam.ca",false,new String[]{"@Wdboyes13"},"Just a lil' channel from william","2025-05-04","Hewwo :3");}}

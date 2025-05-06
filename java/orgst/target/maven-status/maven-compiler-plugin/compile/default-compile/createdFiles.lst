@@ -2,6 +2,7 @@ org/orgst/Extras/Apps/Channel$1.class
 org/orgst/channelapps/AppTester.class
 org/orgst/Extras/py.class
 org/orgst/Extras/ChannelMenu$1.class
+org/orgst/Salvade/DLpypy.class
 org/orgst/Variables/AppData.class
 org/orgst/Variables/Ops$opInfo.class
 org/orgst/Variables/Ops.class
@@ -15,6 +16,7 @@ org/orgst/OrgID/Encrypt.class
 org/orgst/Extras/Apps/Channel.class
 org/orgst/Variables/ChannelData$Data.class
 org/orgst/Extras/WebOpener.class
+org/orgst/channelapps/horo.class
 org/orgst/AppLoader.class
 org/orgst/Extras/Flag.class
 org/orgst/channelapps/CTPorted.class

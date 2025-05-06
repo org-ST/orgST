@@ -1,1 +1,0 @@
-import org.orgst.Variables.ChannelData.Data; public class OtherUsrChannel { public static Data data(){ return new Data("Other UsrChannel",()-> {System.out.println("8==D");},"https://google.com",false,new String[]{"no"},"8==D","no","balls");}}

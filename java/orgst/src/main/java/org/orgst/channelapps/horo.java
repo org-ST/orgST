@@ -19,7 +19,7 @@ public class horo {
 		String destFile = "horo.jar";
 		File file = new File(destFile);
 		try {
-		URL url = new URI( "https://github.com/MakiDevelops/homeroom/raw/refs/heads/main/homeroom/target/HomeRoom-1.0.jar").toURL();
+		URL url = new URI( "https://github.com/MakiDevelops/homeroom/raw/refs/heads/main/homeroom/target/HomeRoom.jar").toURL();
 		
 		if (file.exists()) {
 			run("java -jar " + destFile);

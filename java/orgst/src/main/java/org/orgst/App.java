@@ -8,30 +8,31 @@ public class App {
         String Cmd = Methods.input();
         String[] words = Cmd.split("\\s+");
         switch (words[0]) {
-            case "run": Methods.run();
-            case "help":
+            case "run": //
+                Methods.run();
+            case "help": //
                 Methods.help(words);
                 break;
-            case "sauce":
+            case "sauce": //
                 Methods.sauce();
                 break;
-            case "clear":
+            case "clear": //
                 Methods.clear();
                 break;
-            case "hist":
+            case "hist": //
                 Methods.hist();
                 break;
-            case "orgid":
+            case "orgid": //
                 Methods.orgid();
                 break;
-            case "pride":
+            case "pride": //
                 Methods.flag();
                 break;
-            case "esc":
+            case "esc": //
                 Methods.clear();
                 System.exit(0);
                 break;
-            case "git":
+            case "git": //
                 System.out.println(org.orgst.Variables.AppData.AppData.get("GitHub"));
                 break;
             case "apl":

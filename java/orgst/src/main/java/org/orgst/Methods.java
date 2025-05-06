@@ -54,9 +54,13 @@ public class Methods {
                     System.out.println("Function : Starts ChannelViewer");
                     break;
                 }
+                case "apl" : {
+                    System.out.println("Command : Apl");
+                    System.out.println("Function : Starts App Loader");
+                }
             }
         } else if (command.length == 1){
-            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run, sal");
+            System.out.println("Cmd's: pride, clear, help, orgid, hist, git, sauce, esc, run, apl");
         } else {
             System.out.println("Invalid call of Method org.orgst.Methods.help()");
         }

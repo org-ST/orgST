@@ -2,7 +2,7 @@
 -- -- -- --
 
 ## important announcement!
-the python release of orgST will be finished on 2025-05-06 and will be deprecated later. please switch to the beta java version!
+the python release of orgST will be finished on 2025-05-06 and will be deprecated on 2025-05-12. please switch to the beta java version!
 -- -- -- --
 a console in python/java that comes with apps. 
 

@@ -43,7 +43,7 @@ def pride():
 
 def head():
     import socket
-    print(f"orgST by Wdboyes13, progman.task is marked with CC0 1.0. To view a copy of this license, visit https://creativecommons.org/publicdomain/zero/1.0/\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
+    print(f"orgST by Wdboyes13, Table37, MakiDevelops, is Licensed under GPLv3\nAvailble at https://github.com/MakiDevelops/orgST/blob/main/LICENSE\n'orgST', 'organizationSTATION', and the orgST logo are trademarks of orgST.")
     print("---------------------------------------")
     print("orgST Terminal 1.8")
     print("! PYTHON RELEASE WILL STOP DEVELOPMENT ON 2025-05-12 !")

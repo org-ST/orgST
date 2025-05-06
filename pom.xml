@@ -55,10 +55,10 @@
                         <goal>exec</goal>
                     </goals>
                     <configuration>
-                        <executable>bash</executable>
+                        <executable>git</executable>
                         <arguments>
-                            <argument>-c</argument>
-                            <argument>cd ../.. &amp;&amp; git add .</argument>
+                            <argument>add</argument>
+                            <argument>.</argument>
                         </arguments>
                     </configuration>
                 </execution>

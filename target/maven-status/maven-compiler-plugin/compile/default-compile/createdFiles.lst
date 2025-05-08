@@ -5,6 +5,7 @@ org/orgst/Extras/ChannelMenu$1.class
 org/orgst/Salvade/DLpypy.class
 org/orgst/Variables/AppData.class
 org/orgst/Variables/Ops$opInfo.class
+org/orgst/Main.class
 org/orgst/Variables/Ops.class
 org/orgst/Extras/GetUsrChannels.class
 org/orgst/App.class

@@ -101,7 +101,7 @@
 │   │   │   │       │           ├── Salvade
 │   │   │   │       │           │   ├── Classes$enemy.class
 │   │   │   │       │           │   ├── Classes.class
-│   │   │   │       │           │   └── Main.class
+│   │   │   │       │           │   └── org.orgst.Main.class
 │   │   │   │       │           ├── Variables
 │   │   │   │       │           │   ├── AppData.class
 │   │   │   │       │           │   ├── ChannelData$Data.class
@@ -198,7 +198,7 @@
 │   │       │   │           │   └── KeyLoader.java
 │   │       │   │           ├── Salvade
 │   │       │   │           │   ├── Classes.java
-│   │       │   │           │   └── Main.java
+│   │       │   │           │   └── org.orgst.Main.java
 │   │       │   │           ├── Variables
 │   │       │   │           │   ├── AppData.java
 │   │       │   │           │   ├── ChannelData.java

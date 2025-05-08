@@ -4,6 +4,7 @@ import java.net.*;
 import java.nio.file.*;
 public class horo {
 	public static int run(String command) {
+		//TODO Optimize JVM Process & Downloader (If Possible)
 		try {
 		ProcessBuilder processBuilder = new ProcessBuilder(command.split(" "));
         processBuilder.redirectErrorStream(true);
@@ -22,7 +23,16 @@ public class horo {
 		URL url = new URI( "https://github.com/MakiDevelops/homeroom/raw/refs/heads/main/homeroom/target/HomeRoom.jar").toURL();
 		
 		if (file.exists()) {
-			run("java -jar " + destFile);
+			run("java -jar "
+					+"-XX:+TieredCompilation "
+					+ "-XX:+UseStringDeduplication "
+					+ "-Xverify:none "
+					+ "Xmx1024m "
+					+ "Xms256m "
+					+ "-Dawt.useSystemAAFontSettings=on "
+					+ "-Dswing.aatext=true "
+					+ "-XX:+UseShenandoahGC "
+					+ destFile);
 		} else {
 			InputStream in = url.openStream();
 			Files.copy(in, new File(destFile).toPath(), StandardCopyOption.REPLACE_EXISTING);

@@ -1,7 +1,6 @@
 package org.orgst;
 public class App {
-    String[] yes_ins = {"Yes","yes","Y","y"};
-   
+   //TODO Possibly add JVM Optimization Post-Exec
     public static void main(String[] args) {
         Methods.head();
         while (true){

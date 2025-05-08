@@ -14,7 +14,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
-    <mainClass>org.orgst.App</mainClass>
+    <mainClass>org.orgst.Main</mainClass>
     <javafx.version>21</javafx.version>
     <mavenVersion>3.9.9</mavenVersion>
     <maven.build.timestamp.format>dd-MM-yyyy'T'HH:mm:ss'Z'</maven.build.timestamp.format>

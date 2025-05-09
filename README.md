@@ -9,7 +9,7 @@ original code: https://github.com/MakiDevelops/diary/tree/py
   
 # install and run
 -- -- -- -- -- --
-Install the latest jar, then:
+Install the latest jar from the website, then:
 Open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)
 Enter the directory the jar is in using `cd {exampledir}`
 Then use: `java -jar {jarnamehere}.jar`

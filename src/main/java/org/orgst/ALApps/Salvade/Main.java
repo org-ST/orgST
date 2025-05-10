@@ -1,8 +1,10 @@
-package org.orgst.Salvade;
+package org.orgst.ALApps.Salvade;
+import org.orgst.ALApps.XMLLoader;
+
 import java.io.*;
 
-public class Main {
-    public static void start() {
+public class Main implements XMLLoader.XMLApp {
+    public void start() {
         try {
             String command = "which pypy"; // or "pypy --version"
             String os = System.getProperty("os.name").toLowerCase();
@@ -18,7 +20,7 @@ public class Main {
             
             // Load the resource
             if (exitCode!=0){
-                org.orgst.Salvade.DLpypy.main();
+                org.orgst.ALApps.Salvade.DLpypy.main();
             }
             InputStream in = Main.class.getResourceAsStream("/sal.py");
 

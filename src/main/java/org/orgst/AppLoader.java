@@ -57,7 +57,7 @@ public class AppLoader {
                             terminal.close(); } catch(IOException e) {
                             	e.printStackTrace();
                             }
-                        org.orgst.Salvade.Main.start();
+                        org.orgst.ALApps.Salvade.Main.start();
                         break;
                     }
                     case "exit": {

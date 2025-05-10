@@ -1,7 +1,12 @@
 package org.orgst;
+
+import java.io.PrintStream;
+
 public class App {
    //TODO Possibly add JVM Optimization Post-Exec
+   public static final PrintStream originalOut = System.out;
     public static void main(String[] args) {
+        System.setOut(org.orgst.App.originalOut);
         Methods.head();
         while (true){
         String Cmd = Methods.input();

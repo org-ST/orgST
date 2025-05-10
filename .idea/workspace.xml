@@ -5,16 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="969293dc-fedc-41b3-87c9-8709dfd34234" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.xsd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/ALApps/AppConfs/Salvade.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/ALApps/Salvade/DLpypy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/Salvade/DLpypy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/ALApps/Salvade/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/Salvade/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/ALApps/XMLLoader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/AppLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/AppLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/Variables/ChannelData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/Variables/ChannelData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/channelapps/horo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/horo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-orgST.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-orgST.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +37,7 @@
   "keyToString": {
     "Java Scratch.Scratch.executor": "Run",
     "Java Scratch.scratch_6.executor": "Run",
+    "Maven.orgST [package].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",

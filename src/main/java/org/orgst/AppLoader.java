@@ -10,6 +10,11 @@ import com.googlecode.lanterna.terminal.DefaultTerminalFactory;
 import com.googlecode.lanterna.terminal.Terminal;
 
 public class AppLoader {
+    public interface AlApp {
+        static void start() {
+
+        }
+    }
     public static void main() {
         // Start the GUI in a separate thread
         Thread guiThread = new Thread(() -> startGUI());
@@ -39,6 +44,7 @@ public class AppLoader {
             panel.addComponent(new Label("Options: "));
             panel.addComponent(new Label("salvade"));
             panel.addComponent(new EmptySpace(new TerminalSize(0, 0)));
+            panel.addComponent(new Label("homeroom"));
             panel.addComponent(new Label("exit"));
             panel.addComponent(new Label("App Name"));
             TextBox nameIn = new TextBox();
@@ -57,7 +63,17 @@ public class AppLoader {
                             terminal.close(); } catch(IOException e) {
                             	e.printStackTrace();
                             }
-                        org.orgst.ALApps.Salvade.Main.start();
+                        org.orgst.Salvade.Main.start();
+                        break;
+                    }
+                    case "homeroom": {
+                        try {
+                            window.close();
+                            screen.stopScreen();
+                            terminal.close(); } catch(IOException e) {
+                            e.printStackTrace();
+                        }
+                        org.orgst.horo.start();
                         break;
                     }
                     case "exit": {

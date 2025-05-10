@@ -1,11 +1,11 @@
-package org.orgst.channelapps;
+package org.orgst;
 
 import java.io.*;
 import java.net.*;
 import java.nio.file.*;
 import java.util.*;
 
-public class horo {
+public class horo implements org.orgst.AppLoader.AlApp{
 
 	public static int run(List<String> command) {
 		// JVM Optimized Process Launcher

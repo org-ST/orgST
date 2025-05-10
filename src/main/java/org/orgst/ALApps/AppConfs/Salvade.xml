@@ -1,8 +1,0 @@
-<orgAPP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:noNamespaceSchemaLocation="">
-    <meta>
-        <name>Salvade</name>
-        <link>https://github.com/MakiDevelops/orgST/blob/main/target/classes/sal.py</link>
-    </meta>
-    <func type="internal">org.orgst.ALApps.Salvade.Main</func>
-</orgAPP>

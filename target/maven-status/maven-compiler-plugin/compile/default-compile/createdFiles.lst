@@ -17,7 +17,6 @@ org/orgst/OrgID/Encrypt.class
 org/orgst/Extras/Apps/Channel.class
 org/orgst/Variables/ChannelData$Data.class
 org/orgst/Extras/WebOpener.class
-org/orgst/channelapps/horo.class
 org/orgst/AppLoader.class
 org/orgst/Extras/Flag.class
 org/orgst/channelapps/CTPorted.class

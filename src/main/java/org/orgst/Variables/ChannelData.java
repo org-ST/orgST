@@ -1,4 +1,5 @@
 package org.orgst.Variables;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -56,7 +57,7 @@ public class ChannelData {
         String[] args = {};
         Data debug = new Data("The Debug Channel", ()-> org.orgst.Extras.ChannelMenu.main(args), null, false, debugpeople, "fun fun smile", "2024-12-21", "Delusional office is the best doors game honestly.");
         String[] horopeople = {"@kaycutier", "@Wdboyes13"};
-        Data horo = new Data("The Home Room Channel", ()-> org.orgst.channelapps.horo.start(), null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!");
+        Data horo = new Data("The Home Room Channel", ()-> System.out.println("Please go to AppLoader"), null, false, horopeople, "Info about home room.","2025-04-12", "updates coming soon!");
         channels.put("OrgST Public Channel", orgst);
         channels.put("CalcTech Channel", calctech);
         channels.put("Toyathings MMD Channel", toyas);

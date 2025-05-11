@@ -1,9 +1,6 @@
 # orgST™
 -- -- -- --
-a console in java that comes with apps. 
-
-[orgST](https://github.com/MakiDevelops/orgST) © 2024-2025 by [Wdboyes13](https://github.com/Wdboyes13), [MakiDevelops](https://github.com/MakiDevelops) and [Table37](https://github.com/Table37) is licensed under [The GNU General Public License v3](https://github.com/MakiDevelops/orgST/blob/main/LICENSE)  
-“orgST”, "organizationSTATION", and the orgST logo are trademarks of orgST.  
+a console in java that comes with apps.
   
 original code: https://github.com/MakiDevelops/diary/tree/py  
   
@@ -28,5 +25,21 @@ Then use: `java -jar {jarnamehere}.jar`
 "code thingy"
 - toyathing
 (toyathing)
-
+  
+# [License](LICENSE)
+orgST - A fun java console with apps  
+Copyright (C) 2025  Wdboyes13, MakiDevelops, Table37  
+  
+This program is free software: you can redistribute it and/or modify  
+it under the terms of the GNU General Public License as published by  
+the Free Software Foundation, either version 3 of the License, or any later version.  
+  
+This program is distributed in the hope that it will be useful,  
+but WITHOUT ANY WARRANTY; without even the implied warranty of  
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the  
+GNU General Public License for more details.  
+  
+You should have received a copy of the GNU General Public License  
+along with this program.  If not, see https://www.gnu.org/licenses/.  
+  
 ![orgST logo](image.png)  

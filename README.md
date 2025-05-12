@@ -1,4 +1,4 @@
-# <img src="logo.svg" width="45"/>orgST™
+# <img src="logo.svg" width="50"/>orgST™
 -- -- -- --
 >[!NOTE]
 >A console in java that comes with apps.
@@ -43,6 +43,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.  
   
 You should have received a copy of the GNU General Public License  
-along with this program.  If not, see https://www.gnu.org/licenses/.  
-  
-![orgST logo](image.png)  
+along with this program.  If not, see https://www.gnu.org/licenses/.

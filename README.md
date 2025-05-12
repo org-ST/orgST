@@ -3,8 +3,7 @@
 >[!NOTE]
 >A console in java that comes with apps.
 >  
-Original Idea: https://github.com/MakiDevelops/diary/tree/py  
->  
+>Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
 >[!IMPORTANT]
 ># install and run

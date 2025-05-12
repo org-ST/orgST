@@ -1,4 +1,4 @@
-# orgST™<img src="logo.svg" width="50"/>
+# <img src="logo.svg" width="45"/>orgST™
 -- -- -- --
 >[!NOTE]
 >A console in java that comes with apps.

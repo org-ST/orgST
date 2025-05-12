@@ -6,7 +6,7 @@
 >Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
 >[!IMPORTANT]
-># To run -- Go TO [Running.md](Running.md)
+> __To run -- Go To [Running.md](Running.md)__
   
 # [Sponsors](Sponsors.md)
   

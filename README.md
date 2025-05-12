@@ -1,15 +1,18 @@
-# orgST™
+# <img src="Logo.svg" width="50"/> orgST™
 -- -- -- --
-a console in java that comes with apps.
+>a console in java that comes with apps.
+>  
+>original code: https://github.com/MakiDevelops/diary/tree/py  
+>  
   
-original code: https://github.com/MakiDevelops/diary/tree/py  
-  
-# install and run
--- -- -- -- -- --
-Install the latest jar from the website, then:
-Open either Microsoft PowerShell (for windows) or the terminal (for Macos and Linux)
-Enter the directory the jar is in using `cd {exampledir}`
-Then use: `java -jar {jarnamehere}.jar`
+>[!IMPORTANT]
+># install and run
+>Java 21 or later required
+> 
+>Install the latest jar from the website, then:
+>Open either Microsoft PowerShell (for Windows) or the terminal (Any other OS)
+>Enter the directory the jar is in using `cd {exampledir}`
+>Then use: `java -jar orgST.jar`
 
 # lovely sponsors
 -- -- -- -- -- -- --

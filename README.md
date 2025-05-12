@@ -1,16 +1,12 @@
 # <img src="logo.svg" width="50"/>  orgST™
--- -- -- --
->[!NOTE]
->A console in java that comes with apps.
->  
->Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
->[!IMPORTANT]
->## __To run -- Go To [Running.md](Running.md)__
->## [Sponsors](Sponsors.md)
+### A console in java that comes with apps.
+### Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
-  
-  
+# Info
+
+- 🏎️[Running](Running.md)
+- 💸[Sponsors](Sponsors.md)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

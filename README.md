@@ -6,9 +6,8 @@
 >Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
 >[!IMPORTANT]
-> __To run -- Go To [Running.md](Running.md)__
-  
-# [Sponsors](Sponsors.md)
+>## __To run -- Go To [Running.md](Running.md)__
+>## [Sponsors](Sponsors.md)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

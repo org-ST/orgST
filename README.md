@@ -1,7 +1,7 @@
 # <img src="logo.svg" width="50"/>  orgST™
   
-### A console in java that comes with apps.
-### Original Idea: https://github.com/MakiDevelops/diary/tree/py   
+__A console in java that comes with apps.__  
+__Original Idea: https://github.com/MakiDevelops/diary/tree/py__   
   
 # Info
 

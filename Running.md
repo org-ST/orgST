@@ -13,7 +13,7 @@ java -jar orgST.jar
 ```
 >[!TIP]  
 > __For macOS & Linux__
-> Download [orgST.jar](https://github.com/MakiDevelops/orgST/raw/refs/heads/main/target/orgST.jar)
+> Download [orgST.jar](https://github.com/MakiDevelops/orgST/raw/refs/heads/main/target/orgST.jar)  
 > Open Terminal and Do
 ```sh
 cd ~/Downloads

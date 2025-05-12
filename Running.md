@@ -4,7 +4,7 @@
   
  
 >[!TIP]  
-> __For Windows__
+> __For Windows__  
 >Download [orgST.jar](https://github.com/MakiDevelops/orgST/raw/refs/heads/main/target/orgST.jar)  
 >Open Microsoft PowerShell and Do
 ```sh

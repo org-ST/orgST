@@ -6,28 +6,9 @@
 >Original Idea: https://github.com/MakiDevelops/diary/tree/py   
   
 >[!IMPORTANT]
-># install and run
->Java 21 or later required
-> 
->Install the latest jar from the website, then:
->Open either Microsoft PowerShell (for Windows) or the terminal (Any other OS)
->Enter the directory the jar is in using `cd {exampledir}`
->Then use: `java -jar orgST.jar`
-
-# lovely sponsors
--- -- -- -- -- -- --
-
-"Welcome to orgST's workspace."
-- the orgST team
-(progman.task, Wdboyes13)
-
-"How about YOU try ASM+!!!!"
-- the calc tech team
-(progman.task, chureki)
-
-"code thingy"
-- toyathing
-(toyathing)
+># To run -- Go TO [Running.md](Running.md)
+  
+# [Sponsors](Sponsors.md)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

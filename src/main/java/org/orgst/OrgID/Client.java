@@ -26,6 +26,7 @@ import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 
 public class Client {
+    public static String username = new String();
     public static boolean isAtLeastXYearsAgo(String dateStr, int years) {
         try {
             LocalDate inputDate = LocalDate.parse(dateStr, DateTimeFormatter.ISO_LOCAL_DATE);
@@ -61,7 +62,7 @@ public class Client {
     }
     public static boolean crusr(){
         Scanner inp = new Scanner(System.in);
-        System.out.println("Enter your Date of Birth (YYYY-MM-DD) : ");
+        System.out.println("Enter your Date of Birth (YYYY-MM-DD) We do not store this: ");
         String dob = inp.nextLine();
         if (!isAtLeastXYearsAgo(dob, 13)) {
             System.out.println("You must be at least 13 years old to create an account.");

@@ -12,9 +12,11 @@ org/orgst/App.class
 org/orgst/OrgID/Client.class
 org/orgst/Variables/Ops$op.class
 org/orgst/Variables/ChannelData.class
+org/orgst/Extras/Email$1.class
 org/orgst/Extras/ChannelViewer.class
 org/orgst/OrgID/Encrypt.class
 org/orgst/Extras/Apps/Channel.class
+org/orgst/Extras/Email.class
 org/orgst/Variables/ChannelData$Data.class
 org/orgst/Extras/WebOpener.class
 org/orgst/AppLoader.class

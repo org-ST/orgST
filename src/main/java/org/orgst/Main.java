@@ -37,7 +37,6 @@ public class Main {
                 "-Xms256m",
                 "-XX:MaxGCPauseMillis=200",
                 "-XX:+ParallelRefProcEnabled",
-                "-XX:+UseShenandoahGC",
                 "-XX:+HeapDumpOnOutOfMemoryError",
                 "-cp",
                 jarFile.getAbsolutePath(),

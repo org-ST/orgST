@@ -7,9 +7,10 @@ import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 public class orgIDimage{
-    public static void main(String[] args) throws IOException{
-        System.out.println("Please sign into your orgID");
-        boolean res = org.orgst.OrgID.Client.verusr();
+    public static void main(String[] args){
+        try {
+            System.out.println("Please sign into your orgID");
+            boolean res = org.orgst.OrgID.Client.verusr();
         /* if (!res){
             System.out.println("We could not verify your orgID");
             System.out.println("To create a new one enter 1\nTo try again enter 2\nTo exit enter 3");
@@ -34,8 +35,11 @@ public class orgIDimage{
             g.drawImage(img, 0, 0, null);
             g.setFont(new Font("Arial", Font.BOLD, 24));
             g.setColor(Color.decode("#375EEA"));
-            g.drawString(username, 600 ,650);
+            g.drawString(username, 600, 650);
             g.dispose();
             ImageIO.write(out, "png", new File("output.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
         }
     }

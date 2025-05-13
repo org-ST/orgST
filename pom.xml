@@ -15,7 +15,6 @@
     <maven.compiler.source>21</maven.compiler.source>
     <maven.compiler.target>21</maven.compiler.target>
     <mainClass>org.orgst.Main</mainClass>
-    <finalName>orgST</finalName>
     <mavenVersion>3.9.9</mavenVersion>
     <maven.build.timestamp.format>dd-MM-yyyy'T'HH:mm:ss'Z'</maven.build.timestamp.format>
 </properties>
@@ -47,6 +46,7 @@
 </dependencies>
 
 <build>
+    <finalName>orgST</finalName>
     <plugins>
         <plugin>
             <groupId>org.codehaus.mojo</groupId>

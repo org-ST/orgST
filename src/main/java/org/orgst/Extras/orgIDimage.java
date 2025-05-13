@@ -10,7 +10,7 @@ public class orgIDimage{
     public static void main(String[] args) throws IOException{
         System.out.println("Please sign into your orgID");
         boolean res = org.orgst.OrgID.Client.verusr();
-        if (!res){
+        /* if (!res){
             System.out.println("We could not verify your orgID");
             System.out.println("To create a new one enter 1\nTo try again enter 2\nTo exit enter 3");
             Scanner scanner = new Scanner(System.in);
@@ -21,7 +21,8 @@ public class orgIDimage{
                 case "2": orgIDimage.main(args); break;
                 case "3": System.exit(0); break;
                 default: System.out.println("Invalid input, Exiting orgST"); System.exit(1);
-            }
+            }} */
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Please enter the Birthday, for your orgID (MM-DD): ");
             String inp2 = scanner.nextLine();
             String username = org.orgst.OrgID.Client.username;
@@ -34,6 +35,7 @@ public class orgIDimage{
             g.setFont(new Font("Arial", Font.BOLD, 24));
             g.setColor(Color.decode("#375EEA"));
             g.drawString(username, 600 ,650);
+            g.dispose();
+            ImageIO.write(out, "png", new File("output.png"));
         }
     }
-}

@@ -21,7 +21,21 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.util.Scanner;
 import java.security.PublicKey;
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+
 public class Client {
+    public static boolean isAtLeastXYearsAgo(String dateStr, int years) {
+        try {
+            LocalDate inputDate = LocalDate.parse(dateStr, DateTimeFormatter.ISO_LOCAL_DATE);
+            LocalDate thresholdDate = LocalDate.now().minusYears(years);
+            return inputDate.isBefore(thresholdDate) || inputDate.equals(thresholdDate);
+        } catch (DateTimeParseException e) {
+            System.out.println("Invalid date format: " + dateStr);
+            return false;
+        }
+    }
     public static String HOST = "https://orgid.onrender.com";
     public static int submit(String url, String username, String password){
         try {
@@ -47,6 +61,12 @@ public class Client {
     }
     public static boolean crusr(){
         Scanner inp = new Scanner(System.in);
+        System.out.println("Enter your Date of Birth (YYYY-MM-DD) : ");
+        String dob = inp.nextLine();
+        if (!isAtLeastXYearsAgo(dob, 13)) {
+            System.out.println("You must be at least 13 years old to create an account.");
+            System.exit(0);
+        }
         System.out.print("Enter a username: ");
         String username = inp.nextLine();
         System.out.print("Enter a password: ");

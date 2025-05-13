@@ -4,7 +4,9 @@ __A console in java that comes with apps.__
 __Original Idea: https://github.com/MakiDevelops/diary/tree/py__   
   
 # Info
-
+>[!WARNING]
+> For legal reasons, orgID users MUST be 13 or older.
+  
 - 🏎️[Running](Running.md)
 - 💸[Sponsors](Sponsors.md)
   

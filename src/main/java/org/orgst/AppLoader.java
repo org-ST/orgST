@@ -72,6 +72,17 @@ public class AppLoader {
                 String input = nameIn.getText().trim().toLowerCase(); // normalize input
 
                 switch (input) {
+                    case "mtlsr": {
+                        try {
+                            window.close();
+                            screen.stopScreen();
+                            terminal.close();
+                            org.orgst.mtlsr.main(null);
+                        } catch (Exception e){
+                            e.printStackTrace();
+                        }
+
+                    }
                     case "salvade": {
                     	try {
                             window.close();

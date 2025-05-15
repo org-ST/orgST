@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="969293dc-fedc-41b3-87c9-8709dfd34234" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/orgst/mtlsr.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/orgST.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/orgST.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/original-orgST.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/original-orgST.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/orgst/AppLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/orgst/AppLoader.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

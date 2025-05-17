@@ -6,7 +6,8 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="orgST" />
+        <module name="Launcher" />
+        <module name="orgST-main" />
       </profile>
     </annotationProcessing>
   </component>

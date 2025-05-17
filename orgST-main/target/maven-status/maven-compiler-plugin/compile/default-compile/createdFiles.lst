@@ -1,5 +1,6 @@
 org/orgst/Extras/Apps/Channel$1.class
 org/orgst/channelapps/AppTester.class
+org/orgst/AppLoader$AlApp.class
 org/orgst/Extras/py.class
 org/orgst/Extras/ChannelMenu$1.class
 org/orgst/mtlsr.class
@@ -10,6 +11,7 @@ org/orgst/Main.class
 org/orgst/Extras/orgIDimage.class
 org/orgst/Variables/Ops.class
 org/orgst/Extras/GetUsrChannels.class
+org/orgst/horo.class
 org/orgst/App.class
 org/orgst/OrgID/Client.class
 org/orgst/Variables/Ops$op.class

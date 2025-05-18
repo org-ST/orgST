@@ -6,9 +6,31 @@
   <component name="ChangeListManager">
     <list default="true" id="969293dc-fedc-41b3-87c9-8709dfd34234" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/kobover/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/kobover/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/orgST-main/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-main/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher/target/orgST-Launcher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/target/orgST-Launcher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Launcher/target/original-orgST-Launcher.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Launcher/target/original-orgST-Launcher.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/AppLoader.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/AppLoader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/Apps/ChannelHelper.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/Apps/ChannelHelper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/ChannelViewer.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/ChannelViewer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/GetUsrChannels.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Extras/GetUsrChannels.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Methods.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Methods.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/OrgID/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/OrgID/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Salvade/DLpypy.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Salvade/DLpypy.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Variables/ChannelData$Data.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Variables/ChannelData$Data.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Variables/ChannelData.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/Variables/ChannelData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/channelapps/CTPorted.class" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/classes/org/orgst/channelapps/CTPorted.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/maven-archiver/pom.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-kobo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-kobo/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-main/target/orgST.jar" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-main/target/orgST.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/orgST-main/target/original-orgST.jar" beforeDir="false" afterPath="$PROJECT_DIR$/orgST-main/target/original-orgST.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

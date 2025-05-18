@@ -13,7 +13,7 @@
 <groupId>org.orgst</groupId>
 <version>2.0</version>
 <artifactId>orgST-kobo</artifactId>
-<name>orgST</name>
+<name>orgST-kobo</name>
 <url>https://orgst.ca</url>
 
 <properties>

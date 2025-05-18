@@ -36,5 +36,5 @@ jobs:
             git commit -m "Auto-build jar"
             git push origin main
           else
-            echo "No changes to commit :3"
+            echo "No changes to commit. :3"
           fi

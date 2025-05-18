@@ -1,34 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-                   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
-                             http://maven.apache.org/xsd/maven-4.0.0.xsd">
-<modelVersion>4.0.0</modelVersion>
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                                    http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-<groupId>org.orgst</groupId>
-<version>2.0</version>
+    <groupId>org.orgst</groupId>
+    <version>2.0</version>
     <packaging>pom</packaging>
+
     <modules>
         <module>Launcher</module>
         <module>orgST-main</module>
     </modules>
+
     <artifactId>orgST</artifactId>
-<name>orgST</name>
-<url>https://orgst.ca</url>
+    <name>orgST</name>
+    <url>https://orgst.ca</url>
 
-<properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
-    <mainClass>org.orgst.Main</mainClass>
-    <mavenVersion>3.9.9</mavenVersion>
-    <maven.build.timestamp.format>dd-MM-yyyy'T'HH:mm:ss'Z'</maven.build.timestamp.format>
-</properties>
-
-<repositories>
-    <repository>
-        <id>central</id>
-        <url>https://repo.maven.apache.org/maven2</url>
-    </repository>
-</repositories>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://repo.maven.apache.org/maven2</url>
+        </repository>
+    </repositories>
 
 </project>

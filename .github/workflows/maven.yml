@@ -30,6 +30,7 @@ jobs:
         run: |
           git config user.name "Wdboyes13"
           git config user.email "willdev2025@outlook.com"
+          git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}.git
           git add .
           if ! git diff --cached --quiet; then
             git commit -m "Auto-build jar"

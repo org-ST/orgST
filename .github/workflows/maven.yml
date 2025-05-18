@@ -28,19 +28,18 @@ jobs:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_SIG }}
           GPG_PASSPHRASE: ${{ secrets.GPG_PASS }}
         run: |
-          mkdir -p ~/.gnupg
-          echo "use-agent" >> ~/.gnupg/gpg.conf
-          echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf
-          echo "allow-loopback-pinentry" >> ~/.gnupg/gpg-agent.conf
-          chmod 600 ~/.gnupg/*
-
+          export GNUPGHOME="$(mktemp -d)"
+          chmod 700 "$GNUPGHOME"
+        
           echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
-
-          KEY_ID=$(gpg --list-secret-keys --with-colons | grep '^sec' | cut -d':' -f5)
+        
+          KEY_ID=$(gpg --list-secret-keys --with-colons | awk -F: '/^sec/{print $5}')
           echo "Got Key ID: $KEY_ID"
+        
           echo -e "5\ny\n" | gpg --batch --yes --command-fd 0 --edit-key "$KEY_ID" trust
-          echo "$GPG_PASSPHRASE" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --sign <<< "Verifying GPG works"
-
+        
+          echo "$GPG_PASSPHRASE" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --sign <<< "GPG Test"
+        
           git config --global user.name "Wdboyes13"
           git config --global user.email "willdev2025@outlook.com"
           git config --global user.signingkey "$KEY_ID"

@@ -8,7 +8,8 @@ __Original Idea: https://github.com/MakiDevelops/diary/tree/py__
 > For legal reasons, orgID users MUST be 13 or older.
   
 - 🏎️[Running](Running.md)
-- 💸[Sponsors](Sponsors.md)
+- 💸[Sponsors](Sponsors.md)  
+- 📋[ToDo](TODO.MD)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

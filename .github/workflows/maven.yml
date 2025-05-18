@@ -23,10 +23,18 @@ jobs:
         run: mvn package
       - name: Commit jar
         run: |
-          git config user.name "Wdboyes13"
-          git config user.email "willdev2025@outlook.com"
+          git config --global user.name "Wdboyes13"
+          git config --global user.email "willdev2025@outlook.com"
           git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}.git
           git remote -v
+          
+          git status
           git add .
-          git commit -m "Auto-build jar"
-          git push origin main
+          
+          # Only commit if there are changes
+          if ! git diff --cached --quiet; then
+            git commit --author="Wdboyes13 <willdev2025@outlook.com>" -m "Auto-build jar"
+            git push origin main
+          else
+            echo "No changes to commit."
+          fi

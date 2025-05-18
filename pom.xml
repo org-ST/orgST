@@ -11,6 +11,7 @@
     <modules>
         <module>Launcher</module>
         <module>orgST-main</module>
+        <module>orgST-kobo</module>
     </modules>
 
     <artifactId>orgST</artifactId>

@@ -22,45 +22,19 @@ jobs:
           java-version: '21'
           distribution: 'temurin'
           cache: maven
-
-      - name: Import GPG key and trust
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_SIG }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASS }}
-        run: |
-          export GNUPGHOME="$(mktemp -d)"
-          chmod 700 "$GNUPGHOME"
-        
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --yes --import
-          
-          KEY_ID=$(gpg --list-keys --with-colons | awk -F: '/^pub/ {print $5; exit}')
-          echo "Got Key ID: $KEY_ID"
-        
-          echo -e "5\ny\n" | gpg --batch --yes --command-fd 0 --edit-key "$KEY_ID" trust
-        
-          echo "$GPG_PASSPHRASE" | gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 --sign <<< "GPG Test"
-        
-          git config --global user.name "Wdboyes13"
-          git config --global user.email "willdev2025@outlook.com"
-          git config --global user.signingkey "$KEY_ID"
-          git config --global commit.gpgsign true
-          git config --global gpg.program gpg
-
       - name: Build with Maven
         run: mvn package
 
       - name: Commit JAR and Sign
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
+          git config --global user.name "Wdboyes13"
+          git config --global user.email "willdev2025@outlook.com"
           git remote set-url origin https://x-access-token:${{ secrets.GIT_TOKEN }}@github.com/${{ github.repository }}.git
           git status
           git add .
 
           if ! git diff --cached --quiet; then
-            echo "$GPG_PASSPHRASE" | \
-              gpg --batch --yes --pinentry-mode loopback --passphrase-fd 0 \
-              && git commit -S -m "Auto-build jar with signed commit"
+            git commit -m "Auto-build jar"
             git push origin main
           else
             echo "No changes to commit :3"

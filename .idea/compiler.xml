@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Launcher" />
         <module name="orgST-main" />
+        <module name="orgST-kobo" />
       </profile>
     </annotationProcessing>
   </component>

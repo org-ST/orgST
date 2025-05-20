@@ -2,7 +2,7 @@
   
 __A console in java that comes with apps.__  
 __Original Idea: https://github.com/MakiDevelops/diary/tree/py__   
-__Have suggestions? Head over to [issues](https://github.com/org-ST/orgST/issues)  
+__Have suggestions? Head over to [issues](https://github.com/org-ST/orgST/issues)__
   
 # Info
 >[!WARNING]

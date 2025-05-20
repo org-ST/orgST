@@ -1,4 +1,4 @@
-# <img src="logo.svg" width="50"/>  orgST™
+# <img src="logo.svg" alt="orgST Logo" width="50"/>  orgST™
   
 __A console in java that comes with apps.__  
 __Original Idea: https://github.com/MakiDevelops/diary/tree/py__   

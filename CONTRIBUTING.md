@@ -6,7 +6,7 @@
 - A list of what files were changed  
 - A list of what needs changing in the docs (If Applicable)  
   
-### PLEASE Do Not edit ANY pom.xml  
+### PLEASE Do Not edit ANY pom.xml without prior warning  
 ### PLEASE run CodeQL & Maven CI on your fork   
 ### Your change MUST be tested and proof that your change works must be provided (Screenshots preferred)  
   

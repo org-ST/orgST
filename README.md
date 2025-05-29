@@ -10,9 +10,9 @@ __Python version has been archived as [py.tar.zst](https://github.com/org-ST/org
 >[!WARNING]
 > For legal reasons, orgID users MUST be 13 or older.
   
-- 🏎️[Running](Running.md)
-- 💸[Sponsors](Sponsors.md)  
-- 📋[ToDo](TODO.MD)
+- 🏎️[Running](docs/Running.md)
+- 💸[Sponsors](docs/Sponsors.md)  
+- 📋[ToDo](docs/TODO.MD)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

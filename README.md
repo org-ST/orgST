@@ -2,7 +2,8 @@
   
 __A console in java that comes with apps.__  
 __Original Idea: https://github.com/MakiDevelops/diary/tree/py__   
-__Have suggestions? Head over to [issues](https://github.com/org-ST/orgST/issues)__
+__Have suggestions? Head over to [issues](https://github.com/org-ST/orgST/issues)__  
+__Python version has been archived as [py.tar.zst](https://github.com/org-ST/orgST/raw/refs/heads/main/py.tar.zst) - To open, extract with GNU or BSD Tar & ZSTD (Z-Standard)__
   
 # Info
 >[!WARNING]

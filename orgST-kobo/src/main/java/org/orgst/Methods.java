@@ -82,14 +82,15 @@ public class Methods {
         }
     }
     public static void orgid(){
-        Scanner inp = new Scanner(System.in);
-        System.out.print("What do you want to do\nC - Create orgID\nV - Verify orgID\n..> ");
-        String opt = inp.nextLine();
-        switch(opt){
-            case "V": org.orgst.OrgID.Client.verusr(); break;
-            case "C": org.orgst.OrgID.Client.crusr(); break;
-            default: System.out.println("Invalid option");
-        }
+        System.out.println("OrgID Unavailable due to Java 8 Security and Compatability");
+        // Scanner inp = new Scanner(System.in);
+        // System.out.print("What do you want to do\nC - Create orgID\nV - Verify orgID\n..> ");
+        // String opt = inp.nextLine();
+        // switch(opt){
+           //  case "V": org.orgst.OrgID.Client.verusr(); break;
+           //  case "C": org.orgst.OrgID.Client.crusr(); break;
+           //  default: System.out.println("Invalid option");
+        // }
     }
     public static void head() {
         System.out.print("\033[H\033[2J");

@@ -1,0 +1,14 @@
+name: Discord WebHook
+on:
+  push:
+    branches: [ main ]
+jobs:
+  send_hook:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Hook
+        run: |
+          curl -H "Content-Type: application/json" \
+               -X POST \
+               -d '{"content": "Test"}' \
+               ${{ secrets.HOOK_URL }}

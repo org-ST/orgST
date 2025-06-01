@@ -8,7 +8,10 @@ jobs:
     steps:
       - name: Send Hook
         run: |
+          MSG=$(curl -s https://api.github.com/repos/org-ST/orgST/commits/main | \
+          grep message | sed -n 's/.*"message": "\(.*\)".*/\1/p' | head -n 1)
+          
           curl -H "Content-Type: application/json" \
                -X POST \
-               -d '{"content": "Test"}' \
-               ${{ secrets.HOOK_URL }}
+               -d "{\"content\": \"$MSG\"}" \
+               "${{ secrets.HOOK_URL }}"

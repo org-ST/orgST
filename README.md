@@ -14,6 +14,7 @@ __The commands for this are (Or should be) `zstd -d py.tar.zst && tar xf py.tar`
 - 🏎️[Running](docs/Running.md)
 - 💸[Sponsors](docs/Sponsors.md)  
 - 📋[ToDo](docs/TODO.MD)
+- 💾[Ports](docs/ports.md)
   
 # [License](LICENSE)
 orgST - A fun java console with apps  

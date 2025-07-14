@@ -42,7 +42,11 @@
 - 3DS BASIC (Claimed by MakiDevelops)  
 - Rust (Claimed by Wdboyes13)
 
-This document is Copyright (C) 2025 Wdboyes13  
-This document is licensed under the BSD-3-Clause license  
-SPDX Identifier - BSD-3-Clause  
-July 14, 2025
+Copyright © 2025 Wdboyes13  
+SPDX-License-Identifier: BSD-3-Clause  
+
+This document is licensed under the BSD 3-Clause License.   
+You may use, modify, and redistribute it under the terms of that license.  
+See <https://opensource.org/licenses/BSD-3-Clause> for details.  
+
+Last updated: July 14, 2025  

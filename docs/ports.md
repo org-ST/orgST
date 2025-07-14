@@ -1,6 +1,6 @@
 Official Ports for orgST
-- java ✅
-- orgst C 🕒
+- java ✅ (Main Version of orgST)
+- C 🕒
 - py ✅ ⛔
 - SmileBasic 🕒 🟠
 

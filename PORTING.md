@@ -43,4 +43,6 @@
 - Rust (Claimed by Wdboyes13)
 
 This document is Copyright (C) 2025 Wdboyes13  
+This document is licensed under the BSD-3-Clause license  
+SPDX Identifier - BSD-3-Clause  
 July 14, 2025

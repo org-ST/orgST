@@ -1,0 +1,6 @@
+[submodule "orgST-C++/third-party/CryptoPP"]
+	path = orgST-C++/third-party/CryptoPP
+	url = https://github.com/weidai11/cryptopp
+[submodule "orgST-C++/third-party/CPR"]
+	path = orgST-C++/third-party/CPR
+	url = https://github.com/libcpr/cpr

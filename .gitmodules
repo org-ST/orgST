@@ -7,3 +7,6 @@
 [submodule "orgST++/third-party/CryptoPP"]
 	path = orgST++/third-party/CryptoPP
 	url = https://github.com/weidai11/cryptopp
+[submodule "orgST++/third-party/cpp-httplib"]
+	path = orgST++/third-party/cpp-httplib
+	url = https://github.com/yhirose/cpp-httplib

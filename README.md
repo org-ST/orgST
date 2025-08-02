@@ -40,7 +40,7 @@ Some portions of the code were originally developed by Jack Lloyd (Botan) and An
 See the full license text here: LICENSES/LICENSE.CRYPTOPP [LICENSES/LICENSE.CRYPTOPP](/orgST++/LICENSES/LICENSE.CRYPTOPP)   
 
 [CPP-HTTPLIB](https://github.com/yhirose/cpp-httplib) Licensed under the MIT License.  
-See the full license text here: [LICENSES/LICENSE.MIT](/orgST++/LICENSES/LICENSE.MIT)   
+See the full license text here: [LICENSES/LICENSE.CPPHTTPLIB](/orgST++/LICENSES/LICENSE.CPPHTTPLIB)     
   
 Copyright (C) 2025 Wdboyes13  
 Wdboyes13's orgST++, is under the GNU General Public License v3.  

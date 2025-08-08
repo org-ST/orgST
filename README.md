@@ -1,6 +1,6 @@
 # <img src="logo.svg" alt="orgST Logo" width="50"/>  orgST™
   
-__A console in java that comes with apps.__  
+__A console made in java ported to many platforms.__  
 __Original Idea: https://github.com/MakiDevelops/diary/tree/py__   
 __Have suggestions? Head over to [issues](https://github.com/org-ST/orgST/issues)__  
 __Python version has been archived as [py.tar.zst](https://github.com/org-ST/orgST/raw/refs/heads/main/py.tar.zst) - To open, extract with GNU or BSD Tar & ZSTD (Z-Standard)__  

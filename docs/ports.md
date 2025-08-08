@@ -10,7 +10,7 @@ C++ 🕒
 🟠  = No Server Access
 🚫  = Cancelled or Not Possible
 ❓  = May be Cancelled.
-:circle:  = Local Server (Not original orgST server)
+🔵  = Local Server (Not original orgST server)
 ❌ = Deprecated
 
 (Removed ports will be removed on this list later) 

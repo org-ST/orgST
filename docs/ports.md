@@ -1,14 +1,18 @@
 Official Ports for orgST
-- java ✅ (Main Version of orgST)
-- C 🕒
-- py ✅ ⛔
-- SmileBasic 🕒 🟠
+Java ✅ (Main Version of orgST)
+Python (Original orgST) ✅ ❌
+QBasic 🕒  🟠
+C++ 🕒
 
-✅  = Created  
-🕒  = In Progress  
-⛔ = Works, but unsupported.  
-🟠  = No Server Access  
-🚫  = Cancelled or Not Possible  
-❓  = May be Cancelled.  
+✅  = Created
+🕒  = In Progress
+⛔ = Works, but unsupported.
+🟠  = No Server Access
+🚫  = Cancelled or Not Possible
+❓  = May be Cancelled.
+:circle:  = Local Server (Not original orgST server)
+❌ = Deprecated
+
+(Removed ports will be removed on this list later) 
 
 For more info, see [PORTING.md](/PORTING.md)  

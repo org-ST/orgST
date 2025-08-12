@@ -15,11 +15,14 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see https://www.gnu.org/licenses/.
  */
 package org.orgst;
+import java.io.InputStream;
 import java.util.Map;
 import java.util.Scanner;
 
 import org.orgst.Variables.AppData;
 import org.orgst.Variables.ChannelData;
+
+import javazoom.jl.player.Player;
 public class Methods {
     // Contains help entries for every function in this file
     public static void help(String[] command){
@@ -141,4 +144,38 @@ public class Methods {
         }
         
     }
+    static public class M3Player {
+        private volatile boolean playing = false;
+        private Thread playerThread;
+
+        public void play(String resourcePath) {
+            if (playing) return;  // Already playing, ignore
+
+            playing = true;
+            playerThread = new Thread(() -> {
+                while (playing) {
+                    try (InputStream mp3Stream = getClass().getResourceAsStream(resourcePath)) {
+                        if (mp3Stream == null) {
+                            System.err.println("MP3 not found!");
+                            break;
+                        }
+                        Player player = new Player(mp3Stream);
+                        player.play();  // blocks until song finishes or player.close() called
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                        break;
+                    }
+                }
+            });
+            playerThread.start();
+        }
+
+        public void stop() {
+            playing = false;
+            if (playerThread != null) {
+                playerThread.interrupt();  // Interrupt if blocking somewhere
+            }
+        }
+    }
+
 }

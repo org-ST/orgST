@@ -19,6 +19,8 @@ package org.orgst.Extras;
 import java.util.Scanner;
 import org.orgst.App;
 import org.orgst.Variables.ChannelData;
+import javazoom.jl.player.Player;
+import java.io.InputStream;
 public class ChannelViewer {
     String[] yes_ins = {"y","yes","Yes","Y","check","Check"};
     String[] no_ins = {"n","no","No","N"};
@@ -31,6 +33,8 @@ public class ChannelViewer {
             System.out.println( i+1 + " " + ChannelData.Channels.get(i));
         }}
     public static void CV(String[] args) {
+        org.orgst.Methods.M3Player player = new org.orgst.Methods.M3Player();
+        player.play("/ChannelViewer.mp3");
         System.out.println("Channel Viewer V2.0.1 - Java Beta");
         get();
         Scanner inpscanner = new Scanner(System.in);
@@ -45,7 +49,7 @@ public class ChannelViewer {
                 switch(inp){
                     case "rl": get(); break;
                     case "help" : help(); break;
-                    case "exit" : App.main(args); break;
+                    case "exit" : player.stop(); App.main(args); break;
                     case "DON'T YOU FRICKIN DARE" : System.out.println("ok man geez"); break;
                     case "edit": org.orgst.Extras.Apps.ChannelHelper.main(args);; break;
                     case "test": org.orgst.channelapps.AppTester.start(args);

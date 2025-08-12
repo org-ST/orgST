@@ -49,3 +49,8 @@ SPDX-License-Identifier: GPL-3.0-or-later
 
 __Disclaimer:__  
 This is not legal adivce, nor am I responsible for any loss, damages, and/or mistakes, as a result of these statements. For further information, please contact a legal professional   
+
+## ChannelViewer theme license  
+Farm Kevin MacLeod (incompetech.com)  
+Licensed under Creative Commons: By Attribution 3.0 License  
+http://creativecommons.org/licenses/by/3.0/  
